@@ -13,7 +13,7 @@ On the following project, we are going to integrate `Apache Airflow`, `PostgreSQ
 
 ![diagram](assets/diagram.png)
 
-The idea is not to go through the basics of each technology, but here I will describe a bit each of one.
+The idea is not to go through the basics of each technology, but here is a small summary of each one.
 
 ## Apache Airflow
 `Apache Airflow` is an open-source tool to programmatically author, schedule, and monitor workflows. It is one of the most robust platforms used by Data Engineers for orchestrating workflows or pipelines. You can easily visualize your data pipelines’ dependencies, progress, logs, code, trigger tasks, and success status.
