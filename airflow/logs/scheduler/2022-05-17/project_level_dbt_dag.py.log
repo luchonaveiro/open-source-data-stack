@@ -1,0 +1,1015 @@
+[2022-05-17 00:00:27,266] {processor.py:163} INFO - Started process (PID=1057) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:00:27,269] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:00:27,270] {logging_mixin.py:109} INFO - [2022-05-17 00:00:27,270] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:00:27,306] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:00:27,318] {logging_mixin.py:109} INFO - [2022-05-17 00:00:27,318] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:00:27,334] {logging_mixin.py:109} INFO - [2022-05-17 00:00:27,334] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:00:27.334567+00:00
+[2022-05-17 00:00:27,343] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.081 seconds
+[2022-05-17 00:00:57,456] {processor.py:163} INFO - Started process (PID=1081) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:00:57,459] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:00:57,460] {logging_mixin.py:109} INFO - [2022-05-17 00:00:57,460] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:00:57,499] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:00:57,512] {logging_mixin.py:109} INFO - [2022-05-17 00:00:57,512] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:00:57,533] {logging_mixin.py:109} INFO - [2022-05-17 00:00:57,533] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:00:57.533283+00:00
+[2022-05-17 00:00:57,545] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.093 seconds
+[2022-05-17 00:01:27,576] {processor.py:163} INFO - Started process (PID=1117) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:01:27,578] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:01:27,580] {logging_mixin.py:109} INFO - [2022-05-17 00:01:27,579] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:01:27,619] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:01:27,630] {logging_mixin.py:109} INFO - [2022-05-17 00:01:27,630] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:01:27,647] {logging_mixin.py:109} INFO - [2022-05-17 00:01:27,647] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:01:27.646852+00:00
+[2022-05-17 00:01:27,656] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.085 seconds
+[2022-05-17 00:01:57,872] {processor.py:163} INFO - Started process (PID=1140) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:01:57,876] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:01:57,877] {logging_mixin.py:109} INFO - [2022-05-17 00:01:57,877] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:01:57,913] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:01:57,924] {logging_mixin.py:109} INFO - [2022-05-17 00:01:57,924] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:01:57,944] {logging_mixin.py:109} INFO - [2022-05-17 00:01:57,943] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:01:57.942857+00:00
+[2022-05-17 00:01:57,964] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.100 seconds
+[2022-05-17 00:02:28,397] {processor.py:163} INFO - Started process (PID=1174) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:02:28,401] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:02:28,402] {logging_mixin.py:109} INFO - [2022-05-17 00:02:28,402] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:02:28,455] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:02:28,473] {logging_mixin.py:109} INFO - [2022-05-17 00:02:28,473] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:02:28,507] {logging_mixin.py:109} INFO - [2022-05-17 00:02:28,506] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:02:28.506403+00:00
+[2022-05-17 00:02:28,522] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.135 seconds
+[2022-05-17 00:02:58,647] {processor.py:163} INFO - Started process (PID=1198) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:02:58,653] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:02:58,659] {logging_mixin.py:109} INFO - [2022-05-17 00:02:58,657] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:02:58,799] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:02:58,838] {logging_mixin.py:109} INFO - [2022-05-17 00:02:58,838] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:02:58,897] {logging_mixin.py:109} INFO - [2022-05-17 00:02:58,897] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:02:58.895570+00:00
+[2022-05-17 00:02:58,921] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.281 seconds
+[2022-05-17 00:21:53,189] {processor.py:163} INFO - Started process (PID=1211) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:21:53,198] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:21:53,205] {logging_mixin.py:109} INFO - [2022-05-17 00:21:53,203] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:21:53,410] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:21:53,446] {logging_mixin.py:109} INFO - [2022-05-17 00:21:53,446] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:21:53,497] {logging_mixin.py:109} INFO - [2022-05-17 00:21:53,496] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:21:53.496174+00:00
+[2022-05-17 00:21:53,523] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.349 seconds
+[2022-05-17 00:22:23,960] {processor.py:163} INFO - Started process (PID=1236) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:22:23,962] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:22:23,963] {logging_mixin.py:109} INFO - [2022-05-17 00:22:23,963] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:22:24,013] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:22:24,031] {logging_mixin.py:109} INFO - [2022-05-17 00:22:24,031] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:22:24,059] {logging_mixin.py:109} INFO - [2022-05-17 00:22:24,058] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:22:24.058321+00:00
+[2022-05-17 00:22:24,073] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.118 seconds
+[2022-05-17 00:22:54,313] {processor.py:163} INFO - Started process (PID=1261) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:22:54,315] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:22:54,317] {logging_mixin.py:109} INFO - [2022-05-17 00:22:54,317] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:22:54,348] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:22:54,360] {logging_mixin.py:109} INFO - [2022-05-17 00:22:54,360] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:22:54,376] {logging_mixin.py:109} INFO - [2022-05-17 00:22:54,376] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:22:54.376011+00:00
+[2022-05-17 00:22:54,385] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.075 seconds
+[2022-05-17 00:23:24,587] {processor.py:163} INFO - Started process (PID=1294) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:23:24,593] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:23:24,595] {logging_mixin.py:109} INFO - [2022-05-17 00:23:24,594] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:23:24,646] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:23:24,660] {logging_mixin.py:109} INFO - [2022-05-17 00:23:24,660] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:23:24,682] {logging_mixin.py:109} INFO - [2022-05-17 00:23:24,682] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:23:24.682028+00:00
+[2022-05-17 00:23:24,695] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.114 seconds
+[2022-05-17 00:23:54,894] {processor.py:163} INFO - Started process (PID=1317) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:23:54,896] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:23:54,897] {logging_mixin.py:109} INFO - [2022-05-17 00:23:54,897] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:23:54,942] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:23:54,953] {logging_mixin.py:109} INFO - [2022-05-17 00:23:54,953] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:23:54,970] {logging_mixin.py:109} INFO - [2022-05-17 00:23:54,970] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:23:54.969939+00:00
+[2022-05-17 00:23:54,982] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.092 seconds
+[2022-05-17 00:24:25,184] {processor.py:163} INFO - Started process (PID=1351) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:24:25,186] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:24:25,188] {logging_mixin.py:109} INFO - [2022-05-17 00:24:25,187] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:24:25,231] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:24:25,243] {logging_mixin.py:109} INFO - [2022-05-17 00:24:25,243] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:24:25,262] {logging_mixin.py:109} INFO - [2022-05-17 00:24:25,262] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:24:25.261828+00:00
+[2022-05-17 00:24:25,271] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.093 seconds
+[2022-05-17 00:24:55,473] {processor.py:163} INFO - Started process (PID=1381) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:24:55,476] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:24:55,478] {logging_mixin.py:109} INFO - [2022-05-17 00:24:55,477] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:24:55,607] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:24:55,625] {logging_mixin.py:109} INFO - [2022-05-17 00:24:55,624] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:24:55,661] {logging_mixin.py:109} INFO - [2022-05-17 00:24:55,661] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:24:55.660161+00:00
+[2022-05-17 00:24:55,681] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.216 seconds
+[2022-05-17 00:25:25,909] {processor.py:163} INFO - Started process (PID=1414) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:25:25,912] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:25:25,913] {logging_mixin.py:109} INFO - [2022-05-17 00:25:25,913] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:25:25,958] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:25:25,979] {logging_mixin.py:109} INFO - [2022-05-17 00:25:25,979] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:25:26,014] {logging_mixin.py:109} INFO - [2022-05-17 00:25:26,013] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:25:26.013583+00:00
+[2022-05-17 00:25:26,027] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.123 seconds
+[2022-05-17 00:25:56,239] {processor.py:163} INFO - Started process (PID=1439) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:25:56,245] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:25:56,247] {logging_mixin.py:109} INFO - [2022-05-17 00:25:56,247] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:25:56,302] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:25:56,325] {logging_mixin.py:109} INFO - [2022-05-17 00:25:56,325] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:25:56,359] {logging_mixin.py:109} INFO - [2022-05-17 00:25:56,359] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:25:56.359257+00:00
+[2022-05-17 00:25:56,377] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.149 seconds
+[2022-05-17 00:26:26,612] {processor.py:163} INFO - Started process (PID=1473) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:26:26,614] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:26:26,616] {logging_mixin.py:109} INFO - [2022-05-17 00:26:26,616] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:26:26,666] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:26:26,679] {logging_mixin.py:109} INFO - [2022-05-17 00:26:26,679] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:26:26,697] {logging_mixin.py:109} INFO - [2022-05-17 00:26:26,697] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:26:26.697066+00:00
+[2022-05-17 00:26:26,707] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.101 seconds
+[2022-05-17 00:26:56,954] {processor.py:163} INFO - Started process (PID=1498) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:26:56,956] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:26:56,958] {logging_mixin.py:109} INFO - [2022-05-17 00:26:56,958] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:26:57,015] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:26:57,031] {logging_mixin.py:109} INFO - [2022-05-17 00:26:57,031] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:26:57,054] {logging_mixin.py:109} INFO - [2022-05-17 00:26:57,054] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:26:57.054281+00:00
+[2022-05-17 00:26:57,064] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.115 seconds
+[2022-05-17 00:27:27,244] {processor.py:163} INFO - Started process (PID=1533) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:27:27,246] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:27:27,248] {logging_mixin.py:109} INFO - [2022-05-17 00:27:27,248] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:27:27,301] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:27:27,319] {logging_mixin.py:109} INFO - [2022-05-17 00:27:27,319] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:27:27,342] {logging_mixin.py:109} INFO - [2022-05-17 00:27:27,342] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:27:27.342036+00:00
+[2022-05-17 00:27:27,355] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.118 seconds
+[2022-05-17 00:27:57,556] {processor.py:163} INFO - Started process (PID=1559) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:27:57,561] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:27:57,567] {logging_mixin.py:109} INFO - [2022-05-17 00:27:57,565] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:27:57,651] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:27:57,670] {logging_mixin.py:109} INFO - [2022-05-17 00:27:57,670] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:27:57,711] {logging_mixin.py:109} INFO - [2022-05-17 00:27:57,710] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:27:57.710171+00:00
+[2022-05-17 00:27:57,747] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.207 seconds
+[2022-05-17 00:28:28,061] {processor.py:163} INFO - Started process (PID=1598) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:28:28,065] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:28:28,067] {logging_mixin.py:109} INFO - [2022-05-17 00:28:28,067] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:28:28,126] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:28:28,139] {logging_mixin.py:109} INFO - [2022-05-17 00:28:28,138] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:28:28,159] {logging_mixin.py:109} INFO - [2022-05-17 00:28:28,159] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:28:28.159370+00:00
+[2022-05-17 00:28:28,168] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.115 seconds
+[2022-05-17 00:28:58,377] {processor.py:163} INFO - Started process (PID=1622) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:28:58,379] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:28:58,381] {logging_mixin.py:109} INFO - [2022-05-17 00:28:58,380] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:28:58,426] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:28:58,435] {logging_mixin.py:109} INFO - [2022-05-17 00:28:58,435] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:28:58,452] {logging_mixin.py:109} INFO - [2022-05-17 00:28:58,452] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:28:58.452176+00:00
+[2022-05-17 00:28:58,459] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.086 seconds
+[2022-05-17 00:29:28,667] {processor.py:163} INFO - Started process (PID=1648) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:29:28,674] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:29:28,675] {logging_mixin.py:109} INFO - [2022-05-17 00:29:28,675] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:29:28,725] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:29:28,740] {logging_mixin.py:109} INFO - [2022-05-17 00:29:28,740] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:29:28,760] {logging_mixin.py:109} INFO - [2022-05-17 00:29:28,760] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:29:28.760439+00:00
+[2022-05-17 00:29:28,771] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.110 seconds
+[2022-05-17 00:29:59,001] {processor.py:163} INFO - Started process (PID=1682) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:29:59,004] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:29:59,006] {logging_mixin.py:109} INFO - [2022-05-17 00:29:59,005] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:29:59,053] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:29:59,079] {logging_mixin.py:109} INFO - [2022-05-17 00:29:59,079] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:29:59,108] {logging_mixin.py:109} INFO - [2022-05-17 00:29:59,104] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:29:59.104012+00:00
+[2022-05-17 00:29:59,129] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.132 seconds
+[2022-05-17 00:30:29,342] {processor.py:163} INFO - Started process (PID=1706) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:30:29,345] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:30:29,347] {logging_mixin.py:109} INFO - [2022-05-17 00:30:29,347] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:30:29,412] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:30:29,423] {logging_mixin.py:109} INFO - [2022-05-17 00:30:29,423] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:30:29,442] {logging_mixin.py:109} INFO - [2022-05-17 00:30:29,442] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:30:29.442051+00:00
+[2022-05-17 00:30:29,455] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.120 seconds
+[2022-05-17 00:30:31,567] {processor.py:163} INFO - Started process (PID=1720) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:30:31,570] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:30:31,571] {logging_mixin.py:109} INFO - [2022-05-17 00:30:31,571] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:30:31,627] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:30:33,009] {logging_mixin.py:109} INFO - [2022-05-17 00:30:33,009] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:30:33,033] {logging_mixin.py:109} INFO - [2022-05-17 00:30:33,032] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:30:33.032257+00:00
+[2022-05-17 00:30:33,054] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 1.491 seconds
+[2022-05-17 00:31:03,270] {processor.py:163} INFO - Started process (PID=1744) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:31:03,278] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:31:03,281] {logging_mixin.py:109} INFO - [2022-05-17 00:31:03,280] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:31:03,349] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:31:03,372] {logging_mixin.py:109} INFO - [2022-05-17 00:31:03,371] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:31:03,401] {logging_mixin.py:109} INFO - [2022-05-17 00:31:03,401] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:31:03.401085+00:00
+[2022-05-17 00:31:03,425] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.160 seconds
+[2022-05-17 00:31:33,459] {processor.py:163} INFO - Started process (PID=1780) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:31:33,463] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:31:33,465] {logging_mixin.py:109} INFO - [2022-05-17 00:31:33,465] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:31:33,504] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:31:33,521] {logging_mixin.py:109} INFO - [2022-05-17 00:31:33,521] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:31:33,547] {logging_mixin.py:109} INFO - [2022-05-17 00:31:33,547] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:31:33.546919+00:00
+[2022-05-17 00:31:33,563] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.110 seconds
+[2022-05-17 00:32:03,824] {processor.py:163} INFO - Started process (PID=1803) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:32:03,826] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:32:03,828] {logging_mixin.py:109} INFO - [2022-05-17 00:32:03,828] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:32:03,868] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:32:03,881] {logging_mixin.py:109} INFO - [2022-05-17 00:32:03,880] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:32:03,903] {logging_mixin.py:109} INFO - [2022-05-17 00:32:03,903] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:32:03.902686+00:00
+[2022-05-17 00:32:03,921] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.102 seconds
+[2022-05-17 00:32:34,150] {processor.py:163} INFO - Started process (PID=1827) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:32:34,152] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:32:34,154] {logging_mixin.py:109} INFO - [2022-05-17 00:32:34,153] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:32:34,194] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:32:34,206] {logging_mixin.py:109} INFO - [2022-05-17 00:32:34,206] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:32:34,225] {logging_mixin.py:109} INFO - [2022-05-17 00:32:34,225] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:32:34.225133+00:00
+[2022-05-17 00:32:34,236] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.090 seconds
+[2022-05-17 00:33:04,479] {processor.py:163} INFO - Started process (PID=1867) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:33:04,481] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:33:04,482] {logging_mixin.py:109} INFO - [2022-05-17 00:33:04,482] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:33:04,514] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:33:04,524] {logging_mixin.py:109} INFO - [2022-05-17 00:33:04,524] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:33:04,542] {logging_mixin.py:109} INFO - [2022-05-17 00:33:04,542] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:33:04.542081+00:00
+[2022-05-17 00:33:04,552] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.076 seconds
+[2022-05-17 00:33:34,754] {processor.py:163} INFO - Started process (PID=1893) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:33:34,756] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:33:34,757] {logging_mixin.py:109} INFO - [2022-05-17 00:33:34,757] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:33:34,793] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:33:34,804] {logging_mixin.py:109} INFO - [2022-05-17 00:33:34,804] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:33:34,820] {logging_mixin.py:109} INFO - [2022-05-17 00:33:34,820] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:33:34.820179+00:00
+[2022-05-17 00:33:34,829] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.079 seconds
+[2022-05-17 00:34:05,008] {processor.py:163} INFO - Started process (PID=1928) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:34:05,011] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:34:05,012] {logging_mixin.py:109} INFO - [2022-05-17 00:34:05,012] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:34:05,050] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:34:05,063] {logging_mixin.py:109} INFO - [2022-05-17 00:34:05,063] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:34:05,081] {logging_mixin.py:109} INFO - [2022-05-17 00:34:05,081] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:34:05.081496+00:00
+[2022-05-17 00:34:05,094] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.090 seconds
+[2022-05-17 00:34:35,241] {processor.py:163} INFO - Started process (PID=1956) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:34:35,243] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:34:35,245] {logging_mixin.py:109} INFO - [2022-05-17 00:34:35,245] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:34:35,288] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:34:35,302] {logging_mixin.py:109} INFO - [2022-05-17 00:34:35,302] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:34:35,323] {logging_mixin.py:109} INFO - [2022-05-17 00:34:35,323] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:34:35.322732+00:00
+[2022-05-17 00:34:35,336] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.099 seconds
+[2022-05-17 00:35:05,508] {processor.py:163} INFO - Started process (PID=1988) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:35:05,510] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:35:05,512] {logging_mixin.py:109} INFO - [2022-05-17 00:35:05,512] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:35:05,601] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:35:05,619] {logging_mixin.py:109} INFO - [2022-05-17 00:35:05,619] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:35:05,646] {logging_mixin.py:109} INFO - [2022-05-17 00:35:05,645] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:35:05.645521+00:00
+[2022-05-17 00:35:05,663] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.159 seconds
+[2022-05-17 00:35:35,807] {processor.py:163} INFO - Started process (PID=2015) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:35:35,809] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:35:35,811] {logging_mixin.py:109} INFO - [2022-05-17 00:35:35,811] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:35:35,846] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:35:35,859] {logging_mixin.py:109} INFO - [2022-05-17 00:35:35,858] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:35:35,878] {logging_mixin.py:109} INFO - [2022-05-17 00:35:35,878] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:35:35.878459+00:00
+[2022-05-17 00:35:35,891] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.090 seconds
+[2022-05-17 00:36:06,050] {processor.py:163} INFO - Started process (PID=2050) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:36:06,052] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:36:06,053] {logging_mixin.py:109} INFO - [2022-05-17 00:36:06,053] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:36:06,081] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:36:06,090] {logging_mixin.py:109} INFO - [2022-05-17 00:36:06,090] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:36:06,107] {logging_mixin.py:109} INFO - [2022-05-17 00:36:06,107] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:36:06.106821+00:00
+[2022-05-17 00:36:06,118] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.070 seconds
+[2022-05-17 00:36:36,277] {processor.py:163} INFO - Started process (PID=2074) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:36:36,280] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:36:36,281] {logging_mixin.py:109} INFO - [2022-05-17 00:36:36,281] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:36:36,310] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:36:36,319] {logging_mixin.py:109} INFO - [2022-05-17 00:36:36,319] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:36:36,334] {logging_mixin.py:109} INFO - [2022-05-17 00:36:36,334] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:36:36.334113+00:00
+[2022-05-17 00:36:36,343] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.069 seconds
+[2022-05-17 00:37:06,559] {processor.py:163} INFO - Started process (PID=2109) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:37:06,562] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:37:06,563] {logging_mixin.py:109} INFO - [2022-05-17 00:37:06,563] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:37:06,598] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:37:06,609] {logging_mixin.py:109} INFO - [2022-05-17 00:37:06,609] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:37:06,628] {logging_mixin.py:109} INFO - [2022-05-17 00:37:06,628] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:37:06.628281+00:00
+[2022-05-17 00:37:06,642] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.086 seconds
+[2022-05-17 00:37:36,866] {processor.py:163} INFO - Started process (PID=2133) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:37:36,869] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:37:36,870] {logging_mixin.py:109} INFO - [2022-05-17 00:37:36,870] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:37:36,921] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:37:36,943] {logging_mixin.py:109} INFO - [2022-05-17 00:37:36,943] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:37:36,982] {logging_mixin.py:109} INFO - [2022-05-17 00:37:36,982] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:37:36.980885+00:00
+[2022-05-17 00:37:36,995] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.136 seconds
+[2022-05-17 00:38:07,026] {processor.py:163} INFO - Started process (PID=2166) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:38:07,027] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:38:07,029] {logging_mixin.py:109} INFO - [2022-05-17 00:38:07,029] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:38:07,064] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:38:07,076] {logging_mixin.py:109} INFO - [2022-05-17 00:38:07,076] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:38:07,102] {logging_mixin.py:109} INFO - [2022-05-17 00:38:07,102] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:38:07.101730+00:00
+[2022-05-17 00:38:07,120] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.099 seconds
+[2022-05-17 00:38:37,325] {processor.py:163} INFO - Started process (PID=2190) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:38:37,329] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:38:37,335] {logging_mixin.py:109} INFO - [2022-05-17 00:38:37,334] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:38:37,387] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:38:37,405] {logging_mixin.py:109} INFO - [2022-05-17 00:38:37,405] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:38:37,426] {logging_mixin.py:109} INFO - [2022-05-17 00:38:37,426] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:38:37.426548+00:00
+[2022-05-17 00:38:37,440] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.123 seconds
+[2022-05-17 00:39:07,580] {processor.py:163} INFO - Started process (PID=2214) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:39:07,582] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:39:07,584] {logging_mixin.py:109} INFO - [2022-05-17 00:39:07,584] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:39:07,620] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:39:07,631] {logging_mixin.py:109} INFO - [2022-05-17 00:39:07,631] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:39:07,648] {logging_mixin.py:109} INFO - [2022-05-17 00:39:07,648] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:39:07.647685+00:00
+[2022-05-17 00:39:07,658] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.081 seconds
+[2022-05-17 00:39:37,874] {processor.py:163} INFO - Started process (PID=2247) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:39:37,877] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:39:37,879] {logging_mixin.py:109} INFO - [2022-05-17 00:39:37,879] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:39:37,916] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:39:37,928] {logging_mixin.py:109} INFO - [2022-05-17 00:39:37,928] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:39:37,946] {logging_mixin.py:109} INFO - [2022-05-17 00:39:37,946] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:39:37.946394+00:00
+[2022-05-17 00:39:37,958] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.088 seconds
+[2022-05-17 00:40:08,144] {processor.py:163} INFO - Started process (PID=2270) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:40:08,147] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:40:08,148] {logging_mixin.py:109} INFO - [2022-05-17 00:40:08,148] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:40:08,185] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:40:08,197] {logging_mixin.py:109} INFO - [2022-05-17 00:40:08,197] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:40:08,227] {logging_mixin.py:109} INFO - [2022-05-17 00:40:08,227] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:40:08.226708+00:00
+[2022-05-17 00:40:08,237] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.097 seconds
+[2022-05-17 00:42:04,050] {processor.py:163} INFO - Started process (PID=40) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:42:04,066] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:42:04,071] {logging_mixin.py:109} INFO - [2022-05-17 00:42:04,071] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:42:04,192] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:42:04,232] {logging_mixin.py:109} INFO - [2022-05-17 00:42:04,232] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:42:04,304] {logging_mixin.py:109} INFO - [2022-05-17 00:42:04,304] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:42:04.304105+00:00
+[2022-05-17 00:42:04,366] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.348 seconds
+[2022-05-17 00:42:34,815] {processor.py:163} INFO - Started process (PID=68) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:42:34,817] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:42:34,820] {logging_mixin.py:109} INFO - [2022-05-17 00:42:34,819] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:42:34,865] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:42:34,882] {logging_mixin.py:109} INFO - [2022-05-17 00:42:34,881] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:42:34,906] {logging_mixin.py:109} INFO - [2022-05-17 00:42:34,906] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:42:34.906203+00:00
+[2022-05-17 00:42:34,920] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.110 seconds
+[2022-05-17 00:43:05,126] {processor.py:163} INFO - Started process (PID=105) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:43:05,133] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:43:05,135] {logging_mixin.py:109} INFO - [2022-05-17 00:43:05,135] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:43:05,203] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:43:05,219] {logging_mixin.py:109} INFO - [2022-05-17 00:43:05,218] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:43:05,253] {logging_mixin.py:109} INFO - [2022-05-17 00:43:05,253] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:43:05.252941+00:00
+[2022-05-17 00:43:05,269] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.147 seconds
+[2022-05-17 00:43:35,631] {processor.py:163} INFO - Started process (PID=134) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:43:35,640] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:43:35,642] {logging_mixin.py:109} INFO - [2022-05-17 00:43:35,641] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:43:35,803] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:43:35,867] {logging_mixin.py:109} INFO - [2022-05-17 00:43:35,867] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:43:35,916] {logging_mixin.py:109} INFO - [2022-05-17 00:43:35,916] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:43:35.907822+00:00
+[2022-05-17 00:43:35,931] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.312 seconds
+[2022-05-17 00:44:06,261] {processor.py:163} INFO - Started process (PID=157) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:44:06,264] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:44:06,265] {logging_mixin.py:109} INFO - [2022-05-17 00:44:06,265] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:44:06,343] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:44:06,384] {logging_mixin.py:109} INFO - [2022-05-17 00:44:06,384] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:44:06,421] {logging_mixin.py:109} INFO - [2022-05-17 00:44:06,421] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:44:06.421128+00:00
+[2022-05-17 00:44:06,434] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.177 seconds
+[2022-05-17 00:44:36,651] {processor.py:163} INFO - Started process (PID=180) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:44:36,655] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:44:36,657] {logging_mixin.py:109} INFO - [2022-05-17 00:44:36,657] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:44:36,709] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:44:36,731] {logging_mixin.py:109} INFO - [2022-05-17 00:44:36,731] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:44:36,761] {logging_mixin.py:109} INFO - [2022-05-17 00:44:36,761] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:44:36.760499+00:00
+[2022-05-17 00:44:36,776] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.131 seconds
+[2022-05-17 00:45:07,045] {processor.py:163} INFO - Started process (PID=213) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:45:07,048] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:45:07,050] {logging_mixin.py:109} INFO - [2022-05-17 00:45:07,050] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:45:07,118] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:45:07,153] {logging_mixin.py:109} INFO - [2022-05-17 00:45:07,152] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:45:07,187] {logging_mixin.py:109} INFO - [2022-05-17 00:45:07,187] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:45:07.187213+00:00
+[2022-05-17 00:45:07,216] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.180 seconds
+[2022-05-17 00:45:37,468] {processor.py:163} INFO - Started process (PID=237) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:45:37,470] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:45:37,472] {logging_mixin.py:109} INFO - [2022-05-17 00:45:37,472] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:45:37,522] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:45:37,539] {logging_mixin.py:109} INFO - [2022-05-17 00:45:37,539] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:45:37,563] {logging_mixin.py:109} INFO - [2022-05-17 00:45:37,562] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:45:37.562553+00:00
+[2022-05-17 00:45:37,575] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.114 seconds
+[2022-05-17 00:46:07,824] {processor.py:163} INFO - Started process (PID=272) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:46:07,829] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:46:07,833] {logging_mixin.py:109} INFO - [2022-05-17 00:46:07,832] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:46:07,890] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:46:07,904] {logging_mixin.py:109} INFO - [2022-05-17 00:46:07,904] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:46:07,937] {logging_mixin.py:109} INFO - [2022-05-17 00:46:07,937] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:46:07.937102+00:00
+[2022-05-17 00:46:07,949] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.136 seconds
+[2022-05-17 00:46:38,210] {processor.py:163} INFO - Started process (PID=301) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:46:38,218] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:46:38,226] {logging_mixin.py:109} INFO - [2022-05-17 00:46:38,226] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:46:38,398] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:46:38,451] {logging_mixin.py:109} INFO - [2022-05-17 00:46:38,451] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:46:38,534] {logging_mixin.py:109} INFO - [2022-05-17 00:46:38,534] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:46:38.534370+00:00
+[2022-05-17 00:46:38,559] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.353 seconds
+[2022-05-17 00:47:08,668] {processor.py:163} INFO - Started process (PID=324) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:47:08,671] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:47:08,673] {logging_mixin.py:109} INFO - [2022-05-17 00:47:08,672] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:47:08,778] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:47:08,811] {logging_mixin.py:109} INFO - [2022-05-17 00:47:08,810] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:47:08,862] {logging_mixin.py:109} INFO - [2022-05-17 00:47:08,861] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:47:08.861103+00:00
+[2022-05-17 00:47:08,884] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.221 seconds
+[2022-05-17 00:47:39,081] {processor.py:163} INFO - Started process (PID=357) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:47:39,083] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:47:39,085] {logging_mixin.py:109} INFO - [2022-05-17 00:47:39,085] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:47:39,143] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:47:39,166] {logging_mixin.py:109} INFO - [2022-05-17 00:47:39,165] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:47:39,194] {logging_mixin.py:109} INFO - [2022-05-17 00:47:39,194] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:47:39.194337+00:00
+[2022-05-17 00:47:39,214] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.138 seconds
+[2022-05-17 00:48:09,350] {processor.py:163} INFO - Started process (PID=382) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:48:09,359] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:48:09,456] {logging_mixin.py:109} INFO - [2022-05-17 00:48:09,454] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:48:09,579] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:48:09,629] {logging_mixin.py:109} INFO - [2022-05-17 00:48:09,629] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:48:09,822] {logging_mixin.py:109} INFO - [2022-05-17 00:48:09,820] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:48:09.820048+00:00
+[2022-05-17 00:48:09,907] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.566 seconds
+[2022-05-17 00:48:40,053] {processor.py:163} INFO - Started process (PID=418) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:48:40,057] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:48:40,060] {logging_mixin.py:109} INFO - [2022-05-17 00:48:40,060] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:48:40,138] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:48:40,160] {logging_mixin.py:109} INFO - [2022-05-17 00:48:40,160] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:48:40,188] {logging_mixin.py:109} INFO - [2022-05-17 00:48:40,188] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:48:40.187913+00:00
+[2022-05-17 00:48:40,200] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.153 seconds
+[2022-05-17 00:49:10,356] {processor.py:163} INFO - Started process (PID=443) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:49:10,359] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:49:10,361] {logging_mixin.py:109} INFO - [2022-05-17 00:49:10,361] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:49:10,413] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:49:10,430] {logging_mixin.py:109} INFO - [2022-05-17 00:49:10,430] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:49:10,456] {logging_mixin.py:109} INFO - [2022-05-17 00:49:10,456] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:49:10.455447+00:00
+[2022-05-17 00:49:10,476] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.126 seconds
+[2022-05-17 00:49:40,591] {processor.py:163} INFO - Started process (PID=477) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:49:40,594] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:49:40,596] {logging_mixin.py:109} INFO - [2022-05-17 00:49:40,596] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:49:40,635] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:49:40,648] {logging_mixin.py:109} INFO - [2022-05-17 00:49:40,648] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:49:40,672] {logging_mixin.py:109} INFO - [2022-05-17 00:49:40,672] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:49:40.672153+00:00
+[2022-05-17 00:49:40,780] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.193 seconds
+[2022-05-17 00:50:10,863] {processor.py:163} INFO - Started process (PID=502) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:50:10,866] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:50:10,867] {logging_mixin.py:109} INFO - [2022-05-17 00:50:10,867] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:50:10,916] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:50:10,935] {logging_mixin.py:109} INFO - [2022-05-17 00:50:10,935] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:50:11,057] {logging_mixin.py:109} INFO - [2022-05-17 00:50:11,056] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:50:11.056698+00:00
+[2022-05-17 00:50:11,072] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.216 seconds
+[2022-05-17 00:50:41,188] {processor.py:163} INFO - Started process (PID=537) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:50:41,192] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:50:41,194] {logging_mixin.py:109} INFO - [2022-05-17 00:50:41,193] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:50:41,242] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:50:41,265] {logging_mixin.py:109} INFO - [2022-05-17 00:50:41,265] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:50:41,416] {logging_mixin.py:109} INFO - [2022-05-17 00:50:41,416] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:50:41.415950+00:00
+[2022-05-17 00:50:41,429] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.251 seconds
+[2022-05-17 00:51:11,528] {processor.py:163} INFO - Started process (PID=562) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:51:11,531] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:51:11,533] {logging_mixin.py:109} INFO - [2022-05-17 00:51:11,533] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:51:11,578] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:51:11,590] {logging_mixin.py:109} INFO - [2022-05-17 00:51:11,590] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:51:11,720] {logging_mixin.py:109} INFO - [2022-05-17 00:51:11,720] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:51:11.720140+00:00
+[2022-05-17 00:51:11,732] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.209 seconds
+[2022-05-17 00:51:41,863] {processor.py:163} INFO - Started process (PID=596) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:51:41,865] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:51:41,867] {logging_mixin.py:109} INFO - [2022-05-17 00:51:41,867] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:51:41,903] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:51:42,016] {logging_mixin.py:109} INFO - [2022-05-17 00:51:42,016] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:51:42,034] {logging_mixin.py:109} INFO - [2022-05-17 00:51:42,034] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:51:42.034291+00:00
+[2022-05-17 00:51:42,044] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.184 seconds
+[2022-05-17 00:52:12,186] {processor.py:163} INFO - Started process (PID=620) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:52:12,188] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:52:12,189] {logging_mixin.py:109} INFO - [2022-05-17 00:52:12,189] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:52:12,309] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:52:12,318] {logging_mixin.py:109} INFO - [2022-05-17 00:52:12,318] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:52:12,330] {logging_mixin.py:109} INFO - [2022-05-17 00:52:12,330] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:52:12.330595+00:00
+[2022-05-17 00:52:12,339] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.163 seconds
+[2022-05-17 00:52:42,433] {processor.py:163} INFO - Started process (PID=655) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:52:42,437] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:52:42,439] {logging_mixin.py:109} INFO - [2022-05-17 00:52:42,438] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:52:42,590] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:52:42,602] {logging_mixin.py:109} INFO - [2022-05-17 00:52:42,602] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:52:42,622] {logging_mixin.py:109} INFO - [2022-05-17 00:52:42,622] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:52:42.621817+00:00
+[2022-05-17 00:52:42,631] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.203 seconds
+[2022-05-17 00:53:12,729] {processor.py:163} INFO - Started process (PID=680) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:53:12,732] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:53:12,733] {logging_mixin.py:109} INFO - [2022-05-17 00:53:12,733] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:53:12,881] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:53:12,893] {logging_mixin.py:109} INFO - [2022-05-17 00:53:12,893] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:53:12,916] {logging_mixin.py:109} INFO - [2022-05-17 00:53:12,915] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:53:12.915654+00:00
+[2022-05-17 00:53:12,937] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.214 seconds
+[2022-05-17 00:53:43,281] {processor.py:163} INFO - Started process (PID=702) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:53:43,284] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:53:43,287] {logging_mixin.py:109} INFO - [2022-05-17 00:53:43,286] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:53:43,499] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:53:43,514] {logging_mixin.py:109} INFO - [2022-05-17 00:53:43,514] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:53:43,537] {logging_mixin.py:109} INFO - [2022-05-17 00:53:43,537] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:53:43.537230+00:00
+[2022-05-17 00:53:43,549] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.279 seconds
+[2022-05-17 00:54:13,951] {processor.py:163} INFO - Started process (PID=737) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:54:13,953] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:54:13,955] {logging_mixin.py:109} INFO - [2022-05-17 00:54:13,955] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:54:13,996] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:54:14,019] {logging_mixin.py:109} INFO - [2022-05-17 00:54:14,018] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:54:14,053] {logging_mixin.py:109} INFO - [2022-05-17 00:54:14,053] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:54:14.053113+00:00
+[2022-05-17 00:54:14,070] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.124 seconds
+[2022-05-17 00:54:44,166] {processor.py:163} INFO - Started process (PID=761) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:54:44,170] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:54:44,173] {logging_mixin.py:109} INFO - [2022-05-17 00:54:44,173] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:54:44,231] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:54:44,256] {logging_mixin.py:109} INFO - [2022-05-17 00:54:44,256] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:54:44,284] {logging_mixin.py:109} INFO - [2022-05-17 00:54:44,284] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:54:44.283760+00:00
+[2022-05-17 00:54:44,300] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.139 seconds
+[2022-05-17 00:55:14,409] {processor.py:163} INFO - Started process (PID=794) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:55:14,411] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:55:14,414] {logging_mixin.py:109} INFO - [2022-05-17 00:55:14,414] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:55:14,453] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:55:14,469] {logging_mixin.py:109} INFO - [2022-05-17 00:55:14,469] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:55:14,494] {logging_mixin.py:109} INFO - [2022-05-17 00:55:14,494] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:55:14.494197+00:00
+[2022-05-17 00:55:14,503] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.099 seconds
+[2022-05-17 00:55:44,611] {processor.py:163} INFO - Started process (PID=817) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:55:44,614] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:55:44,616] {logging_mixin.py:109} INFO - [2022-05-17 00:55:44,616] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:55:44,675] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:55:44,692] {logging_mixin.py:109} INFO - [2022-05-17 00:55:44,692] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:55:44,718] {logging_mixin.py:109} INFO - [2022-05-17 00:55:44,718] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:55:44.717929+00:00
+[2022-05-17 00:55:44,734] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.137 seconds
+[2022-05-17 00:56:14,912] {processor.py:163} INFO - Started process (PID=849) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:56:14,915] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:56:14,917] {logging_mixin.py:109} INFO - [2022-05-17 00:56:14,917] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:56:14,964] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:56:14,983] {logging_mixin.py:109} INFO - [2022-05-17 00:56:14,983] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:56:15,011] {logging_mixin.py:109} INFO - [2022-05-17 00:56:15,011] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:56:15.011137+00:00
+[2022-05-17 00:56:15,036] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.129 seconds
+[2022-05-17 00:56:45,204] {processor.py:163} INFO - Started process (PID=873) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:56:45,207] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:56:45,211] {logging_mixin.py:109} INFO - [2022-05-17 00:56:45,211] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:56:45,267] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:56:45,291] {logging_mixin.py:109} INFO - [2022-05-17 00:56:45,291] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:56:45,328] {logging_mixin.py:109} INFO - [2022-05-17 00:56:45,328] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:56:45.327914+00:00
+[2022-05-17 00:56:45,344] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.148 seconds
+[2022-05-17 00:57:15,561] {processor.py:163} INFO - Started process (PID=907) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:57:15,568] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:57:15,573] {logging_mixin.py:109} INFO - [2022-05-17 00:57:15,573] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:57:15,646] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:57:15,674] {logging_mixin.py:109} INFO - [2022-05-17 00:57:15,674] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:57:15,720] {logging_mixin.py:109} INFO - [2022-05-17 00:57:15,720] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:57:15.719273+00:00
+[2022-05-17 00:57:15,738] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.189 seconds
+[2022-05-17 00:57:45,867] {processor.py:163} INFO - Started process (PID=930) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:57:45,871] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:57:45,874] {logging_mixin.py:109} INFO - [2022-05-17 00:57:45,874] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:57:45,931] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:57:45,945] {logging_mixin.py:109} INFO - [2022-05-17 00:57:45,945] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:57:45,967] {logging_mixin.py:109} INFO - [2022-05-17 00:57:45,967] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:57:45.966796+00:00
+[2022-05-17 00:57:45,978] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.121 seconds
+[2022-05-17 00:58:16,128] {processor.py:163} INFO - Started process (PID=955) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:58:16,130] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:58:16,133] {logging_mixin.py:109} INFO - [2022-05-17 00:58:16,133] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:58:16,179] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:58:16,194] {logging_mixin.py:109} INFO - [2022-05-17 00:58:16,194] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:58:16,220] {logging_mixin.py:109} INFO - [2022-05-17 00:58:16,220] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:58:16.219963+00:00
+[2022-05-17 00:58:16,232] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.111 seconds
+[2022-05-17 00:58:46,384] {processor.py:163} INFO - Started process (PID=989) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:58:46,387] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:58:46,388] {logging_mixin.py:109} INFO - [2022-05-17 00:58:46,388] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:58:46,531] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:58:46,579] {logging_mixin.py:109} INFO - [2022-05-17 00:58:46,579] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:58:46,640] {logging_mixin.py:109} INFO - [2022-05-17 00:58:46,640] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:58:46.639829+00:00
+[2022-05-17 00:58:46,662] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.284 seconds
+[2022-05-17 00:59:16,798] {processor.py:163} INFO - Started process (PID=1013) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:59:16,801] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:59:16,802] {logging_mixin.py:109} INFO - [2022-05-17 00:59:16,802] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:59:16,870] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:59:16,890] {logging_mixin.py:109} INFO - [2022-05-17 00:59:16,890] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:59:16,916] {logging_mixin.py:109} INFO - [2022-05-17 00:59:16,916] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:59:16.915966+00:00
+[2022-05-17 00:59:16,930] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.137 seconds
+[2022-05-17 00:59:47,079] {processor.py:163} INFO - Started process (PID=1046) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:59:47,082] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 00:59:47,083] {logging_mixin.py:109} INFO - [2022-05-17 00:59:47,083] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:59:47,123] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 00:59:47,140] {logging_mixin.py:109} INFO - [2022-05-17 00:59:47,140] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 00:59:47,181] {logging_mixin.py:109} INFO - [2022-05-17 00:59:47,181] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T00:59:47.180744+00:00
+[2022-05-17 00:59:47,190] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.116 seconds
+[2022-05-17 01:00:17,337] {processor.py:163} INFO - Started process (PID=1071) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:00:17,340] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:00:17,342] {logging_mixin.py:109} INFO - [2022-05-17 01:00:17,342] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:00:17,383] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:00:17,397] {logging_mixin.py:109} INFO - [2022-05-17 01:00:17,397] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:00:17,420] {logging_mixin.py:109} INFO - [2022-05-17 01:00:17,420] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T01:00:17.419832+00:00
+[2022-05-17 01:00:17,447] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.116 seconds
+[2022-05-17 01:00:47,603] {processor.py:163} INFO - Started process (PID=1111) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:00:47,610] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:00:47,613] {logging_mixin.py:109} INFO - [2022-05-17 01:00:47,613] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:00:47,676] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:00:47,700] {logging_mixin.py:109} INFO - [2022-05-17 01:00:47,700] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:00:47,728] {logging_mixin.py:109} INFO - [2022-05-17 01:00:47,727] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-16T01:00:47.727461+00:00
+[2022-05-17 01:00:47,739] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.143 seconds
+[2022-05-17 01:01:17,943] {processor.py:163} INFO - Started process (PID=1136) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:01:17,946] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:01:17,949] {logging_mixin.py:109} INFO - [2022-05-17 01:01:17,948] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:01:17,998] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:01:18,014] {logging_mixin.py:109} INFO - [2022-05-17 01:01:18,014] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:01:18,065] {logging_mixin.py:109} INFO - [2022-05-17 01:01:18,065] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:01:18,081] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.143 seconds
+[2022-05-17 01:01:48,260] {processor.py:163} INFO - Started process (PID=1160) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:01:48,263] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:01:48,265] {logging_mixin.py:109} INFO - [2022-05-17 01:01:48,265] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:01:48,311] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:01:48,330] {logging_mixin.py:109} INFO - [2022-05-17 01:01:48,329] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:01:48,363] {logging_mixin.py:109} INFO - [2022-05-17 01:01:48,363] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:01:48,380] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.123 seconds
+[2022-05-17 01:02:18,564] {processor.py:163} INFO - Started process (PID=1194) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:02:18,568] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:02:18,570] {logging_mixin.py:109} INFO - [2022-05-17 01:02:18,570] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:02:18,614] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:02:18,630] {logging_mixin.py:109} INFO - [2022-05-17 01:02:18,630] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:02:18,659] {logging_mixin.py:109} INFO - [2022-05-17 01:02:18,659] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:02:18,672] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.114 seconds
+[2022-05-17 01:02:48,797] {processor.py:163} INFO - Started process (PID=1218) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:02:48,802] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:02:48,805] {logging_mixin.py:109} INFO - [2022-05-17 01:02:48,805] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:02:48,889] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:02:48,906] {logging_mixin.py:109} INFO - [2022-05-17 01:02:48,905] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:02:48,931] {logging_mixin.py:109} INFO - [2022-05-17 01:02:48,931] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:02:48,945] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.159 seconds
+[2022-05-17 01:03:19,109] {processor.py:163} INFO - Started process (PID=1253) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:03:19,116] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:03:19,118] {logging_mixin.py:109} INFO - [2022-05-17 01:03:19,118] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:03:19,192] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:03:19,213] {logging_mixin.py:109} INFO - [2022-05-17 01:03:19,213] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:03:19,259] {logging_mixin.py:109} INFO - [2022-05-17 01:03:19,259] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:03:19,271] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.166 seconds
+[2022-05-17 01:03:49,453] {processor.py:163} INFO - Started process (PID=1277) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:03:49,458] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:03:49,461] {logging_mixin.py:109} INFO - [2022-05-17 01:03:49,461] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:03:49,567] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:03:49,594] {logging_mixin.py:109} INFO - [2022-05-17 01:03:49,594] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:03:49,656] {logging_mixin.py:109} INFO - [2022-05-17 01:03:49,655] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:03:49,682] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.262 seconds
+[2022-05-17 01:04:19,903] {processor.py:163} INFO - Started process (PID=1309) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:04:19,905] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:04:19,907] {logging_mixin.py:109} INFO - [2022-05-17 01:04:19,907] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:04:19,953] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:04:19,966] {logging_mixin.py:109} INFO - [2022-05-17 01:04:19,966] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:04:19,990] {logging_mixin.py:109} INFO - [2022-05-17 01:04:19,990] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:04:20,004] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.106 seconds
+[2022-05-17 01:04:50,163] {processor.py:163} INFO - Started process (PID=1333) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:04:50,166] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:04:50,167] {logging_mixin.py:109} INFO - [2022-05-17 01:04:50,167] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:04:50,216] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:04:50,235] {logging_mixin.py:109} INFO - [2022-05-17 01:04:50,234] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:04:50,275] {logging_mixin.py:109} INFO - [2022-05-17 01:04:50,275] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:04:50,287] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.129 seconds
+[2022-05-17 01:05:20,421] {processor.py:163} INFO - Started process (PID=1366) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:05:20,424] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:05:20,426] {logging_mixin.py:109} INFO - [2022-05-17 01:05:20,426] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:05:20,467] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:05:20,480] {logging_mixin.py:109} INFO - [2022-05-17 01:05:20,480] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:05:20,503] {logging_mixin.py:109} INFO - [2022-05-17 01:05:20,502] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:05:20,513] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.097 seconds
+[2022-05-17 01:05:50,713] {processor.py:163} INFO - Started process (PID=1391) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:05:50,715] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:05:50,716] {logging_mixin.py:109} INFO - [2022-05-17 01:05:50,716] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:05:50,764] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:05:50,780] {logging_mixin.py:109} INFO - [2022-05-17 01:05:50,780] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:05:50,802] {logging_mixin.py:109} INFO - [2022-05-17 01:05:50,802] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:05:50,816] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.109 seconds
+[2022-05-17 01:06:20,966] {processor.py:163} INFO - Started process (PID=1418) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:06:20,969] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:06:20,971] {logging_mixin.py:109} INFO - [2022-05-17 01:06:20,971] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:06:21,023] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:06:21,039] {logging_mixin.py:109} INFO - [2022-05-17 01:06:21,038] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:06:21,067] {logging_mixin.py:109} INFO - [2022-05-17 01:06:21,066] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:06:21,078] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.118 seconds
+[2022-05-17 01:06:51,292] {processor.py:163} INFO - Started process (PID=1452) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:06:51,295] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:06:51,297] {logging_mixin.py:109} INFO - [2022-05-17 01:06:51,297] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:06:51,346] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:06:51,370] {logging_mixin.py:109} INFO - [2022-05-17 01:06:51,370] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:06:51,401] {logging_mixin.py:109} INFO - [2022-05-17 01:06:51,401] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:06:51,414] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.129 seconds
+[2022-05-17 01:07:21,583] {processor.py:163} INFO - Started process (PID=1476) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:07:21,585] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:07:21,586] {logging_mixin.py:109} INFO - [2022-05-17 01:07:21,586] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:07:21,631] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:07:21,649] {logging_mixin.py:109} INFO - [2022-05-17 01:07:21,649] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:07:21,674] {logging_mixin.py:109} INFO - [2022-05-17 01:07:21,674] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:07:21,687] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.110 seconds
+[2022-05-17 01:07:51,839] {processor.py:163} INFO - Started process (PID=1510) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:07:51,845] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:07:51,849] {logging_mixin.py:109} INFO - [2022-05-17 01:07:51,848] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:07:51,897] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:07:51,916] {logging_mixin.py:109} INFO - [2022-05-17 01:07:51,915] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:07:51,943] {logging_mixin.py:109} INFO - [2022-05-17 01:07:51,943] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:07:51,962] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.129 seconds
+[2022-05-17 01:08:22,095] {processor.py:163} INFO - Started process (PID=1535) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:08:22,097] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:08:22,098] {logging_mixin.py:109} INFO - [2022-05-17 01:08:22,098] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:08:22,145] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:08:22,180] {logging_mixin.py:109} INFO - [2022-05-17 01:08:22,179] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:08:22,217] {logging_mixin.py:109} INFO - [2022-05-17 01:08:22,217] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:08:22,240] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.152 seconds
+[2022-05-17 01:08:52,377] {processor.py:163} INFO - Started process (PID=1571) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:08:52,382] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:08:52,385] {logging_mixin.py:109} INFO - [2022-05-17 01:08:52,385] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:08:52,450] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:08:52,467] {logging_mixin.py:109} INFO - [2022-05-17 01:08:52,467] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:08:52,488] {logging_mixin.py:109} INFO - [2022-05-17 01:08:52,488] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:08:52,504] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.138 seconds
+[2022-05-17 01:09:22,717] {processor.py:163} INFO - Started process (PID=1595) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:09:22,719] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:09:22,723] {logging_mixin.py:109} INFO - [2022-05-17 01:09:22,723] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:09:22,765] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:09:22,779] {logging_mixin.py:109} INFO - [2022-05-17 01:09:22,779] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:09:22,807] {logging_mixin.py:109} INFO - [2022-05-17 01:09:22,806] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:09:22,821] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.110 seconds
+[2022-05-17 01:09:52,973] {processor.py:163} INFO - Started process (PID=1629) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:09:52,978] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:09:52,982] {logging_mixin.py:109} INFO - [2022-05-17 01:09:52,981] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:09:53,050] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:09:53,089] {logging_mixin.py:109} INFO - [2022-05-17 01:09:53,089] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:09:53,122] {logging_mixin.py:109} INFO - [2022-05-17 01:09:53,122] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:09:53,144] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.183 seconds
+[2022-05-17 01:10:23,266] {processor.py:163} INFO - Started process (PID=1654) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:10:23,273] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:10:23,274] {logging_mixin.py:109} INFO - [2022-05-17 01:10:23,274] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:10:23,342] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:10:23,370] {logging_mixin.py:109} INFO - [2022-05-17 01:10:23,370] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:10:23,398] {logging_mixin.py:109} INFO - [2022-05-17 01:10:23,397] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:10:23,418] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.158 seconds
+[2022-05-17 01:10:53,583] {processor.py:163} INFO - Started process (PID=1678) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:10:53,588] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:10:53,592] {logging_mixin.py:109} INFO - [2022-05-17 01:10:53,591] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:10:53,685] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:10:53,710] {logging_mixin.py:109} INFO - [2022-05-17 01:10:53,710] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:10:53,741] {logging_mixin.py:109} INFO - [2022-05-17 01:10:53,740] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:10:53,755] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.185 seconds
+[2022-05-17 01:11:23,942] {processor.py:163} INFO - Started process (PID=1713) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:11:23,945] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:11:23,947] {logging_mixin.py:109} INFO - [2022-05-17 01:11:23,946] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:11:24,003] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:11:24,018] {logging_mixin.py:109} INFO - [2022-05-17 01:11:24,017] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:11:24,045] {logging_mixin.py:109} INFO - [2022-05-17 01:11:24,045] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:11:24,060] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.122 seconds
+[2022-05-17 01:11:54,203] {processor.py:163} INFO - Started process (PID=1737) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:11:54,205] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:11:54,206] {logging_mixin.py:109} INFO - [2022-05-17 01:11:54,206] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:11:54,242] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:11:54,256] {logging_mixin.py:109} INFO - [2022-05-17 01:11:54,256] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:11:54,287] {logging_mixin.py:109} INFO - [2022-05-17 01:11:54,287] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:11:54,304] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.106 seconds
+[2022-05-17 01:12:24,423] {processor.py:163} INFO - Started process (PID=1771) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:12:24,426] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:12:24,428] {logging_mixin.py:109} INFO - [2022-05-17 01:12:24,428] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:12:24,524] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:12:24,552] {logging_mixin.py:109} INFO - [2022-05-17 01:12:24,552] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:12:24,591] {logging_mixin.py:109} INFO - [2022-05-17 01:12:24,591] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:12:24,618] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.205 seconds
+[2022-05-17 01:12:54,758] {processor.py:163} INFO - Started process (PID=1794) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:12:54,761] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:12:54,763] {logging_mixin.py:109} INFO - [2022-05-17 01:12:54,763] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:12:54,815] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:12:54,831] {logging_mixin.py:109} INFO - [2022-05-17 01:12:54,830] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:12:54,856] {logging_mixin.py:109} INFO - [2022-05-17 01:12:54,856] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:12:54,869] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.117 seconds
+[2022-05-17 01:13:25,006] {processor.py:163} INFO - Started process (PID=1830) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:13:25,008] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:13:25,010] {logging_mixin.py:109} INFO - [2022-05-17 01:13:25,010] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:13:25,070] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:13:25,087] {logging_mixin.py:109} INFO - [2022-05-17 01:13:25,087] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:13:25,134] {logging_mixin.py:109} INFO - [2022-05-17 01:13:25,134] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:13:25,154] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.154 seconds
+[2022-05-17 01:13:55,319] {processor.py:163} INFO - Started process (PID=1852) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:13:55,322] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:13:55,323] {logging_mixin.py:109} INFO - [2022-05-17 01:13:55,323] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:13:55,375] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:13:55,388] {logging_mixin.py:109} INFO - [2022-05-17 01:13:55,388] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:13:55,410] {logging_mixin.py:109} INFO - [2022-05-17 01:13:55,410] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:13:55,427] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.112 seconds
+[2022-05-17 01:14:25,594] {processor.py:163} INFO - Started process (PID=1875) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:14:25,598] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:14:25,601] {logging_mixin.py:109} INFO - [2022-05-17 01:14:25,601] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:14:25,669] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:14:25,697] {logging_mixin.py:109} INFO - [2022-05-17 01:14:25,697] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:14:25,739] {logging_mixin.py:109} INFO - [2022-05-17 01:14:25,739] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:14:25,753] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.171 seconds
+[2022-05-17 01:14:55,862] {processor.py:163} INFO - Started process (PID=1909) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:14:55,865] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:14:55,866] {logging_mixin.py:109} INFO - [2022-05-17 01:14:55,866] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:14:55,914] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:14:55,927] {logging_mixin.py:109} INFO - [2022-05-17 01:14:55,927] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:14:55,953] {logging_mixin.py:109} INFO - [2022-05-17 01:14:55,953] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:14:55,965] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.109 seconds
+[2022-05-17 01:15:26,116] {processor.py:163} INFO - Started process (PID=1935) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:15:26,120] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:15:26,121] {logging_mixin.py:109} INFO - [2022-05-17 01:15:26,121] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:15:26,167] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:15:26,186] {logging_mixin.py:109} INFO - [2022-05-17 01:15:26,186] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:15:26,212] {logging_mixin.py:109} INFO - [2022-05-17 01:15:26,211] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:15:26,224] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.112 seconds
+[2022-05-17 01:15:56,352] {processor.py:163} INFO - Started process (PID=1969) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:15:56,354] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:15:56,356] {logging_mixin.py:109} INFO - [2022-05-17 01:15:56,355] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:15:56,397] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:15:56,410] {logging_mixin.py:109} INFO - [2022-05-17 01:15:56,409] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:15:56,431] {logging_mixin.py:109} INFO - [2022-05-17 01:15:56,431] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:15:56,441] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.094 seconds
+[2022-05-17 01:16:26,591] {processor.py:163} INFO - Started process (PID=1993) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:16:26,595] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:16:26,597] {logging_mixin.py:109} INFO - [2022-05-17 01:16:26,596] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:16:26,637] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:16:26,659] {logging_mixin.py:109} INFO - [2022-05-17 01:16:26,659] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:16:26,687] {logging_mixin.py:109} INFO - [2022-05-17 01:16:26,687] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:16:26,705] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.123 seconds
+[2022-05-17 01:16:56,877] {processor.py:163} INFO - Started process (PID=2031) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:16:56,880] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:16:56,882] {logging_mixin.py:109} INFO - [2022-05-17 01:16:56,881] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:16:56,927] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:16:56,943] {logging_mixin.py:109} INFO - [2022-05-17 01:16:56,942] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:16:56,964] {logging_mixin.py:109} INFO - [2022-05-17 01:16:56,964] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:16:56,976] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.103 seconds
+[2022-05-17 01:17:27,179] {processor.py:163} INFO - Started process (PID=2057) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:17:27,182] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:17:27,184] {logging_mixin.py:109} INFO - [2022-05-17 01:17:27,183] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:17:27,234] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:17:27,249] {logging_mixin.py:109} INFO - [2022-05-17 01:17:27,249] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:17:27,276] {logging_mixin.py:109} INFO - [2022-05-17 01:17:27,275] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:17:27,288] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.116 seconds
+[2022-05-17 01:17:57,423] {processor.py:163} INFO - Started process (PID=2092) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:17:57,426] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:17:57,429] {logging_mixin.py:109} INFO - [2022-05-17 01:17:57,429] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:17:57,478] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:17:57,506] {logging_mixin.py:109} INFO - [2022-05-17 01:17:57,506] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:17:57,532] {logging_mixin.py:109} INFO - [2022-05-17 01:17:57,532] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:17:57,544] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.127 seconds
+[2022-05-17 01:18:27,671] {processor.py:163} INFO - Started process (PID=2114) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:18:27,673] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:18:27,675] {logging_mixin.py:109} INFO - [2022-05-17 01:18:27,675] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:18:27,717] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:18:27,731] {logging_mixin.py:109} INFO - [2022-05-17 01:18:27,731] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:18:27,754] {logging_mixin.py:109} INFO - [2022-05-17 01:18:27,754] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:18:27,767] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.101 seconds
+[2022-05-17 01:18:58,034] {processor.py:163} INFO - Started process (PID=2147) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:18:58,046] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:18:58,056] {logging_mixin.py:109} INFO - [2022-05-17 01:18:58,056] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:18:58,160] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:18:58,209] {logging_mixin.py:109} INFO - [2022-05-17 01:18:58,209] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:18:58,308] {logging_mixin.py:109} INFO - [2022-05-17 01:18:58,307] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:18:58,367] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.354 seconds
+[2022-05-17 01:19:28,527] {processor.py:163} INFO - Started process (PID=2172) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:19:28,531] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:19:28,533] {logging_mixin.py:109} INFO - [2022-05-17 01:19:28,533] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:19:28,590] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:19:28,607] {logging_mixin.py:109} INFO - [2022-05-17 01:19:28,606] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:19:28,629] {logging_mixin.py:109} INFO - [2022-05-17 01:19:28,628] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:19:28,638] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.119 seconds
+[2022-05-17 01:19:58,773] {processor.py:163} INFO - Started process (PID=2198) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:19:58,776] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:19:58,778] {logging_mixin.py:109} INFO - [2022-05-17 01:19:58,778] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:19:58,839] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:19:58,871] {logging_mixin.py:109} INFO - [2022-05-17 01:19:58,871] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:19:58,893] {logging_mixin.py:109} INFO - [2022-05-17 01:19:58,893] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:19:58,905] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.137 seconds
+[2022-05-17 01:20:29,017] {processor.py:163} INFO - Started process (PID=2232) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:20:29,019] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:20:29,021] {logging_mixin.py:109} INFO - [2022-05-17 01:20:29,021] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:20:29,062] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:20:29,076] {logging_mixin.py:109} INFO - [2022-05-17 01:20:29,076] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:20:29,121] {logging_mixin.py:109} INFO - [2022-05-17 01:20:29,120] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:20:29,139] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.126 seconds
+[2022-05-17 01:20:59,260] {processor.py:163} INFO - Started process (PID=2258) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:20:59,263] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:20:59,265] {logging_mixin.py:109} INFO - [2022-05-17 01:20:59,265] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:20:59,309] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:20:59,327] {logging_mixin.py:109} INFO - [2022-05-17 01:20:59,326] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:20:59,352] {logging_mixin.py:109} INFO - [2022-05-17 01:20:59,352] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:20:59,372] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.118 seconds
+[2022-05-17 01:21:29,468] {processor.py:163} INFO - Started process (PID=2292) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:21:29,471] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:21:29,472] {logging_mixin.py:109} INFO - [2022-05-17 01:21:29,472] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:21:29,514] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:21:29,526] {logging_mixin.py:109} INFO - [2022-05-17 01:21:29,526] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:21:29,554] {logging_mixin.py:109} INFO - [2022-05-17 01:21:29,554] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:21:29,567] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.103 seconds
+[2022-05-17 01:21:59,714] {processor.py:163} INFO - Started process (PID=2317) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:21:59,716] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:21:59,718] {logging_mixin.py:109} INFO - [2022-05-17 01:21:59,718] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:21:59,759] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:21:59,773] {logging_mixin.py:109} INFO - [2022-05-17 01:21:59,772] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:21:59,796] {logging_mixin.py:109} INFO - [2022-05-17 01:21:59,796] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:21:59,808] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.099 seconds
+[2022-05-17 01:22:29,988] {processor.py:163} INFO - Started process (PID=2353) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:22:29,990] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:22:29,992] {logging_mixin.py:109} INFO - [2022-05-17 01:22:29,991] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:22:30,061] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:22:30,090] {logging_mixin.py:109} INFO - [2022-05-17 01:22:30,090] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:22:30,117] {logging_mixin.py:109} INFO - [2022-05-17 01:22:30,117] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:22:30,133] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.151 seconds
+[2022-05-17 01:23:00,286] {processor.py:163} INFO - Started process (PID=2376) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:23:00,288] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:23:00,290] {logging_mixin.py:109} INFO - [2022-05-17 01:23:00,290] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:23:00,328] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:23:00,343] {logging_mixin.py:109} INFO - [2022-05-17 01:23:00,343] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:23:00,379] {logging_mixin.py:109} INFO - [2022-05-17 01:23:00,379] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:23:00,390] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.110 seconds
+[2022-05-17 01:23:30,529] {processor.py:163} INFO - Started process (PID=2412) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:23:30,537] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:23:30,541] {logging_mixin.py:109} INFO - [2022-05-17 01:23:30,541] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:23:30,616] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:23:30,633] {logging_mixin.py:109} INFO - [2022-05-17 01:23:30,633] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:23:30,652] {logging_mixin.py:109} INFO - [2022-05-17 01:23:30,652] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:23:30,661] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.140 seconds
+[2022-05-17 01:24:00,866] {processor.py:163} INFO - Started process (PID=2435) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:24:00,870] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:24:00,872] {logging_mixin.py:109} INFO - [2022-05-17 01:24:00,872] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:24:00,926] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:24:00,941] {logging_mixin.py:109} INFO - [2022-05-17 01:24:00,941] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:24:00,968] {logging_mixin.py:109} INFO - [2022-05-17 01:24:00,968] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:24:00,978] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.119 seconds
+[2022-05-17 01:24:31,097] {processor.py:163} INFO - Started process (PID=2472) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:24:31,104] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:24:31,107] {logging_mixin.py:109} INFO - [2022-05-17 01:24:31,107] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:24:31,174] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:24:31,188] {logging_mixin.py:109} INFO - [2022-05-17 01:24:31,187] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:24:31,209] {logging_mixin.py:109} INFO - [2022-05-17 01:24:31,208] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:24:31,224] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.139 seconds
+[2022-05-17 01:25:01,342] {processor.py:163} INFO - Started process (PID=2495) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:25:01,348] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:25:01,352] {logging_mixin.py:109} INFO - [2022-05-17 01:25:01,351] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:25:01,413] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:25:01,445] {logging_mixin.py:109} INFO - [2022-05-17 01:25:01,444] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:25:01,486] {logging_mixin.py:109} INFO - [2022-05-17 01:25:01,485] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:25:01,507] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.172 seconds
+[2022-05-17 01:25:31,615] {processor.py:163} INFO - Started process (PID=2519) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:25:31,618] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:25:31,620] {logging_mixin.py:109} INFO - [2022-05-17 01:25:31,620] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:25:31,666] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:25:31,682] {logging_mixin.py:109} INFO - [2022-05-17 01:25:31,682] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:25:31,706] {logging_mixin.py:109} INFO - [2022-05-17 01:25:31,706] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:25:31,720] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.112 seconds
+[2022-05-17 01:26:01,868] {processor.py:163} INFO - Started process (PID=2554) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:26:01,872] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:26:01,873] {logging_mixin.py:109} INFO - [2022-05-17 01:26:01,873] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:26:01,918] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:26:01,938] {logging_mixin.py:109} INFO - [2022-05-17 01:26:01,937] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:26:01,975] {logging_mixin.py:109} INFO - [2022-05-17 01:26:01,975] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:26:01,993] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.134 seconds
+[2022-05-17 01:26:32,150] {processor.py:163} INFO - Started process (PID=2579) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:26:32,157] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:26:32,160] {logging_mixin.py:109} INFO - [2022-05-17 01:26:32,159] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:26:32,213] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:26:32,227] {logging_mixin.py:109} INFO - [2022-05-17 01:26:32,227] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:26:32,256] {logging_mixin.py:109} INFO - [2022-05-17 01:26:32,256] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:26:32,277] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.138 seconds
+[2022-05-17 01:27:02,411] {processor.py:163} INFO - Started process (PID=2613) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:27:02,413] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:27:02,415] {logging_mixin.py:109} INFO - [2022-05-17 01:27:02,415] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:27:02,465] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:27:02,483] {logging_mixin.py:109} INFO - [2022-05-17 01:27:02,483] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:27:02,511] {logging_mixin.py:109} INFO - [2022-05-17 01:27:02,511] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:27:02,523] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.120 seconds
+[2022-05-17 01:27:32,707] {processor.py:163} INFO - Started process (PID=2638) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:27:32,709] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:27:32,711] {logging_mixin.py:109} INFO - [2022-05-17 01:27:32,711] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:27:32,786] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:27:32,810] {logging_mixin.py:109} INFO - [2022-05-17 01:27:32,809] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:27:32,829] {logging_mixin.py:109} INFO - [2022-05-17 01:27:32,829] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:27:32,839] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.137 seconds
+[2022-05-17 01:30:39,702] {processor.py:163} INFO - Started process (PID=40) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:30:39,709] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:30:39,717] {logging_mixin.py:109} INFO - [2022-05-17 01:30:39,717] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:30:39,828] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:30:39,882] {logging_mixin.py:109} INFO - [2022-05-17 01:30:39,882] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:30:39,954] {logging_mixin.py:109} INFO - [2022-05-17 01:30:39,954] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:30:39,976] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.284 seconds
+[2022-05-17 01:31:10,175] {processor.py:163} INFO - Started process (PID=69) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:31:10,178] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:31:10,179] {logging_mixin.py:109} INFO - [2022-05-17 01:31:10,179] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:31:10,232] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:31:10,250] {logging_mixin.py:109} INFO - [2022-05-17 01:31:10,249] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:31:10,273] {logging_mixin.py:109} INFO - [2022-05-17 01:31:10,273] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:31:10,284] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.115 seconds
+[2022-05-17 01:31:40,611] {processor.py:163} INFO - Started process (PID=103) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:31:40,614] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:31:40,615] {logging_mixin.py:109} INFO - [2022-05-17 01:31:40,615] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:31:40,665] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:31:40,680] {logging_mixin.py:109} INFO - [2022-05-17 01:31:40,680] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:31:40,702] {logging_mixin.py:109} INFO - [2022-05-17 01:31:40,701] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:31:40,715] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.108 seconds
+[2022-05-17 01:32:10,962] {processor.py:163} INFO - Started process (PID=131) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:32:10,964] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:32:10,966] {logging_mixin.py:109} INFO - [2022-05-17 01:32:10,966] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:32:11,024] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:32:11,040] {logging_mixin.py:109} INFO - [2022-05-17 01:32:11,040] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:32:11,075] {logging_mixin.py:109} INFO - [2022-05-17 01:32:11,075] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:32:11,087] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.131 seconds
+[2022-05-17 01:32:41,354] {processor.py:163} INFO - Started process (PID=168) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:32:41,357] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:32:41,359] {logging_mixin.py:109} INFO - [2022-05-17 01:32:41,359] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:32:41,435] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:32:41,459] {logging_mixin.py:109} INFO - [2022-05-17 01:32:41,459] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:32:41,506] {logging_mixin.py:109} INFO - [2022-05-17 01:32:41,506] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:32:41,533] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.183 seconds
+[2022-05-17 01:33:11,716] {processor.py:163} INFO - Started process (PID=190) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:33:11,719] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:33:11,721] {logging_mixin.py:109} INFO - [2022-05-17 01:33:11,721] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:33:11,862] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:33:11,940] {logging_mixin.py:109} INFO - [2022-05-17 01:33:11,940] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:33:12,016] {logging_mixin.py:109} INFO - [2022-05-17 01:33:12,015] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:33:12,042] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.332 seconds
+[2022-05-17 01:33:42,079] {processor.py:163} INFO - Started process (PID=216) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:33:42,083] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:33:42,087] {logging_mixin.py:109} INFO - [2022-05-17 01:33:42,086] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:33:42,139] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:33:42,153] {logging_mixin.py:109} INFO - [2022-05-17 01:33:42,153] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:33:42,172] {logging_mixin.py:109} INFO - [2022-05-17 01:33:42,172] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:33:42,186] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.111 seconds
+[2022-05-17 01:34:12,354] {processor.py:163} INFO - Started process (PID=248) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:34:12,360] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:34:12,363] {logging_mixin.py:109} INFO - [2022-05-17 01:34:12,362] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:34:12,429] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:34:12,446] {logging_mixin.py:109} INFO - [2022-05-17 01:34:12,446] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:34:12,471] {logging_mixin.py:109} INFO - [2022-05-17 01:34:12,471] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:34:12,484] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.141 seconds
+[2022-05-17 01:34:42,620] {processor.py:163} INFO - Started process (PID=272) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:34:42,625] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:34:42,627] {logging_mixin.py:109} INFO - [2022-05-17 01:34:42,627] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:34:42,681] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:34:42,693] {logging_mixin.py:109} INFO - [2022-05-17 01:34:42,693] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:34:42,727] {logging_mixin.py:109} INFO - [2022-05-17 01:34:42,726] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:34:42,737] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.127 seconds
+[2022-05-17 01:35:12,887] {processor.py:163} INFO - Started process (PID=306) to work on /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:35:12,889] {processor.py:625} INFO - Processing file /opt/airflow/dags/project_level_dbt_dag.py for tasks to queue
+[2022-05-17 01:35:12,890] {logging_mixin.py:109} INFO - [2022-05-17 01:35:12,890] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:35:12,931] {processor.py:637} INFO - DAG(s) dict_keys(['project_level_dbt_dag']) retrieved from /opt/airflow/dags/project_level_dbt_dag.py
+[2022-05-17 01:35:12,941] {logging_mixin.py:109} INFO - [2022-05-17 01:35:12,941] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-17 01:35:12,963] {logging_mixin.py:109} INFO - [2022-05-17 01:35:12,963] {dag.py:2928} INFO - Setting next_dagrun for project_level_dbt_dag to 2022-05-17T01:00:47.727461+00:00
+[2022-05-17 01:35:12,980] {processor.py:171} INFO - Processing /opt/airflow/dags/project_level_dbt_dag.py took 0.097 seconds

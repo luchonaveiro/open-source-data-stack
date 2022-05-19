@@ -1,0 +1,61 @@
+{
+    "path_count": 57,
+    "parsed_path_count": 57,
+    "static_analysis_path_count": 5,
+    "static_analysis_parsed_path_count": 5,
+    "is_partial_parse_enabled": true,
+    "is_static_analysis_enabled": true,
+    "read_files_elapsed": 0.1628072999883443,
+    "load_macros_elapsed": 1.0303346000000602,
+    "parse_project_elapsed": 0.26958200000808574,
+    "patch_sources_elapsed": 0.028463399998145178,
+    "process_manifest_elapsed": 0.013348899999982677,
+    "load_all_elapsed": 1.588046899996698,
+    "projects": [
+        {
+            "project_name": "jaffle_shop",
+            "elapsed": 0.2550067999836756,
+            "parsers": [
+                {
+                    "parser": "model",
+                    "elapsed": 0.08328110000002198,
+                    "parsed_path_count": 5
+                },
+                {
+                    "parser": "test",
+                    "elapsed": 0.022993599995970726,
+                    "parsed_path_count": 1
+                },
+                {
+                    "parser": "docs",
+                    "elapsed": 0.00034500000765547156,
+                    "parsed_path_count": 1
+                },
+                {
+                    "parser": "test",
+                    "elapsed": 0.14287019999756012,
+                    "parsed_path_count": 3
+                }
+            ],
+            "parsed_path_count": 10
+        },
+        {
+            "project_name": "dbt_postgres",
+            "elapsed": 0.008838299996568821,
+            "parsers": [],
+            "parsed_path_count": 0
+        },
+        {
+            "project_name": "dbt",
+            "elapsed": 0.005555600015213713,
+            "parsers": [
+                {
+                    "parser": "docs",
+                    "elapsed": 0.0013991000014357269,
+                    "parsed_path_count": 1
+                }
+            ],
+            "parsed_path_count": 1
+        }
+    ]
+}

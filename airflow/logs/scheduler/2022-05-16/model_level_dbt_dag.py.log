@@ -1,0 +1,922 @@
+[2022-05-16 23:42:24,335] {processor.py:163} INFO - Started process (PID=43) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:42:24,338] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:42:24,345] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,345] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:42:24,466] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,466] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:42:24,470] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,470] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:42:24,474] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,474] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:42:24,477] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,476] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:42:24,479] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,479] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:42:24,482] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,482] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:42:24,483] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,483] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:42:24,487] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,487] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:42:24,489] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,489] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:42:24,491] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,491] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:42:24,495] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,493] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:42:24,498] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,498] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:42:24,500] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,500] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:42:24,501] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,501] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:42:24,503] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,503] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:42:24,505] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,505] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:42:24,506] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,506] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:42:24,508] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,508] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:42:24,594] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:42:24,647] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,647] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:42:24,699] {logging_mixin.py:109} INFO - [2022-05-16 23:42:24,699] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:42:24,739] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.444 seconds
+[2022-05-16 23:42:55,036] {processor.py:163} INFO - Started process (PID=73) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:42:55,043] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:42:55,048] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,048] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:42:55,083] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,083] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:42:55,084] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,084] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:42:55,085] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,085] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:42:55,087] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,086] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:42:55,088] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,088] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:42:55,089] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,089] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:42:55,091] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,091] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:42:55,094] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,094] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:42:55,096] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,096] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:42:55,099] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,098] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:42:55,102] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,101] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:42:55,104] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,104] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:42:55,106] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,106] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:42:55,108] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,108] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:42:55,109] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,109] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:42:55,111] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,110] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:42:55,112] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,112] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:42:55,113] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,113] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:42:55,145] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:42:55,168] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,167] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:42:55,195] {logging_mixin.py:109} INFO - [2022-05-16 23:42:55,194] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:42:55,210] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.179 seconds
+[2022-05-16 23:43:25,536] {processor.py:163} INFO - Started process (PID=97) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:43:25,545] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:43:25,549] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,548] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:43:25,626] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,625] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:43:25,646] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,645] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:43:25,663] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,663] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:43:25,695] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,695] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:43:25,699] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,698] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:43:25,704] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,704] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:43:25,708] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,708] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:43:25,713] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,713] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:43:25,717] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,717] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:43:25,721] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,721] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:43:25,724] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,724] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:43:25,727] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,727] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:43:25,730] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,729] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:43:25,732] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,732] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:43:25,735] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,735] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:43:25,741] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,741] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:43:25,752] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,751] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:43:25,757] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,756] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:43:25,844] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:43:25,937] {logging_mixin.py:109} INFO - [2022-05-16 23:43:25,937] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:43:26,004] {logging_mixin.py:109} INFO - [2022-05-16 23:43:26,004] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:43:26,023] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.501 seconds
+[2022-05-16 23:43:56,365] {processor.py:163} INFO - Started process (PID=131) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:43:56,369] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:43:56,371] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,371] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:43:56,399] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,399] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:43:56,400] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,400] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:43:56,401] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,401] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:43:56,402] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,402] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:43:56,403] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,403] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:43:56,404] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,404] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:43:56,405] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,405] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:43:56,407] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,406] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:43:56,407] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,407] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:43:56,409] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,409] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:43:56,410] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,410] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:43:56,412] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,411] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:43:56,414] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,413] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:43:56,415] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,415] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:43:56,416] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,416] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:43:56,417] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,417] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:43:56,418] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,418] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:43:56,419] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,419] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:43:56,452] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:43:56,474] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,474] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:43:56,497] {logging_mixin.py:109} INFO - [2022-05-16 23:43:56,497] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:43:56,516] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.157 seconds
+[2022-05-16 23:44:26,711] {processor.py:163} INFO - Started process (PID=156) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:44:26,717] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:44:26,719] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,719] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:44:26,773] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,773] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:44:26,778] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,778] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:44:26,780] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,780] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:44:26,782] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,782] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:44:26,783] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,783] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:44:26,784] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,784] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:44:26,786] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,786] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:44:26,788] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,788] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:44:26,793] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,793] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:44:26,795] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,795] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:44:26,797] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,797] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:44:26,801] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,801] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:44:26,803] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,803] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:44:26,805] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,805] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:44:26,807] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,807] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:44:26,809] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,809] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:44:26,811] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,811] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:44:26,815] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,815] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:44:26,900] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:44:26,961] {logging_mixin.py:109} INFO - [2022-05-16 23:44:26,961] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:44:27,022] {logging_mixin.py:109} INFO - [2022-05-16 23:44:27,015] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:44:27,054] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.347 seconds
+[2022-05-16 23:44:57,323] {processor.py:163} INFO - Started process (PID=186) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:44:57,332] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:44:57,336] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,336] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:44:57,413] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,413] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:44:57,417] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,416] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:44:57,419] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,419] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:44:57,422] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,422] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:44:57,425] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,424] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:44:57,427] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,427] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:44:57,430] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,430] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:44:57,432] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,432] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:44:57,434] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,434] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:44:57,438] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,437] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:44:57,441] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,440] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:44:57,444] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,443] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:44:57,448] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,447] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:44:57,451] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,451] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:44:57,454] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,453] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:44:57,457] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,456] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:44:57,460] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,459] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:44:57,462] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,462] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:44:57,510] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:44:57,548] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,548] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:44:57,589] {logging_mixin.py:109} INFO - [2022-05-16 23:44:57,589] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:44:57,605] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.296 seconds
+[2022-05-16 23:45:28,465] {processor.py:163} INFO - Started process (PID=209) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:45:28,468] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:45:28,475] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,475] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:45:28,570] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,569] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:45:28,573] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,573] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:45:28,576] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,575] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:45:28,581] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,580] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:45:28,594] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,593] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:45:28,596] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,596] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:45:28,597] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,597] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:45:28,599] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,598] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:45:28,600] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,600] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:45:28,601] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,601] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:45:28,603] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,603] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:45:28,604] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,604] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:45:28,605] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,605] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:45:28,607] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,607] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:45:28,608] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,608] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:45:28,609] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,609] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:45:28,611] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,610] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:45:28,612] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,612] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:45:28,658] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:45:28,692] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,692] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:45:28,755] {logging_mixin.py:109} INFO - [2022-05-16 23:45:28,754] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:45:28,773] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.329 seconds
+[2022-05-16 23:45:59,143] {processor.py:163} INFO - Started process (PID=246) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:45:59,146] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:45:59,148] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,147] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:45:59,192] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,192] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:45:59,193] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,193] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:45:59,194] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,194] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:45:59,196] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,195] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:45:59,197] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,197] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:45:59,198] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,198] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:45:59,199] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,199] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:45:59,200] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,200] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:45:59,201] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,201] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:45:59,203] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,203] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:45:59,205] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,204] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:45:59,206] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,206] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:45:59,209] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,209] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:45:59,212] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,212] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:45:59,213] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,213] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:45:59,214] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,214] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:45:59,216] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,215] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:45:59,217] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,217] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:45:59,293] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:45:59,327] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,326] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:45:59,350] {logging_mixin.py:109} INFO - [2022-05-16 23:45:59,350] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:45:59,367] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.229 seconds
+[2022-05-16 23:46:26,530] {processor.py:163} INFO - Started process (PID=270) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:46:26,533] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:46:26,535] {logging_mixin.py:109} INFO - [2022-05-16 23:46:26,534] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:46:26,558] {logging_mixin.py:109} INFO - [2022-05-16 23:46:26,556] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/model_level_dbt_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/model_level_dbt_dag.py", line 22, in <module>
+    retry_delay=datetime.timedelta(minutes=2),
+AttributeError: type object 'datetime.datetime' has no attribute 'timedelta'
+[2022-05-16 23:46:26,578] {processor.py:673} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:46:26,579] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:46:26,586] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.060 seconds
+[2022-05-16 23:46:36,678] {processor.py:163} INFO - Started process (PID=282) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:46:36,681] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:46:36,682] {logging_mixin.py:109} INFO - [2022-05-16 23:46:36,682] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:46:36,728] {logging_mixin.py:109} INFO - [2022-05-16 23:46:36,724] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/model_level_dbt_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/model_level_dbt_dag.py", line 23, in <module>
+    catchup=False,
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2022-05-16 23:46:36,773] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:46:36,785] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.111 seconds
+[2022-05-16 23:47:06,850] {processor.py:163} INFO - Started process (PID=306) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:47:06,852] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:47:06,854] {logging_mixin.py:109} INFO - [2022-05-16 23:47:06,854] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:47:06,873] {logging_mixin.py:109} INFO - [2022-05-16 23:47:06,871] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/model_level_dbt_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/model_level_dbt_dag.py", line 23, in <module>
+    catchup=False,
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2022-05-16 23:47:06,898] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:47:06,909] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.063 seconds
+[2022-05-16 23:47:37,188] {processor.py:163} INFO - Started process (PID=330) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:47:37,190] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:47:37,192] {logging_mixin.py:109} INFO - [2022-05-16 23:47:37,191] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:47:37,209] {logging_mixin.py:109} INFO - [2022-05-16 23:47:37,207] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/model_level_dbt_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/model_level_dbt_dag.py", line 23, in <module>
+    catchup=False,
+TypeError: __init__() got an unexpected keyword argument 'retries'
+[2022-05-16 23:47:37,230] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:47:37,239] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.055 seconds
+[2022-05-16 23:48:03,366] {processor.py:163} INFO - Started process (PID=356) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:03,369] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:48:03,371] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,370] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:03,420] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,420] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:48:03,422] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,422] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:48:03,424] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,424] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:48:03,425] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,425] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:48:03,426] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,426] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:48:03,428] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,427] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:48:03,429] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,429] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:48:03,430] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,430] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:48:03,432] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,432] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:48:03,435] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,435] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:48:03,436] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,436] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:48:03,438] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,438] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:48:03,440] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,439] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:48:03,441] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,441] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:48:03,442] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,442] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:48:03,443] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,443] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:48:03,445] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,445] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:48:03,446] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,446] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:48:03,478] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:03,976] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,976] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:48:03,991] {logging_mixin.py:109} INFO - [2022-05-16 23:48:03,991] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:48:04,009] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.647 seconds
+[2022-05-16 23:48:06,439] {processor.py:163} INFO - Started process (PID=367) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:06,443] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:48:06,447] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,446] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:06,488] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,487] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:48:06,489] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,489] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:48:06,490] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,490] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:48:06,491] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,491] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:48:06,492] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,492] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:48:06,494] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,494] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:48:06,494] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,494] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:48:06,496] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,495] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:48:06,498] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,497] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:48:06,500] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,500] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:48:06,501] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,501] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:48:06,502] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,502] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:48:06,504] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,504] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:48:06,506] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,506] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:48:06,507] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,507] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:48:06,509] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,509] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:48:06,510] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,510] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:48:06,511] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,511] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:48:06,538] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:06,655] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,655] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:48:06,675] {logging_mixin.py:109} INFO - [2022-05-16 23:48:06,675] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:48:06,695] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.264 seconds
+[2022-05-16 23:48:11,449] {processor.py:163} INFO - Started process (PID=368) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:11,451] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:48:11,453] {logging_mixin.py:109} INFO - [2022-05-16 23:48:11,453] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:11,474] {logging_mixin.py:109} INFO - [2022-05-16 23:48:11,472] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/model_level_dbt_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/model_level_dbt_dag.py", line 9, in <module>
+    v
+NameError: name 'v' is not defined
+[2022-05-16 23:48:11,490] {processor.py:673} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:11,491] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:11,497] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.051 seconds
+[2022-05-16 23:48:13,479] {processor.py:163} INFO - Started process (PID=369) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:13,481] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:48:13,483] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,482] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:13,517] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,517] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:48:13,518] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,518] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:48:13,520] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,520] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:48:13,521] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,521] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:48:13,522] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,522] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:48:13,523] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,523] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:48:13,524] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,524] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:48:13,526] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,526] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:48:13,528] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,528] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:48:13,530] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,530] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:48:13,531] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,531] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:48:13,532] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,532] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:48:13,533] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,533] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:48:13,534] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,534] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:48:13,536] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,536] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:48:13,537] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,537] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:48:13,538] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,538] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:48:13,539] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,539] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:48:13,571] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:13,688] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,688] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:48:13,707] {logging_mixin.py:109} INFO - [2022-05-16 23:48:13,707] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:48:13,723] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.248 seconds
+[2022-05-16 23:48:43,817] {processor.py:163} INFO - Started process (PID=404) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:43,818] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:48:43,820] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,820] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:43,848] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,847] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:48:43,850] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,850] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:48:43,851] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,851] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:48:43,854] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,854] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:48:43,856] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,856] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:48:43,857] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,857] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:48:43,858] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,858] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:48:43,859] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,859] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:48:43,861] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,860] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:48:43,861] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,861] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:48:43,862] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,862] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:48:43,863] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,863] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:48:43,864] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,864] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:48:43,865] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,865] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:48:43,866] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,866] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:48:43,867] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,867] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:48:43,867] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,867] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:48:43,868] {logging_mixin.py:109} INFO - [2022-05-16 23:48:43,868] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:48:43,896] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:48:44,001] {logging_mixin.py:109} INFO - [2022-05-16 23:48:44,000] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:48:44,023] {logging_mixin.py:109} INFO - [2022-05-16 23:48:44,023] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:48:44,035] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.222 seconds
+[2022-05-16 23:49:14,970] {processor.py:163} INFO - Started process (PID=429) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:49:14,972] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:49:14,973] {logging_mixin.py:109} INFO - [2022-05-16 23:49:14,973] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:49:14,994] {logging_mixin.py:109} INFO - [2022-05-16 23:49:14,994] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:49:14,995] {logging_mixin.py:109} INFO - [2022-05-16 23:49:14,995] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:49:14,996] {logging_mixin.py:109} INFO - [2022-05-16 23:49:14,996] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:49:14,997] {logging_mixin.py:109} INFO - [2022-05-16 23:49:14,997] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:49:14,998] {logging_mixin.py:109} INFO - [2022-05-16 23:49:14,998] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:49:14,999] {logging_mixin.py:109} INFO - [2022-05-16 23:49:14,999] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:49:15,000] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,000] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:49:15,001] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,001] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:49:15,002] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,002] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:49:15,003] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,003] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:49:15,004] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,004] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:49:15,005] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,005] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:49:15,006] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,006] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:49:15,091] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,090] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:49:15,092] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,092] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:49:15,094] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,094] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:49:15,095] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,095] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:49:15,096] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,096] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:49:15,124] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:49:15,139] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,139] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:49:15,155] {logging_mixin.py:109} INFO - [2022-05-16 23:49:15,155] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:49:15,164] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.198 seconds
+[2022-05-16 23:49:45,200] {processor.py:163} INFO - Started process (PID=453) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:49:45,202] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:49:45,204] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,204] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:49:45,224] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,223] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:49:45,225] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,225] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:49:45,225] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,225] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:49:45,226] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,226] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:49:45,227] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,227] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:49:45,229] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,229] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:49:45,230] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,230] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:49:45,231] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,231] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:49:45,232] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,232] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:49:45,233] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,233] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:49:45,323] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,323] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:49:45,325] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,325] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:49:45,326] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,326] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:49:45,327] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,327] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:49:45,328] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,328] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:49:45,331] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,331] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:49:45,332] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,332] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:49:45,333] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,333] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:49:45,362] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:49:45,377] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,377] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:49:45,395] {logging_mixin.py:109} INFO - [2022-05-16 23:49:45,395] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:49:45,406] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.209 seconds
+[2022-05-16 23:50:16,405] {processor.py:163} INFO - Started process (PID=489) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:50:16,408] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:50:16,410] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,410] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:50:16,439] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,439] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:50:16,441] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,441] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:50:16,442] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,442] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:50:16,443] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,443] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:50:16,444] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,444] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:50:16,546] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,546] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:50:16,548] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,548] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:50:16,550] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,549] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:50:16,551] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,551] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:50:16,552] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,552] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:50:16,553] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,553] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:50:16,554] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,554] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:50:16,555] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,555] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:50:16,557] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,557] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:50:16,558] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,558] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:50:16,559] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,559] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:50:16,560] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,560] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:50:16,561] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,561] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:50:16,584] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:50:16,599] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,599] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:50:16,615] {logging_mixin.py:109} INFO - [2022-05-16 23:50:16,615] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:50:16,625] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.225 seconds
+[2022-05-16 23:50:47,625] {processor.py:163} INFO - Started process (PID=512) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:50:47,629] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:50:47,632] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,632] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:50:47,770] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,770] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:50:47,771] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,771] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:50:47,773] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,772] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:50:47,774] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,774] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:50:47,775] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,775] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:50:47,776] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,776] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:50:47,777] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,777] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:50:47,778] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,778] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:50:47,779] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,779] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:50:47,780] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,780] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:50:47,781] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,781] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:50:47,783] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,783] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:50:47,784] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,783] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:50:47,785] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,785] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:50:47,786] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,786] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:50:47,787] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,787] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:50:47,789] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,789] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:50:47,790] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,790] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:50:47,811] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:50:47,825] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,825] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:50:47,852] {logging_mixin.py:109} INFO - [2022-05-16 23:50:47,852] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:50:47,865] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.248 seconds
+[2022-05-16 23:51:17,999] {processor.py:163} INFO - Started process (PID=547) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:51:18,003] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:51:18,006] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,006] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:51:18,128] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,128] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:51:18,130] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,130] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:51:18,131] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,131] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:51:18,132] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,132] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:51:18,133] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,133] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:51:18,134] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,134] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:51:18,135] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,135] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:51:18,136] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,136] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:51:18,137] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,137] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:51:18,139] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,139] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:51:18,140] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,140] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:51:18,141] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,141] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:51:18,142] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,142] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:51:18,143] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,143] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:51:18,144] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,144] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:51:18,145] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,145] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:51:18,146] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,146] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:51:18,147] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,147] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:51:18,171] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:51:18,186] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,186] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:51:18,201] {logging_mixin.py:109} INFO - [2022-05-16 23:51:18,201] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:51:18,209] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.219 seconds
+[2022-05-16 23:51:48,409] {processor.py:163} INFO - Started process (PID=571) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:51:48,412] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:51:48,413] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,413] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:51:48,533] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,533] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:51:48,534] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,534] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:51:48,535] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,535] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:51:48,536] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,536] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:51:48,537] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,537] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:51:48,538] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,538] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:51:48,539] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,539] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:51:48,540] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,540] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:51:48,542] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,542] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:51:48,543] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,543] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:51:48,544] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,544] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:51:48,545] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,545] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:51:48,546] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,546] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:51:48,547] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,547] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:51:48,548] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,548] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:51:48,549] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,549] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:51:48,551] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,550] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:51:48,552] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,552] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:51:48,574] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:51:48,589] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,589] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:51:48,606] {logging_mixin.py:109} INFO - [2022-05-16 23:51:48,605] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:51:48,615] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.210 seconds
+[2022-05-16 23:52:18,880] {processor.py:163} INFO - Started process (PID=594) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:52:18,884] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:52:18,885] {logging_mixin.py:109} INFO - [2022-05-16 23:52:18,885] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:52:18,993] {logging_mixin.py:109} INFO - [2022-05-16 23:52:18,992] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:52:18,994] {logging_mixin.py:109} INFO - [2022-05-16 23:52:18,994] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:52:18,996] {logging_mixin.py:109} INFO - [2022-05-16 23:52:18,996] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:52:18,998] {logging_mixin.py:109} INFO - [2022-05-16 23:52:18,998] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:52:19,000] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,000] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:52:19,002] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,001] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:52:19,003] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,003] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:52:19,005] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,005] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:52:19,007] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,007] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:52:19,009] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,009] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:52:19,011] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,010] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:52:19,012] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,012] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:52:19,014] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,014] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:52:19,015] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,015] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:52:19,017] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,017] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:52:19,020] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,020] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:52:19,022] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,022] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:52:19,025] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,024] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:52:19,050] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:52:19,067] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,067] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:52:19,088] {logging_mixin.py:109} INFO - [2022-05-16 23:52:19,088] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:52:19,099] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.224 seconds
+[2022-05-16 23:52:50,080] {processor.py:163} INFO - Started process (PID=628) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:52:50,082] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:52:50,084] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,084] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:52:50,200] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,200] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:52:50,202] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,201] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:52:50,203] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,203] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:52:50,204] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,204] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:52:50,205] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,205] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:52:50,207] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,206] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:52:50,208] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,208] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:52:50,209] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,209] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:52:50,210] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,210] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:52:50,211] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,211] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:52:50,213] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,213] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:52:50,214] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,214] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:52:50,215] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,215] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:52:50,216] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,216] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:52:50,218] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,218] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:52:50,219] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,219] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:52:50,220] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,220] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:52:50,221] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,221] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:52:50,244] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:52:50,258] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,258] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:52:50,274] {logging_mixin.py:109} INFO - [2022-05-16 23:52:50,274] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:52:50,282] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.207 seconds
+[2022-05-16 23:53:20,417] {processor.py:163} INFO - Started process (PID=651) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:53:20,422] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:53:20,426] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,425] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:53:20,572] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,572] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:53:20,573] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,573] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:53:20,574] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,574] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:53:20,575] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,575] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:53:20,576] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,576] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:53:20,578] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,578] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:53:20,580] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,579] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:53:20,581] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,581] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:53:20,582] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,582] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:53:20,583] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,583] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:53:20,584] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,584] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:53:20,585] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,585] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:53:20,587] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,587] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:53:20,589] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,588] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:53:20,590] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,590] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:53:20,591] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,591] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:53:20,592] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,592] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:53:20,594] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,594] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:53:20,617] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:53:20,635] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,634] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:53:20,662] {logging_mixin.py:109} INFO - [2022-05-16 23:53:20,662] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:53:20,677] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.270 seconds
+[2022-05-16 23:53:51,022] {processor.py:163} INFO - Started process (PID=685) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:53:51,026] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:53:51,029] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,028] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:53:51,213] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,213] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:53:51,215] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,215] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:53:51,216] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,216] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:53:51,218] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,218] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:53:51,219] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,219] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:53:51,221] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,221] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:53:51,222] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,222] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:53:51,224] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,224] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:53:51,226] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,225] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:53:51,227] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,227] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:53:51,228] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,228] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:53:51,230] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,230] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:53:51,232] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,232] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:53:51,233] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,233] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:53:51,235] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,235] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:53:51,236] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,236] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:53:51,238] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,237] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:53:51,239] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,239] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:53:51,268] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:53:51,286] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,286] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:53:51,305] {logging_mixin.py:109} INFO - [2022-05-16 23:53:51,305] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:53:51,319] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.302 seconds
+[2022-05-16 23:54:22,349] {processor.py:163} INFO - Started process (PID=708) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:54:22,351] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:54:22,352] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,352] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:54:22,489] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,489] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:54:22,490] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,490] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:54:22,491] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,491] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:54:22,492] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,492] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:54:22,494] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,493] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:54:22,494] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,494] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:54:22,495] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,495] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:54:22,497] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,497] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:54:22,498] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,498] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:54:22,499] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,499] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:54:22,500] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,500] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:54:22,502] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,502] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:54:22,503] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,503] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:54:22,504] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,504] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:54:22,505] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,505] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:54:22,506] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,506] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:54:22,507] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,507] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:54:22,508] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,508] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:54:22,533] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:54:22,550] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,550] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:54:22,572] {logging_mixin.py:109} INFO - [2022-05-16 23:54:22,572] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:54:22,587] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.243 seconds
+[2022-05-16 23:54:52,880] {processor.py:163} INFO - Started process (PID=742) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:54:52,882] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:54:52,883] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,883] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:54:52,908] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,908] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:54:52,909] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,909] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:54:52,911] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,910] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:54:52,912] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,912] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:54:52,913] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,913] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:54:52,914] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,914] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:54:52,915] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,915] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:54:52,916] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,916] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:54:52,918] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,918] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:54:52,919] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,919] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:54:52,920] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,920] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:54:52,921] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,921] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:54:52,923] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,923] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:54:52,924] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,924] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:54:52,925] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,925] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:54:52,926] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,926] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:54:52,928] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,928] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:54:52,929] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,929] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:54:52,955] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:54:52,972] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,972] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:54:52,993] {logging_mixin.py:109} INFO - [2022-05-16 23:54:52,993] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:54:53,004] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.128 seconds
+[2022-05-16 23:55:23,063] {processor.py:163} INFO - Started process (PID=765) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:55:23,066] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:55:23,067] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,067] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:55:23,088] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,088] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:55:23,090] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,090] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:55:23,091] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,090] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:55:23,092] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,092] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:55:23,093] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,093] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:55:23,094] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,094] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:55:23,095] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,095] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:55:23,096] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,096] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:55:23,097] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,097] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:55:23,098] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,098] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:55:23,099] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,099] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:55:23,100] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,100] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:55:23,101] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,101] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:55:23,102] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,102] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:55:23,103] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,103] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:55:23,104] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,104] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:55:23,105] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,105] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:55:23,106] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,106] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:55:23,130] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:55:23,146] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,146] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:55:23,172] {logging_mixin.py:109} INFO - [2022-05-16 23:55:23,172] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:55:23,183] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.126 seconds
+[2022-05-16 23:55:53,370] {processor.py:163} INFO - Started process (PID=797) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:55:53,373] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:55:53,382] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,382] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:55:53,423] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,423] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:55:53,426] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,426] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:55:53,428] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,428] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:55:53,430] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,430] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:55:53,432] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,432] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:55:53,433] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,433] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:55:53,435] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,435] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:55:53,437] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,437] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:55:53,438] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,438] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:55:53,440] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,440] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:55:53,442] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,442] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:55:53,443] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,443] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:55:53,445] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,444] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:55:53,447] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,447] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:55:53,449] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,449] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:55:53,452] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,452] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:55:53,454] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,454] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:55:53,455] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,455] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:55:53,486] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:55:53,510] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,510] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:55:53,535] {logging_mixin.py:109} INFO - [2022-05-16 23:55:53,535] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:55:53,553] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.189 seconds
+[2022-05-16 23:56:24,547] {processor.py:163} INFO - Started process (PID=822) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:56:24,548] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:56:24,550] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,550] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:56:24,571] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,570] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:56:24,572] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,572] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:56:24,573] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,573] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:56:24,574] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,574] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:56:24,575] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,575] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:56:24,576] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,576] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:56:24,577] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,577] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:56:24,579] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,579] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:56:24,580] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,580] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:56:24,581] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,581] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:56:24,582] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,582] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:56:24,583] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,583] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:56:24,584] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,584] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:56:24,586] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,585] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:56:24,587] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,587] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:56:24,588] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,588] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:56:24,589] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,589] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:56:24,590] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,590] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:56:24,614] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:56:24,635] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,635] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:56:24,651] {logging_mixin.py:109} INFO - [2022-05-16 23:56:24,651] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:56:24,661] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.119 seconds
+[2022-05-16 23:56:54,869] {processor.py:163} INFO - Started process (PID=855) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:56:54,872] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:56:54,874] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,874] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:56:54,913] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,913] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:56:54,915] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,915] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:56:54,918] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,918] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:56:54,921] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,921] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:56:54,923] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,923] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:56:54,926] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,926] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:56:54,927] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,927] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:56:54,928] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,928] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:56:54,930] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,930] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:56:54,931] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,931] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:56:54,933] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,933] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:56:54,934] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,934] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:56:54,936] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,936] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:56:54,938] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,938] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:56:54,940] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,940] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:56:54,941] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,941] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:56:54,943] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,943] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:56:54,945] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,944] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:56:54,970] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:56:54,986] {logging_mixin.py:109} INFO - [2022-05-16 23:56:54,986] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:56:55,004] {logging_mixin.py:109} INFO - [2022-05-16 23:56:55,004] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:56:55,013] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.149 seconds
+[2022-05-16 23:57:25,049] {processor.py:163} INFO - Started process (PID=879) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:57:25,051] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:57:25,053] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,053] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:57:25,075] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,075] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:57:25,076] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,076] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:57:25,077] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,077] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:57:25,078] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,078] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:57:25,079] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,079] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:57:25,080] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,080] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:57:25,081] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,081] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:57:25,082] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,082] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:57:25,083] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,083] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:57:25,084] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,084] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:57:25,085] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,085] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:57:25,086] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,086] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:57:25,087] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,087] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:57:25,088] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,088] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:57:25,089] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,089] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:57:25,090] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,090] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:57:25,091] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,091] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:57:25,092] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,092] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:57:25,111] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:57:25,125] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,125] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:57:25,140] {logging_mixin.py:109} INFO - [2022-05-16 23:57:25,140] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:57:25,149] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.104 seconds
+[2022-05-16 23:57:55,249] {processor.py:163} INFO - Started process (PID=911) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:57:55,252] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:57:55,254] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,253] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:57:55,285] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,284] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:57:55,286] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,286] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:57:55,288] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,287] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:57:55,290] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,289] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:57:55,291] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,291] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:57:55,292] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,292] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:57:55,294] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,294] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:57:55,295] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,295] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:57:55,296] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,296] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:57:55,298] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,297] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:57:55,299] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,299] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:57:55,300] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,300] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:57:55,301] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,301] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:57:55,303] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,302] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:57:55,304] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,304] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:57:55,305] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,305] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:57:55,307] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,307] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:57:55,309] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,309] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:57:55,337] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:57:55,361] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,361] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:57:55,382] {logging_mixin.py:109} INFO - [2022-05-16 23:57:55,382] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:57:55,394] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.149 seconds
+[2022-05-16 23:58:25,434] {processor.py:163} INFO - Started process (PID=938) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:58:25,436] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:58:25,438] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,438] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:58:25,460] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,460] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:58:25,462] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,462] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:58:25,463] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,463] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:58:25,464] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,464] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:58:25,465] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,465] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:58:25,466] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,466] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:58:25,467] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,467] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:58:25,469] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,468] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:58:25,470] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,470] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:58:25,471] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,471] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:58:25,472] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,472] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:58:25,473] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,473] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:58:25,475] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,475] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:58:25,476] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,475] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:58:25,477] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,477] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:58:25,478] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,478] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:58:25,479] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,479] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:58:25,480] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,480] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:58:25,507] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:58:25,524] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,524] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:58:25,542] {logging_mixin.py:109} INFO - [2022-05-16 23:58:25,542] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:58:25,552] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.122 seconds
+[2022-05-16 23:58:55,637] {processor.py:163} INFO - Started process (PID=962) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:58:55,638] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:58:55,639] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,639] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:58:55,657] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,657] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:58:55,658] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,658] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:58:55,659] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,659] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:58:55,660] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,660] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:58:55,661] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,661] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:58:55,662] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,662] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:58:55,662] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,662] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:58:55,663] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,663] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:58:55,664] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,664] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:58:55,665] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,665] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:58:55,666] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,666] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:58:55,667] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,667] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:58:55,667] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,667] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:58:55,668] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,668] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:58:55,669] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,669] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:58:55,670] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,670] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:58:55,670] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,670] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:58:55,671] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,671] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:58:55,691] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:58:55,705] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,705] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:58:55,720] {logging_mixin.py:109} INFO - [2022-05-16 23:58:55,720] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:58:55,729] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.095 seconds
+[2022-05-16 23:59:25,826] {processor.py:163} INFO - Started process (PID=998) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:59:25,828] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:59:25,830] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,829] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:59:25,851] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,851] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:59:25,852] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,852] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:59:25,853] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,853] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:59:25,854] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,854] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:59:25,855] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,855] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:59:25,856] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,856] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:59:25,857] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,857] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:59:25,858] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,858] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:59:25,859] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,859] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:59:25,860] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,860] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:59:25,861] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,861] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:59:25,861] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,861] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:59:25,862] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,862] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:59:25,863] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,863] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:59:25,864] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,864] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:59:25,865] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,865] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:59:25,866] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,865] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:59:25,866] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,866] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:59:25,887] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:59:25,902] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,902] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:59:25,918] {logging_mixin.py:109} INFO - [2022-05-16 23:59:25,918] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:59:25,931] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.108 seconds
+[2022-05-16 23:59:56,035] {processor.py:163} INFO - Started process (PID=1021) to work on /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:59:56,037] {processor.py:625} INFO - Processing file /opt/airflow/dags/model_level_dbt_dag.py for tasks to queue
+[2022-05-16 23:59:56,038] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,038] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:59:56,056] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,056] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.int_orders
+[2022-05-16 23:59:56,057] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,057] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.fct_customer_orders
+[2022-05-16 23:59:56,058] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,058] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__customers
+[2022-05-16 23:59:56,058] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,058] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-16 23:59:56,059] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,059] {dbt_dag_parser_v2.py:104} INFO - Created task: model.jaffle_shop.stg_stripe__payments
+[2022-05-16 23:59:56,060] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,060] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.assert_positive_total_for_payments
+[2022-05-16 23:59:56,061] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,061] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-16 23:59:56,062] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,062] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.b4343d8610
+[2022-05-16 23:59:56,063] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,062] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.7f899b6afe
+[2022-05-16 23:59:56,063] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,063] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-16 23:59:56,064] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,064] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed.66bdbafd6b
+[2022-05-16 23:59:56,065] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,065] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_.3e222ebf00
+[2022-05-16 23:59:56,066] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,066] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_customers_id.2777a7933e
+[2022-05-16 23:59:56,066] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,066] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_customers_id.50aa22178f
+[2022-05-16 23:59:56,067] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,067] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_jaffle_shop_orders_id.8a425b2fba
+[2022-05-16 23:59:56,068] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,068] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_jaffle_shop_orders_id.f924998b13
+[2022-05-16 23:59:56,069] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,069] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_unique_stripe_payment_id.3b7989ce64
+[2022-05-16 23:59:56,070] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,070] {dbt_dag_parser_v2.py:104} INFO - Created task: test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-16 23:59:56,091] {processor.py:637} INFO - DAG(s) dict_keys(['model_level_dbt_dag']) retrieved from /opt/airflow/dags/model_level_dbt_dag.py
+[2022-05-16 23:59:56,109] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,109] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-05-16 23:59:56,128] {logging_mixin.py:109} INFO - [2022-05-16 23:59:56,127] {dag.py:2928} INFO - Setting next_dagrun for model_level_dbt_dag to 2022-05-16T16:00:47.250021+00:00
+[2022-05-16 23:59:56,137] {processor.py:171} INFO - Processing /opt/airflow/dags/model_level_dbt_dag.py took 0.105 seconds

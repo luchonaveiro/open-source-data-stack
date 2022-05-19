@@ -1,0 +1,89 @@
+[2022-05-18 23:59:27,911] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.great_expectations_targets.targets.dev__fct_customer_orders scheduled__2022-05-17T23:51:54.527642+00:00 [queued]>
+[2022-05-18 23:59:27,931] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.great_expectations_targets.targets.dev__fct_customer_orders scheduled__2022-05-17T23:51:54.527642+00:00 [queued]>
+[2022-05-18 23:59:27,932] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 23:59:27,934] {taskinstance.py:1242} INFO - Starting attempt 2 of 4
+[2022-05-18 23:59:27,935] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 23:59:27,954] {taskinstance.py:1262} INFO - Executing <Task(GreatExpectationsOperator): great_expectations_targets.targets.dev__fct_customer_orders> on 2022-05-17 23:51:54.527642+00:00
+[2022-05-18 23:59:27,965] {standard_task_runner.py:52} INFO - Started process 878 to run task
+[2022-05-18 23:59:27,976] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_great_expectations_dag', 'great_expectations_targets.targets.dev__fct_customer_orders', 'scheduled__2022-05-17T23:51:54.527642+00:00', '--job-id', '271', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_great_expectations_dag.py', '--cfg-path', '/tmp/tmpmmr_9i03', '--error-file', '/tmp/tmp0ui32eqq']
+[2022-05-18 23:59:27,978] {standard_task_runner.py:77} INFO - Job 271: Subtask great_expectations_targets.targets.dev__fct_customer_orders
+[2022-05-18 23:59:28,056] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_great_expectations_dag.great_expectations_targets.targets.dev__fct_customer_orders scheduled__2022-05-17T23:51:54.527642+00:00 [running]> on host 41cba24e2fbb
+[2022-05-18 23:59:28,133] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_great_expectations_dag
+AIRFLOW_CTX_TASK_ID=great_expectations_targets.targets.dev__fct_customer_orders
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-17T23:51:54.527642+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-17T23:51:54.527642+00:00
+[2022-05-18 23:59:28,135] {great_expectations.py:122} INFO - Running validation with Great Expectations...
+[2022-05-18 23:59:28,136] {great_expectations.py:125} INFO - Ensuring data context is valid...
+[2022-05-18 23:59:29,199] {sqlalchemy_execution_engine.py:404} WARNING - schema_name specified creating a URL with schema is not supported. Set a default schema on the user connecting to your database.
+[2022-05-18 23:59:29,214] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/great_expectations/datasource/data_connector/runtime_data_connector.py:135 DeprecationWarning: Specifying batch_identifiers as part of the RuntimeDataConnector config is deprecated as of v0.15.1 and will be removed by v0.18. Please configure batch_identifiers as part of Assets instead.
+[2022-05-18 23:59:30,575] {validator.py:1669} INFO - 	26 expectation(s) included in expectation_suite.
+[2022-05-18 23:59:30,861] {logging_mixin.py:109} WARNING - Calculating Metrics:   0%|          | 0/53 [00:00<?, ?it/s]
+[2022-05-18 23:59:30,862] {logging_mixin.py:109} WARNING - Calculating Metrics:   0%|          | 0/53 [00:00<?, ?it/s]
+[2022-05-18 23:59:30,876] {logging_mixin.py:109} WARNING - Calculating Metrics:   4%|3         | 2/53 [00:00<00:00, 141.97it/s]
+[2022-05-18 23:59:30,934] {logging_mixin.py:109} WARNING - Calculating Metrics:   8%|7         | 4/53 [00:00<00:00, 55.60it/s] 
+[2022-05-18 23:59:31,004] {logging_mixin.py:109} WARNING - Calculating Metrics:  36%|###5      | 19/53 [00:00<00:00, 133.86it/s]
+[2022-05-18 23:59:31,006] {logging_mixin.py:109} WARNING - Calculating Metrics:  36%|###5      | 19/53 [00:00<00:00, 133.86it/s]
+[2022-05-18 23:59:31,091] {logging_mixin.py:109} WARNING - Calculating Metrics:  81%|########1 | 43/53 [00:00<00:00, 133.86it/s]
+[2022-05-18 23:59:31,149] {logging_mixin.py:109} WARNING - Calculating Metrics: 100%|##########| 53/53 [00:00<00:00, 193.77it/s]
+[2022-05-18 23:59:31,150] {logging_mixin.py:109} WARNING - Calculating Metrics: 100%|##########| 53/53 [00:00<00:00, 193.77it/s]
+[2022-05-18 23:59:31,196] {logging_mixin.py:109} WARNING - Calculating Metrics: 100%|##########| 53/53 [00:00<00:00, 193.77it/s]
+[2022-05-18 23:59:31,197] {logging_mixin.py:109} WARNING - Calculating Metrics: 100%|##########| 53/53 [00:00<00:00, 158.36it/s]
+[2022-05-18 23:59:31,198] {logging_mixin.py:109} WARNING - 
+[2022-05-18 23:59:33,101] {local_task_job.py:212} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2022-05-18 23:59:33,137] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 878
+[2022-05-18 23:59:33,170] {taskinstance.py:1411} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-05-18 23:59:33,187] {site_builder.py:767} ERROR - An unexpected Exception occurred during data docs rendering.  Because of this error, certain parts of data docs will not be rendered properly and/or may not appear altogether.  Please use the trace, included in this message, to diagnose and repair the underlying issue.  Detailed information follows:
+            AirflowException: "Task received SIGTERM signal".  Traceback: "Traceback (most recent call last):
+  File "/home/***/.local/lib/python3.7/site-packages/great_expectations/render/renderer/site_builder.py", line 755, in build
+    show_how_to_buttons=self.show_how_to_buttons,
+  File "/home/***/.local/lib/python3.7/site-packages/great_expectations/render/view/view.py", line 105, in render
+    document = document.to_json_dict()
+  File "/home/***/.local/lib/python3.7/site-packages/great_expectations/render/types/__init__.py", line 463, in to_json_dict
+    d["sections"] = RenderedContent.rendered_content_list_to_json(self.sections)
+  File "/home/***/.local/lib/python3.7/site-packages/great_expectations/render/types/__init__.py", line 26, in rendered_content_list_to_json
+    result_list.append(item.to_json_dict())
+  File "/home/***/.local/lib/python3.7/site-packages/great_expectations/render/types/__init__.py", line 495, in to_json_dict
+    self.content_blocks
+  File "/home/***/.local/lib/python3.7/site-packages/great_expectations/render/types/__init__.py", line 26, in rendered_content_list_to_json
+    result_list.append(item.to_json_dict())
+  File "/home/***/.local/lib/python3.7/site-packages/great_expectations/render/types/__init__.py", line 189, in to_json_dict
+    self.tabs, check_dicts=True
+  File "/home/***/.local/lib/python3.7/site-packages/great_expectations/render/types/__init__.py", line 34, in rendered_content_list_to_json
+    result_list.append(cls.rendered_content_dict_to_json(item))
+  File "/home/***/.local/lib/python3.7/site-packages/great_expectations/render/types/__init__.py", line 41, in rendered_content_dict_to_json
+    json_dict = deepcopy(dict_)
+  File "/usr/local/lib/python3.7/copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "/usr/local/lib/python3.7/copy.py", line 241, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/usr/local/lib/python3.7/copy.py", line 180, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/usr/local/lib/python3.7/copy.py", line 281, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/usr/local/lib/python3.7/copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "/usr/local/lib/python3.7/copy.py", line 241, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/usr/local/lib/python3.7/copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "/usr/local/lib/python3.7/copy.py", line 216, in _deepcopy_list
+    append(deepcopy(a, memo))
+  File "/usr/local/lib/python3.7/copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "/usr/local/lib/python3.7/copy.py", line 241, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/usr/local/lib/python3.7/copy.py", line 141, in deepcopy
+    d = id(x)
+  File "/home/***/.local/lib/python3.7/site-packages/great_expectations/core/usage_statistics/usage_statistics.py", line 90, in _teardown
+    self._sigterm_handler(signum, frame)
+  File "/home/***/.local/lib/python3.7/site-packages/***/models/taskinstance.py", line 1413, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+***.exceptions.AirflowException: Task received SIGTERM signal
+".
+[2022-05-18 23:59:33,487] {great_expectations.py:197} INFO - Validation with Great Expectations successful.
+[2022-05-18 23:59:33,539] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=model_level_dbt_great_expectations_dag, task_id=great_expectations_targets.targets.dev__fct_customer_orders, execution_date=20220517T235154, start_date=20220518T235927, end_date=20220518T235933
+[2022-05-18 23:59:33,600] {process_utils.py:66} INFO - Process psutil.Process(pid=878, status='terminated', exitcode=0, started='23:59:27') (878) terminated with exit code 0

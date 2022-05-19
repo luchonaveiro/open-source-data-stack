@@ -1,0 +1,22 @@
+[2022-05-18 23:02:39,051] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08 scheduled__2022-05-17T22:12:00.138285+00:00 [queued]>
+[2022-05-18 23:02:39,186] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08 scheduled__2022-05-17T22:12:00.138285+00:00 [queued]>
+[2022-05-18 23:02:39,187] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 23:02:39,190] {taskinstance.py:1242} INFO - Starting attempt 2 of 5
+[2022-05-18 23:02:39,192] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 23:02:39,440] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08> on 2022-05-17 22:12:00.138285+00:00
+[2022-05-18 23:02:39,547] {standard_task_runner.py:52} INFO - Started process 412 to run task
+[2022-05-18 23:02:39,577] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_great_expectations_dag', 'dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08', 'scheduled__2022-05-17T22:12:00.138285+00:00', '--job-id', '141', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_great_expectations_dag.py', '--cfg-path', '/tmp/tmpiq67mo6n', '--error-file', '/tmp/tmps1oc2d76']
+[2022-05-18 23:02:39,579] {standard_task_runner.py:77} INFO - Job 141: Subtask dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-18 23:02:40,133] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_great_expectations_dag.dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08 scheduled__2022-05-17T22:12:00.138285+00:00 [running]> on host 3d7cb1bfa13d
+[2022-05-18 23:02:40,462] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_great_expectations_dag
+AIRFLOW_CTX_TASK_ID=dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-17T22:12:00.138285+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-17T22:12:00.138285+00:00
+[2022-05-18 23:02:40,476] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-18 23:02:40,485] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'dbt --no-write-json test --target dev --select not_null_stg_jaffle_shop__orders_order_id --profiles-dir /opt/dbt/jaffle_shop --project-dir /opt/dbt/jaffle_shop']
+[2022-05-18 23:02:40,771] {subprocess.py:85} INFO - Output:

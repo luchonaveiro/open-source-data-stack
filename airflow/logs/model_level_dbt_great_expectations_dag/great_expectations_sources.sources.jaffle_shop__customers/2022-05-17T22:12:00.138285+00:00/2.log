@@ -1,0 +1,43 @@
+[2022-05-18 23:01:06,294] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.great_expectations_sources.sources.jaffle_shop__customers scheduled__2022-05-17T22:12:00.138285+00:00 [queued]>
+[2022-05-18 23:01:06,315] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.great_expectations_sources.sources.jaffle_shop__customers scheduled__2022-05-17T22:12:00.138285+00:00 [queued]>
+[2022-05-18 23:01:06,317] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 23:01:06,318] {taskinstance.py:1242} INFO - Starting attempt 2 of 5
+[2022-05-18 23:01:06,319] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 23:01:06,343] {taskinstance.py:1262} INFO - Executing <Task(GreatExpectationsOperator): great_expectations_sources.sources.jaffle_shop__customers> on 2022-05-17 22:12:00.138285+00:00
+[2022-05-18 23:01:06,363] {standard_task_runner.py:52} INFO - Started process 146 to run task
+[2022-05-18 23:01:06,377] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_great_expectations_dag', 'great_expectations_sources.sources.jaffle_shop__customers', 'scheduled__2022-05-17T22:12:00.138285+00:00', '--job-id', '125', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_great_expectations_dag.py', '--cfg-path', '/tmp/tmpnuawrj3o', '--error-file', '/tmp/tmppqffd6qc']
+[2022-05-18 23:01:06,380] {standard_task_runner.py:77} INFO - Job 125: Subtask great_expectations_sources.sources.jaffle_shop__customers
+[2022-05-18 23:01:06,544] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_great_expectations_dag.great_expectations_sources.sources.jaffle_shop__customers scheduled__2022-05-17T22:12:00.138285+00:00 [running]> on host 3d7cb1bfa13d
+[2022-05-18 23:01:06,651] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_great_expectations_dag
+AIRFLOW_CTX_TASK_ID=great_expectations_sources.sources.jaffle_shop__customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-17T22:12:00.138285+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-17T22:12:00.138285+00:00
+[2022-05-18 23:01:06,653] {great_expectations.py:122} INFO - Running validation with Great Expectations...
+[2022-05-18 23:01:06,654] {great_expectations.py:125} INFO - Ensuring data context is valid...
+[2022-05-18 23:01:08,356] {sqlalchemy_execution_engine.py:404} WARNING - schema_name specified creating a URL with schema is not supported. Set a default schema on the user connecting to your database.
+[2022-05-18 23:01:08,365] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/great_expectations/datasource/data_connector/runtime_data_connector.py:135 DeprecationWarning: Specifying batch_identifiers as part of the RuntimeDataConnector config is deprecated as of v0.15.1 and will be removed by v0.18. Please configure batch_identifiers as part of Assets instead.
+[2022-05-18 23:01:09,818] {validator.py:1669} INFO - 	13 expectation(s) included in expectation_suite.
+[2022-05-18 23:01:10,243] {logging_mixin.py:109} WARNING - Calculating Metrics:   0%|          | 0/30 [00:00<?, ?it/s]
+[2022-05-18 23:01:10,246] {logging_mixin.py:109} WARNING - Calculating Metrics:   0%|          | 0/30 [00:00<?, ?it/s]
+[2022-05-18 23:01:10,267] {logging_mixin.py:109} WARNING - Calculating Metrics:   7%|6         | 2/30 [00:00<00:00, 94.49it/s]
+[2022-05-18 23:01:10,400] {logging_mixin.py:109} WARNING - Calculating Metrics:  13%|#3        | 4/30 [00:00<00:00, 26.11it/s]
+[2022-05-18 23:01:10,403] {logging_mixin.py:109} WARNING - Calculating Metrics:  13%|#3        | 4/30 [00:00<00:00, 26.11it/s]
+[2022-05-18 23:01:10,528] {logging_mixin.py:109} WARNING - Calculating Metrics:  40%|####      | 12/30 [00:00<00:00, 45.87it/s]
+[2022-05-18 23:01:10,537] {logging_mixin.py:109} WARNING - Calculating Metrics:  40%|####      | 12/30 [00:00<00:00, 45.87it/s]
+[2022-05-18 23:01:10,724] {logging_mixin.py:109} WARNING - Calculating Metrics:  80%|########  | 24/30 [00:00<00:00, 54.18it/s]
+[2022-05-18 23:01:10,726] {logging_mixin.py:109} WARNING - Calculating Metrics:  80%|########  | 24/30 [00:00<00:00, 54.18it/s]
+[2022-05-18 23:01:10,850] {logging_mixin.py:109} WARNING - Calculating Metrics:  93%|#########3| 28/30 [00:00<00:00, 54.18it/s]
+[2022-05-18 23:01:10,999] {logging_mixin.py:109} WARNING - Calculating Metrics:  97%|#########6| 29/30 [00:00<00:00, 54.18it/s]
+[2022-05-18 23:01:11,185] {logging_mixin.py:109} WARNING - Calculating Metrics: 100%|##########| 30/30 [00:00<00:00, 27.58it/s]
+[2022-05-18 23:01:11,189] {logging_mixin.py:109} WARNING - Calculating Metrics: 100%|##########| 30/30 [00:00<00:00, 27.58it/s]
+[2022-05-18 23:01:11,246] {logging_mixin.py:109} WARNING - Calculating Metrics: 100%|##########| 30/30 [00:00<00:00, 27.58it/s]
+[2022-05-18 23:01:11,250] {logging_mixin.py:109} WARNING - Calculating Metrics: 100%|##########| 30/30 [00:01<00:00, 29.88it/s]
+[2022-05-18 23:01:11,252] {logging_mixin.py:109} WARNING - 
+[2022-05-18 23:01:17,556] {great_expectations.py:197} INFO - Validation with Great Expectations successful.
+[2022-05-18 23:01:17,791] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=model_level_dbt_great_expectations_dag, task_id=great_expectations_sources.sources.jaffle_shop__customers, execution_date=20220517T221200, start_date=20220518T230106, end_date=20220518T230117
+[2022-05-18 23:01:17,958] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-05-18 23:01:18,490] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

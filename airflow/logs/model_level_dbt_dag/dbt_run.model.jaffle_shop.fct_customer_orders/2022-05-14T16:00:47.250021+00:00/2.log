@@ -1,0 +1,39 @@
+[2022-05-15 21:35:31,879] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_run.model.jaffle_shop.fct_customer_orders scheduled__2022-05-14T16:00:47.250021+00:00 [queued]>
+[2022-05-15 21:35:31,892] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_run.model.jaffle_shop.fct_customer_orders scheduled__2022-05-14T16:00:47.250021+00:00 [queued]>
+[2022-05-15 21:35:31,893] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:35:31,894] {taskinstance.py:1242} INFO - Starting attempt 2 of 2
+[2022-05-15 21:35:31,895] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:35:31,910] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_run.model.jaffle_shop.fct_customer_orders> on 2022-05-14 16:00:47.250021+00:00
+[2022-05-15 21:35:31,916] {standard_task_runner.py:52} INFO - Started process 221 to run task
+[2022-05-15 21:35:31,920] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_dag', 'dbt_run.model.jaffle_shop.fct_customer_orders', 'scheduled__2022-05-14T16:00:47.250021+00:00', '--job-id', '208', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_dag.py', '--cfg-path', '/tmp/tmpb38_8ofc', '--error-file', '/tmp/tmptv0bue3o']
+[2022-05-15 21:35:31,921] {standard_task_runner.py:77} INFO - Job 208: Subtask dbt_run.model.jaffle_shop.fct_customer_orders
+[2022-05-15 21:35:31,968] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_dag.dbt_run.model.jaffle_shop.fct_customer_orders scheduled__2022-05-14T16:00:47.250021+00:00 [running]> on host d197d9cd39af
+[2022-05-15 21:35:32,022] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=model_level_dbt_dag
+AIRFLOW_CTX_TASK_ID=dbt_run.model.jaffle_shop.fct_customer_orders
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-14T16:00:47.250021+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-14T16:00:47.250021+00:00
+[2022-05-15 21:35:32,024] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-15 21:35:32,025] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'dbt --no-write-json run --target dev --models fct_customer_orders --profiles-dir /opt/***/dags/jaffle_shop --project-dir /opt/***/dags/jaffle_shop']
+[2022-05-15 21:35:32,036] {subprocess.py:85} INFO - Output:
+[2022-05-15 21:35:35,181] {subprocess.py:89} INFO - 21:35:35  Running with dbt=1.1.0
+[2022-05-15 21:35:35,309] {subprocess.py:89} INFO - 21:35:35  Found 5 models, 13 tests, 0 snapshots, 0 analyses, 170 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[2022-05-15 21:35:35,315] {subprocess.py:89} INFO - 21:35:35
+[2022-05-15 21:35:35,462] {subprocess.py:89} INFO - 21:35:35  Concurrency: 1 threads (target='dev')
+[2022-05-15 21:35:35,464] {subprocess.py:89} INFO - 21:35:35
+[2022-05-15 21:35:35,475] {subprocess.py:89} INFO - 21:35:35  1 of 1 START table model dev.fct_customer_orders ............................... [RUN]
+[2022-05-15 21:35:35,683] {subprocess.py:89} INFO - 21:35:35  1 of 1 OK created table model dev.fct_customer_orders .......................... [[32mSELECT 99[0m in 0.20s]
+[2022-05-15 21:35:35,813] {subprocess.py:89} INFO - 21:35:35
+[2022-05-15 21:35:35,819] {subprocess.py:89} INFO - 21:35:35  Finished running 1 table model in 0.49s.
+[2022-05-15 21:35:35,832] {subprocess.py:89} INFO - 21:35:35
+[2022-05-15 21:35:35,838] {subprocess.py:89} INFO - 21:35:35  [32mCompleted successfully[0m
+[2022-05-15 21:35:35,845] {subprocess.py:89} INFO - 21:35:35
+[2022-05-15 21:35:35,849] {subprocess.py:89} INFO - 21:35:35  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2022-05-15 21:35:36,883] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-05-15 21:35:36,910] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=model_level_dbt_dag, task_id=dbt_run.model.jaffle_shop.fct_customer_orders, execution_date=20220514T160047, start_date=20220515T213531, end_date=20220515T213536
+[2022-05-15 21:35:36,962] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-05-15 21:35:37,019] {local_task_job.py:264} INFO - 13 downstream tasks scheduled from follow-on schedule check

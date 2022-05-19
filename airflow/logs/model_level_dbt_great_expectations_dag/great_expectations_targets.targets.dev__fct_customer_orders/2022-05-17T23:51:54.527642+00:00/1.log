@@ -1,0 +1,81 @@
+[2022-05-18 23:57:21,710] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.great_expectations_targets.targets.dev__fct_customer_orders scheduled__2022-05-17T23:51:54.527642+00:00 [queued]>
+[2022-05-18 23:57:21,731] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.great_expectations_targets.targets.dev__fct_customer_orders scheduled__2022-05-17T23:51:54.527642+00:00 [queued]>
+[2022-05-18 23:57:21,733] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 23:57:21,733] {taskinstance.py:1242} INFO - Starting attempt 1 of 4
+[2022-05-18 23:57:21,734] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 23:57:21,751] {taskinstance.py:1262} INFO - Executing <Task(GreatExpectationsOperator): great_expectations_targets.targets.dev__fct_customer_orders> on 2022-05-17 23:51:54.527642+00:00
+[2022-05-18 23:57:21,762] {standard_task_runner.py:52} INFO - Started process 781 to run task
+[2022-05-18 23:57:21,769] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_great_expectations_dag', 'great_expectations_targets.targets.dev__fct_customer_orders', 'scheduled__2022-05-17T23:51:54.527642+00:00', '--job-id', '270', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_great_expectations_dag.py', '--cfg-path', '/tmp/tmps6jjm0y3', '--error-file', '/tmp/tmpmj0e3gqp']
+[2022-05-18 23:57:21,771] {standard_task_runner.py:77} INFO - Job 270: Subtask great_expectations_targets.targets.dev__fct_customer_orders
+[2022-05-18 23:57:21,872] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_great_expectations_dag.great_expectations_targets.targets.dev__fct_customer_orders scheduled__2022-05-17T23:51:54.527642+00:00 [running]> on host 41cba24e2fbb
+[2022-05-18 23:57:21,943] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_great_expectations_dag
+AIRFLOW_CTX_TASK_ID=great_expectations_targets.targets.dev__fct_customer_orders
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-17T23:51:54.527642+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-17T23:51:54.527642+00:00
+[2022-05-18 23:57:21,945] {great_expectations.py:122} INFO - Running validation with Great Expectations...
+[2022-05-18 23:57:21,948] {great_expectations.py:125} INFO - Ensuring data context is valid...
+[2022-05-18 23:57:23,172] {sqlalchemy_execution_engine.py:404} WARNING - schema_name specified creating a URL with schema is not supported. Set a default schema on the user connecting to your database.
+[2022-05-18 23:57:23,177] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/great_expectations/datasource/data_connector/runtime_data_connector.py:135 DeprecationWarning: Specifying batch_identifiers as part of the RuntimeDataConnector config is deprecated as of v0.15.1 and will be removed by v0.18. Please configure batch_identifiers as part of Assets instead.
+[2022-05-18 23:57:24,182] {taskinstance.py:1703} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations_provider/operators/great_expectations.py", line 160, in execute
+    result = self.checkpoint.run()
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/core/usage_statistics/usage_statistics.py", line 287, in usage_statistics_wrapped_method
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/checkpoint/checkpoint.py", line 168, in run
+    validation_dict=validation_dict,
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/checkpoint/checkpoint.py", line 320, in _run_validation
+    else None
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/data_context/data_context/base_data_context.py", line 1817, in get_validator
+    expectation_suite = self.get_expectation_suite(expectation_suite_name)
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/data_context/data_context/base_data_context.py", line 2295, in get_expectation_suite
+    f"expectation_suite {expectation_suite_name} not found"
+great_expectations.exceptions.exceptions.DataContextError: expectation_suite dev.fct_customer_orders.warning not found
+[2022-05-18 23:57:24,227] {taskinstance.py:1280} INFO - Marking task as UP_FOR_RETRY. dag_id=model_level_dbt_great_expectations_dag, task_id=great_expectations_targets.targets.dev__fct_customer_orders, execution_date=20220517T235154, start_date=20220518T235721, end_date=20220518T235724
+[2022-05-18 23:57:24,251] {standard_task_runner.py:91} ERROR - Failed to execute job 270 for task great_expectations_targets.targets.dev__fct_customer_orders
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 292, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations_provider/operators/great_expectations.py", line 160, in execute
+    result = self.checkpoint.run()
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/core/usage_statistics/usage_statistics.py", line 287, in usage_statistics_wrapped_method
+    result = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/checkpoint/checkpoint.py", line 168, in run
+    validation_dict=validation_dict,
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/checkpoint/checkpoint.py", line 320, in _run_validation
+    else None
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/data_context/data_context/base_data_context.py", line 1817, in get_validator
+    expectation_suite = self.get_expectation_suite(expectation_suite_name)
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/data_context/data_context/base_data_context.py", line 2295, in get_expectation_suite
+    f"expectation_suite {expectation_suite_name} not found"
+great_expectations.exceptions.exceptions.DataContextError: expectation_suite dev.fct_customer_orders.warning not found
+[2022-05-18 23:57:24,301] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-05-18 23:57:24,353] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

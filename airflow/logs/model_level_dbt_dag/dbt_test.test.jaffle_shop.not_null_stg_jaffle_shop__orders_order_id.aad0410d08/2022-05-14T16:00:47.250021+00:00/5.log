@@ -1,0 +1,39 @@
+[2022-05-15 22:14:35,911] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08 scheduled__2022-05-14T16:00:47.250021+00:00 [queued]>
+[2022-05-15 22:14:35,988] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08 scheduled__2022-05-14T16:00:47.250021+00:00 [queued]>
+[2022-05-15 22:14:35,990] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 22:14:35,991] {taskinstance.py:1242} INFO - Starting attempt 5 of 5
+[2022-05-15 22:14:35,992] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 22:14:36,062] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08> on 2022-05-14 16:00:47.250021+00:00
+[2022-05-15 22:14:36,080] {standard_task_runner.py:52} INFO - Started process 1651 to run task
+[2022-05-15 22:14:36,106] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_dag', 'dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08', 'scheduled__2022-05-14T16:00:47.250021+00:00', '--job-id', '313', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_dag.py', '--cfg-path', '/tmp/tmp1f_4p3t_', '--error-file', '/tmp/tmp2z60iyw9']
+[2022-05-15 22:14:36,107] {standard_task_runner.py:77} INFO - Job 313: Subtask dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+[2022-05-15 22:14:36,265] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_dag.dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08 scheduled__2022-05-14T16:00:47.250021+00:00 [running]> on host 9922a9d65d01
+[2022-05-15 22:14:36,508] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=model_level_dbt_dag
+AIRFLOW_CTX_TASK_ID=dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-14T16:00:47.250021+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-14T16:00:47.250021+00:00
+[2022-05-15 22:14:36,521] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-15 22:14:36,523] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'dbt --no-write-json test --target dev --select not_null_stg_jaffle_shop__orders_order_id --profiles-dir /opt/***/dags/jaffle_shop --project-dir /opt/***/dags/jaffle_shop']
+[2022-05-15 22:14:36,590] {subprocess.py:85} INFO - Output:
+[2022-05-15 22:14:54,777] {subprocess.py:89} INFO - 22:14:54  Running with dbt=1.1.0
+[2022-05-15 22:14:55,234] {subprocess.py:89} INFO - 22:14:55  Found 5 models, 13 tests, 0 snapshots, 0 analyses, 170 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[2022-05-15 22:14:55,247] {subprocess.py:89} INFO - 22:14:55
+[2022-05-15 22:14:55,531] {subprocess.py:89} INFO - 22:14:55  Concurrency: 1 threads (target='dev')
+[2022-05-15 22:14:55,534] {subprocess.py:89} INFO - 22:14:55
+[2022-05-15 22:14:55,629] {subprocess.py:89} INFO - 22:14:55  1 of 1 START test not_null_stg_jaffle_shop__orders_order_id .................... [RUN]
+[2022-05-15 22:14:56,524] {subprocess.py:89} INFO - 22:14:56  1 of 1 PASS not_null_stg_jaffle_shop__orders_order_id .......................... [[32mPASS[0m in 0.89s]
+[2022-05-15 22:14:56,662] {subprocess.py:89} INFO - 22:14:56
+[2022-05-15 22:14:56,665] {subprocess.py:89} INFO - 22:14:56  Finished running 1 test in 1.41s.
+[2022-05-15 22:14:56,677] {subprocess.py:89} INFO - 22:14:56
+[2022-05-15 22:14:56,688] {subprocess.py:89} INFO - 22:14:56  [32mCompleted successfully[0m
+[2022-05-15 22:14:56,691] {subprocess.py:89} INFO - 22:14:56
+[2022-05-15 22:14:56,693] {subprocess.py:89} INFO - 22:14:56  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2022-05-15 22:14:58,187] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-05-15 22:14:58,359] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=model_level_dbt_dag, task_id=dbt_test.test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.aad0410d08, execution_date=20220514T160047, start_date=20220515T221435, end_date=20220515T221458
+[2022-05-15 22:14:58,394] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-05-15 22:14:58,446] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

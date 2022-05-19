@@ -1,0 +1,2 @@
+[2022-05-15 01:30:15,921] {taskinstance.py:1029} INFO - Dependencies not met for <TaskInstance: dbt_dag.dbt_run scheduled__2021-12-25T00:00:00+00:00 [queued]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'total': 1, 'successes': 0, 'skipped': 0, 'failed': 0, 'upstream_failed': 0, 'done': 0}, upstream_task_ids={'test'}
+[2022-05-15 01:30:15,976] {local_task_job.py:99} INFO - Task is not able to be run

@@ -1,0 +1,35 @@
+[2022-05-15 21:57:16,363] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_docs scheduled__2022-05-14T16:00:47.250021+00:00 [queued]>
+[2022-05-15 21:57:16,388] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_docs scheduled__2022-05-14T16:00:47.250021+00:00 [queued]>
+[2022-05-15 21:57:16,389] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:57:16,390] {taskinstance.py:1242} INFO - Starting attempt 2 of 2
+[2022-05-15 21:57:16,390] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:57:16,408] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_docs> on 2022-05-14 16:00:47.250021+00:00
+[2022-05-15 21:57:16,415] {standard_task_runner.py:52} INFO - Started process 468 to run task
+[2022-05-15 21:57:16,419] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_dag', 'dbt_docs', 'scheduled__2022-05-14T16:00:47.250021+00:00', '--job-id', '279', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_dag.py', '--cfg-path', '/tmp/tmps4id6be0', '--error-file', '/tmp/tmptn4asyhu']
+[2022-05-15 21:57:16,421] {standard_task_runner.py:77} INFO - Job 279: Subtask dbt_docs
+[2022-05-15 21:57:16,470] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_dag.dbt_docs scheduled__2022-05-14T16:00:47.250021+00:00 [running]> on host 9922a9d65d01
+[2022-05-15 21:57:16,523] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=model_level_dbt_dag
+AIRFLOW_CTX_TASK_ID=dbt_docs
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-14T16:00:47.250021+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-14T16:00:47.250021+00:00
+[2022-05-15 21:57:16,525] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-15 21:57:16,527] {subprocess.py:74} INFO - Running command: ['bash', '-c', '\n        dbt docs generate --profiles-dir /opt/***/dags/jaffle_shop --project-dir /opt/***/dags/jaffle_shop\n        ']
+[2022-05-15 21:57:16,540] {subprocess.py:85} INFO - Output:
+[2022-05-15 21:57:20,194] {subprocess.py:89} INFO - 21:57:20  Running with dbt=1.1.0
+[2022-05-15 21:57:20,239] {subprocess.py:89} INFO - 21:57:20  Unable to do partial parsing because config vars, config profile, or config target have changed
+[2022-05-15 21:57:21,238] {subprocess.py:89} INFO - 21:57:21  Found 5 models, 13 tests, 0 snapshots, 0 analyses, 170 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[2022-05-15 21:57:21,244] {subprocess.py:89} INFO - 21:57:21
+[2022-05-15 21:57:21,323] {subprocess.py:89} INFO - 21:57:21  Concurrency: 1 threads (target='dev')
+[2022-05-15 21:57:21,324] {subprocess.py:89} INFO - 21:57:21
+[2022-05-15 21:57:21,752] {subprocess.py:89} INFO - 21:57:21  Done.
+[2022-05-15 21:57:21,819] {subprocess.py:89} INFO - 21:57:21  Building catalog
+[2022-05-15 21:57:21,902] {subprocess.py:89} INFO - 21:57:21  Catalog written to /opt/***/dags/jaffle_shop/target/catalog.json
+[2022-05-15 21:57:22,925] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-05-15 21:57:22,951] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=model_level_dbt_dag, task_id=dbt_docs, execution_date=20220514T160047, start_date=20220515T215716, end_date=20220515T215722
+[2022-05-15 21:57:22,997] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-05-15 21:57:23,029] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

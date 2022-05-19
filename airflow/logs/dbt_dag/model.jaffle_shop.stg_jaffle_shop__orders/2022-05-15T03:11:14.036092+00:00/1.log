@@ -1,0 +1,52 @@
+[2022-05-15 03:11:15,515] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: dbt_dag.model.jaffle_shop.stg_jaffle_shop__orders manual__2022-05-15T03:11:14.036092+00:00 [queued]>
+[2022-05-15 03:11:15,533] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: dbt_dag.model.jaffle_shop.stg_jaffle_shop__orders manual__2022-05-15T03:11:14.036092+00:00 [queued]>
+[2022-05-15 03:11:15,537] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 03:11:15,539] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2022-05-15 03:11:15,540] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 03:11:15,567] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): model.jaffle_shop.stg_jaffle_shop__orders> on 2022-05-15 03:11:14.036092+00:00
+[2022-05-15 03:11:15,585] {standard_task_runner.py:52} INFO - Started process 4199 to run task
+[2022-05-15 03:11:15,597] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'dbt_dag', 'model.jaffle_shop.stg_jaffle_shop__orders', 'manual__2022-05-15T03:11:14.036092+00:00', '--job-id', '80', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpweaaofie', '--error-file', '/tmp/tmp_aiwmr7b']
+[2022-05-15 03:11:15,598] {standard_task_runner.py:77} INFO - Job 80: Subtask model.jaffle_shop.stg_jaffle_shop__orders
+[2022-05-15 03:11:15,678] {logging_mixin.py:109} INFO - Running <TaskInstance: dbt_dag.model.jaffle_shop.stg_jaffle_shop__orders manual__2022-05-15T03:11:14.036092+00:00 [running]> on host b0833397c3cf
+[2022-05-15 03:11:15,776] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dbt_dag
+AIRFLOW_CTX_TASK_ID=model.jaffle_shop.stg_jaffle_shop__orders
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-15T03:11:14.036092+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-15T03:11:14.036092+00:00
+[2022-05-15 03:11:15,779] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-15 03:11:15,783] {subprocess.py:74} INFO - Running command: ['bash', '-c', '\n            cd /opt/***/dags/jaffle_shop &&\n            dbt --no-write-json run --target prod --models stg_jaffle_shop__orders --profiles-dir .\n            ']
+[2022-05-15 03:11:15,806] {subprocess.py:85} INFO - Output:
+[2022-05-15 03:11:19,893] {subprocess.py:89} INFO - 03:11:19  Running with dbt=1.1.0
+[2022-05-15 03:11:20,095] {subprocess.py:89} INFO - 03:11:20  Unable to do partial parsing because config vars, config profile, or config target have changed
+[2022-05-15 03:11:20,100] {subprocess.py:89} INFO - 03:11:20  Unable to do partial parsing because profile has changed
+[2022-05-15 03:11:20,105] {subprocess.py:89} INFO - 03:11:20  Unable to do partial parsing because env vars used in profiles.yml have changed
+[2022-05-15 03:11:21,859] {subprocess.py:89} INFO - 03:11:21  [[33mWARNING[0m]: Did not find matching node for patch with name 'stg_customers' in the 'models' section of file 'models/staging/jaffle_shop/stg_jaffle_shop.yml'
+[2022-05-15 03:11:21,864] {subprocess.py:89} INFO - 03:11:21  [[33mWARNING[0m]: Did not find matching node for patch with name 'stg_orders' in the 'models' section of file 'models/staging/jaffle_shop/stg_jaffle_shop.yml'
+[2022-05-15 03:11:22,015] {subprocess.py:89} INFO - 03:11:22  [[33mWARNING[0m]: Test 'test.jaffle_shop.assert_positive_total_for_payments' (tests/assert_positive_total_for_payments.sql) depends on a node named 'stg_payments' which was not found
+[2022-05-15 03:11:22,017] {subprocess.py:89} INFO - 03:11:22  [[33mWARNING[0m]: Test 'test.jaffle_shop.unique_stg_customers_customer_id.c7614daada' (models/staging/jaffle_shop/stg_jaffle_shop.yml) depends on a node named 'stg_customers' which was not found
+[2022-05-15 03:11:22,021] {subprocess.py:89} INFO - 03:11:22  [[33mWARNING[0m]: Test 'test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa' (models/staging/jaffle_shop/stg_jaffle_shop.yml) depends on a node named 'stg_customers' which was not found
+[2022-05-15 03:11:22,024] {subprocess.py:89} INFO - 03:11:22  [[33mWARNING[0m]: Test 'test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a' (models/staging/jaffle_shop/stg_jaffle_shop.yml) depends on a node named 'stg_orders' which was not found
+[2022-05-15 03:11:22,027] {subprocess.py:89} INFO - 03:11:22  [[33mWARNING[0m]: Test 'test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64' (models/staging/jaffle_shop/stg_jaffle_shop.yml) depends on a node named 'stg_orders' which was not found
+[2022-05-15 03:11:22,031] {subprocess.py:89} INFO - 03:11:22  [[33mWARNING[0m]: Test 'test.jaffle_shop.accepted_values_stg_orders_status__completed__shipped__returned__return_pending__placed.89a0a7d5f1' (models/staging/jaffle_shop/stg_jaffle_shop.yml) depends on a node named 'stg_orders' which was not found
+[2022-05-15 03:11:22,034] {subprocess.py:89} INFO - 03:11:22  [[33mWARNING[0m]: Test 'test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500' (models/staging/jaffle_shop/stg_jaffle_shop.yml) depends on a node named 'stg_customers' which was not found
+[2022-05-15 03:11:22,038] {subprocess.py:89} INFO - 03:11:22  [[33mWARNING[0m]: Test 'test.jaffle_shop.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500' (models/staging/jaffle_shop/stg_jaffle_shop.yml) depends on a node named 'stg_orders' which was not found
+[2022-05-15 03:11:22,116] {subprocess.py:89} INFO - 03:11:22  Found 5 models, 4 tests, 0 snapshots, 0 analyses, 170 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[2022-05-15 03:11:22,124] {subprocess.py:89} INFO - 03:11:22
+[2022-05-15 03:11:22,570] {subprocess.py:89} INFO - 03:11:22  Concurrency: 1 threads (target='prod')
+[2022-05-15 03:11:22,574] {subprocess.py:89} INFO - 03:11:22
+[2022-05-15 03:11:22,600] {subprocess.py:89} INFO - 03:11:22  1 of 1 START view model analytics.stg_jaffle_shop__orders ...................... [RUN]
+[2022-05-15 03:11:22,869] {subprocess.py:89} INFO - 03:11:22  1 of 1 OK created view model analytics.stg_jaffle_shop__orders ................. [[32mCREATE VIEW[0m in 0.26s]
+[2022-05-15 03:11:22,933] {subprocess.py:89} INFO - 03:11:22
+[2022-05-15 03:11:22,937] {subprocess.py:89} INFO - 03:11:22  Finished running 1 view model in 0.81s.
+[2022-05-15 03:11:22,947] {subprocess.py:89} INFO - 03:11:22
+[2022-05-15 03:11:22,949] {subprocess.py:89} INFO - 03:11:22  [32mCompleted successfully[0m
+[2022-05-15 03:11:22,954] {subprocess.py:89} INFO - 03:11:22
+[2022-05-15 03:11:22,957] {subprocess.py:89} INFO - 03:11:22  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2022-05-15 03:11:24,587] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-05-15 03:11:24,654] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=dbt_dag, task_id=model.jaffle_shop.stg_jaffle_shop__orders, execution_date=20220515T031114, start_date=20220515T031115, end_date=20220515T031124
+[2022-05-15 03:11:24,688] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-05-15 03:11:24,753] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

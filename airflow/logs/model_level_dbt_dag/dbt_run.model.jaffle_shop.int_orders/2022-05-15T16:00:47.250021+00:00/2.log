@@ -1,0 +1,81 @@
+[2022-05-17 00:42:16,455] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_run.model.jaffle_shop.int_orders scheduled__2022-05-15T16:00:47.250021+00:00 [queued]>
+[2022-05-17 00:42:16,467] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_run.model.jaffle_shop.int_orders scheduled__2022-05-15T16:00:47.250021+00:00 [queued]>
+[2022-05-17 00:42:16,468] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-17 00:42:16,469] {taskinstance.py:1242} INFO - Starting attempt 2 of 5
+[2022-05-17 00:42:16,470] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-17 00:42:16,481] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_run.model.jaffle_shop.int_orders> on 2022-05-15 16:00:47.250021+00:00
+[2022-05-17 00:42:16,485] {standard_task_runner.py:52} INFO - Started process 87 to run task
+[2022-05-17 00:42:16,488] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_dag', 'dbt_run.model.jaffle_shop.int_orders', 'scheduled__2022-05-15T16:00:47.250021+00:00', '--job-id', '489', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_dag.py', '--cfg-path', '/tmp/tmpf9msfn8a', '--error-file', '/tmp/tmpj1yla7_n']
+[2022-05-17 00:42:16,489] {standard_task_runner.py:77} INFO - Job 489: Subtask dbt_run.model.jaffle_shop.int_orders
+[2022-05-17 00:42:16,538] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_dag.dbt_run.model.jaffle_shop.int_orders scheduled__2022-05-15T16:00:47.250021+00:00 [running]> on host 5b92c0eb864a
+[2022-05-17 00:42:16,591] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_dag
+AIRFLOW_CTX_TASK_ID=dbt_run.model.jaffle_shop.int_orders
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-15T16:00:47.250021+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-15T16:00:47.250021+00:00
+[2022-05-17 00:42:16,593] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-17 00:42:16,594] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'dbt --no-write-json run --target dev --models int_orders --profiles-dir /opt/dbt/jaffle_shop --project-dir /opt/dbt/jaffle_shop']
+[2022-05-17 00:42:16,605] {subprocess.py:85} INFO - Output:
+[2022-05-17 00:42:19,591] {subprocess.py:89} INFO - 00:42:19  Running with dbt=1.1.0
+[2022-05-17 00:42:19,687] {subprocess.py:89} INFO - 00:42:19  Found 5 models, 13 tests, 0 snapshots, 0 analyses, 170 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[2022-05-17 00:42:19,692] {subprocess.py:89} INFO - 00:42:19
+[2022-05-17 00:42:19,828] {subprocess.py:89} INFO - 00:42:19  Concurrency: 1 threads (target='dev')
+[2022-05-17 00:42:19,830] {subprocess.py:89} INFO - 00:42:19
+[2022-05-17 00:42:19,840] {subprocess.py:89} INFO - 00:42:19  1 of 1 START view model dev.int_orders ......................................... [RUN]
+[2022-05-17 00:42:19,945] {subprocess.py:89} INFO - 00:42:19  1 of 1 ERROR creating view model dev.int_orders ................................ [[31mERROR[0m in 0.10s]
+[2022-05-17 00:42:20,066] {subprocess.py:89} INFO - 00:42:20
+[2022-05-17 00:42:20,068] {subprocess.py:89} INFO - 00:42:20  Finished running 1 view model in 0.37s.
+[2022-05-17 00:42:20,073] {subprocess.py:89} INFO - 00:42:20
+[2022-05-17 00:42:20,076] {subprocess.py:89} INFO - 00:42:20  [31mCompleted with 1 error and 0 warnings:[0m
+[2022-05-17 00:42:20,078] {subprocess.py:89} INFO - 00:42:20
+[2022-05-17 00:42:20,080] {subprocess.py:89} INFO - 00:42:20  [33mDatabase Error in model int_orders (models/intermediate/int_orders.sql)[0m
+[2022-05-17 00:42:20,082] {subprocess.py:89} INFO - 00:42:20    relation "dev.stg_jaffle_shop__orders" does not exist
+[2022-05-17 00:42:20,084] {subprocess.py:89} INFO - 00:42:20    LINE 8:   select * from "raw"."dev"."stg_jaffle_shop__orders"
+[2022-05-17 00:42:20,086] {subprocess.py:89} INFO - 00:42:20                            ^
+[2022-05-17 00:42:20,088] {subprocess.py:89} INFO - 00:42:20    compiled SQL at target/run/jaffle_shop/models/intermediate/int_orders.sql
+[2022-05-17 00:42:20,090] {subprocess.py:89} INFO - 00:42:20
+[2022-05-17 00:42:20,092] {subprocess.py:89} INFO - 00:42:20  Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[2022-05-17 00:42:21,175] {subprocess.py:93} INFO - Command exited with return code 1
+[2022-05-17 00:42:21,191] {taskinstance.py:1703} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 188, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-05-17 00:42:21,200] {taskinstance.py:1280} INFO - Marking task as UP_FOR_RETRY. dag_id=model_level_dbt_dag, task_id=dbt_run.model.jaffle_shop.int_orders, execution_date=20220515T160047, start_date=20220517T004216, end_date=20220517T004221
+[2022-05-17 00:42:21,218] {standard_task_runner.py:91} ERROR - Failed to execute job 489 for task dbt_run.model.jaffle_shop.int_orders
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 292, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 188, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-05-17 00:42:21,231] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-05-17 00:42:21,308] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,25 @@
+[2022-05-18 23:02:38,523] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c scheduled__2022-05-17T22:12:00.138285+00:00 [queued]>
+[2022-05-18 23:02:38,601] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c scheduled__2022-05-17T22:12:00.138285+00:00 [queued]>
+[2022-05-18 23:02:38,604] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 23:02:38,606] {taskinstance.py:1242} INFO - Starting attempt 2 of 5
+[2022-05-18 23:02:38,608] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 23:02:38,954] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c> on 2022-05-17 22:12:00.138285+00:00
+[2022-05-18 23:02:39,072] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_great_expectations_dag', 'dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c', 'scheduled__2022-05-17T22:12:00.138285+00:00', '--job-id', '140', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_great_expectations_dag.py', '--cfg-path', '/tmp/tmpf4kq78e9', '--error-file', '/tmp/tmpljsydyo_']
+[2022-05-18 23:02:39,067] {standard_task_runner.py:52} INFO - Started process 409 to run task
+[2022-05-18 23:02:39,080] {standard_task_runner.py:77} INFO - Job 140: Subtask dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-18 23:02:39,584] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_great_expectations_dag.dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c scheduled__2022-05-17T22:12:00.138285+00:00 [running]> on host 3d7cb1bfa13d
+[2022-05-18 23:02:40,500] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_great_expectations_dag
+AIRFLOW_CTX_TASK_ID=dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-17T22:12:00.138285+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-17T22:12:00.138285+00:00
+[2022-05-18 23:02:40,507] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-18 23:02:40,511] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'dbt --no-write-json test --target dev --select source_not_null_stripe_payment_id --profiles-dir /opt/dbt/jaffle_shop --project-dir /opt/dbt/jaffle_shop']
+[2022-05-18 23:02:40,642] {subprocess.py:85} INFO - Output:
+[2022-05-18 23:04:19,048] {local_task_job.py:154} INFO - Task exited with return code Negsignal.SIGKILL
+[2022-05-18 23:04:26,125] {taskinstance.py:1280} INFO - Marking task as UP_FOR_RETRY. dag_id=model_level_dbt_great_expectations_dag, task_id=dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c, execution_date=20220517T221200, start_date=20220518T230238, end_date=20220518T230425
+[2022-05-18 23:04:30,330] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

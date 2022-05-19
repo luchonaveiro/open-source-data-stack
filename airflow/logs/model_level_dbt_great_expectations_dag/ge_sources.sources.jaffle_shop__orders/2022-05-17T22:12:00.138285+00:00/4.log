@@ -1,0 +1,87 @@
+[2022-05-18 22:20:05,566] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.ge_sources.sources.jaffle_shop__orders scheduled__2022-05-17T22:12:00.138285+00:00 [queued]>
+[2022-05-18 22:20:05,582] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.ge_sources.sources.jaffle_shop__orders scheduled__2022-05-17T22:12:00.138285+00:00 [queued]>
+[2022-05-18 22:20:05,584] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 22:20:05,584] {taskinstance.py:1242} INFO - Starting attempt 4 of 4
+[2022-05-18 22:20:05,585] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 22:20:05,607] {taskinstance.py:1262} INFO - Executing <Task(GreatExpectationsOperator): ge_sources.sources.jaffle_shop__orders> on 2022-05-17 22:12:00.138285+00:00
+[2022-05-18 22:20:05,617] {standard_task_runner.py:52} INFO - Started process 202 to run task
+[2022-05-18 22:20:05,631] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_great_expectations_dag', 'ge_sources.sources.jaffle_shop__orders', 'scheduled__2022-05-17T22:12:00.138285+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_great_expectations_dag.py', '--cfg-path', '/tmp/tmp0s1tpb97', '--error-file', '/tmp/tmpnn_qzek2']
+[2022-05-18 22:20:05,633] {standard_task_runner.py:77} INFO - Job 45: Subtask ge_sources.sources.jaffle_shop__orders
+[2022-05-18 22:20:05,700] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_great_expectations_dag.ge_sources.sources.jaffle_shop__orders scheduled__2022-05-17T22:12:00.138285+00:00 [running]> on host 69bd44d8e2a2
+[2022-05-18 22:20:05,771] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_great_expectations_dag
+AIRFLOW_CTX_TASK_ID=ge_sources.sources.jaffle_shop__orders
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-17T22:12:00.138285+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-17T22:12:00.138285+00:00
+[2022-05-18 22:20:05,774] {great_expectations.py:122} INFO - Running validation with Great Expectations...
+[2022-05-18 22:20:05,775] {great_expectations.py:125} INFO - Ensuring data context is valid...
+[2022-05-18 22:20:05,776] {taskinstance.py:1703} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/data_context/data_context/data_context.py", line 414, in _load_project_config
+    with open(path_to_yml) as data:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/great_expectations/great_expectations.yml'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations_provider/operators/great_expectations.py", line 128, in execute
+    context_root_dir=self.data_context_root_dir
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/data_context/data_context/data_context.py", line 352, in __init__
+    project_config = self._load_project_config()
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/data_context/data_context/data_context.py", line 428, in _load_project_config
+    raise ge_exceptions.ConfigNotFoundError()
+great_expectations.exceptions.exceptions.ConfigNotFoundError: Error: No great_expectations directory was found here!
+    - Please check that you are in the correct directory or have specified the correct directory.
+    - If you have never run Great Expectations in this project, please run `great_expectations init` to get started.
+
+[2022-05-18 22:20:05,796] {taskinstance.py:1280} INFO - Marking task as FAILED. dag_id=model_level_dbt_great_expectations_dag, task_id=ge_sources.sources.jaffle_shop__orders, execution_date=20220517T221200, start_date=20220518T222005, end_date=20220518T222005
+[2022-05-18 22:20:05,814] {standard_task_runner.py:91} ERROR - Failed to execute job 45 for task ge_sources.sources.jaffle_shop__orders
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/data_context/data_context/data_context.py", line 414, in _load_project_config
+    with open(path_to_yml) as data:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/great_expectations/great_expectations.yml'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 292, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations_provider/operators/great_expectations.py", line 128, in execute
+    context_root_dir=self.data_context_root_dir
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/data_context/data_context/data_context.py", line 352, in __init__
+    project_config = self._load_project_config()
+  File "/home/airflow/.local/lib/python3.7/site-packages/great_expectations/data_context/data_context/data_context.py", line 428, in _load_project_config
+    raise ge_exceptions.ConfigNotFoundError()
+great_expectations.exceptions.exceptions.ConfigNotFoundError: Error: No great_expectations directory was found here!
+    - Please check that you are in the correct directory or have specified the correct directory.
+    - If you have never run Great Expectations in this project, please run `great_expectations init` to get started.
+
+[2022-05-18 22:20:05,839] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-05-18 22:20:06,031] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

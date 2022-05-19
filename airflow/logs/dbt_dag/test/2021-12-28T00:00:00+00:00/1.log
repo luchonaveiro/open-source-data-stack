@@ -1,0 +1,29 @@
+[2022-05-15 01:30:37,264] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: dbt_dag.test scheduled__2021-12-28T00:00:00+00:00 [queued]>
+[2022-05-15 01:30:37,616] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: dbt_dag.test scheduled__2021-12-28T00:00:00+00:00 [queued]>
+[2022-05-15 01:30:37,628] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 01:30:37,632] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2022-05-15 01:30:37,652] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 01:30:38,175] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): test> on 2021-12-28 00:00:00+00:00
+[2022-05-15 01:30:38,323] {standard_task_runner.py:52} INFO - Started process 2592 to run task
+[2022-05-15 01:30:38,403] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'dbt_dag', 'test', 'scheduled__2021-12-28T00:00:00+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpkg4kc1dg', '--error-file', '/tmp/tmp5n8pb8cs']
+[2022-05-15 01:30:38,439] {standard_task_runner.py:77} INFO - Job 47: Subtask test
+[2022-05-15 01:30:39,489] {logging_mixin.py:109} INFO - Running <TaskInstance: dbt_dag.test scheduled__2021-12-28T00:00:00+00:00 [running]> on host b0833397c3cf
+[2022-05-15 01:30:48,575] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dbt_dag
+AIRFLOW_CTX_TASK_ID=test
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-28T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-12-28T00:00:00+00:00
+[2022-05-15 01:30:48,645] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-15 01:30:48,648] {subprocess.py:74} INFO - Running command: ['bash', '-c', '\n        pwd\n        ']
+[2022-05-15 01:30:48,760] {subprocess.py:85} INFO - Output:
+[2022-05-15 01:30:48,767] {subprocess.py:89} INFO - /tmp/***tmphdt_h70u
+[2022-05-15 01:30:48,770] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-05-15 01:30:48,958] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=dbt_dag, task_id=test, execution_date=20211228T000000, start_date=20220515T013037, end_date=20220515T013048
+[2022-05-15 01:30:49,291] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-05-15 01:30:49,935] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-05-15 01:30:50,063] {dagrun.py:527} ERROR - Marking run <DagRun dbt_dag @ 2021-12-28 00:00:00+00:00: scheduled__2021-12-28T00:00:00+00:00, externally triggered: False> failed
+[2022-05-15 01:30:50,066] {dagrun.py:602} INFO - DagRun Finished: dag_id=dbt_dag, execution_date=2021-12-28 00:00:00+00:00, run_id=scheduled__2021-12-28T00:00:00+00:00, run_start_date=2022-05-15 01:30:10.436572+00:00, run_end_date=2022-05-15 01:30:50.066189+00:00, run_duration=39.629617, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2021-12-28 00:00:00+00:00, data_interval_end=2021-12-29 00:00:00+00:00, dag_hash=08ba76bc4de643e0df82526ee6b4f9f1

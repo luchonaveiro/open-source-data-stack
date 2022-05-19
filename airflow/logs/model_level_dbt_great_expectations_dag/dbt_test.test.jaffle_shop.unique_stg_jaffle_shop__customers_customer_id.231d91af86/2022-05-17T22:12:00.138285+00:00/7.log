@@ -1,0 +1,67 @@
+[2022-05-18 23:40:33,227] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.dbt_test.test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86 scheduled__2022-05-17T22:12:00.138285+00:00 [queued]>
+[2022-05-18 23:40:33,306] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.dbt_test.test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86 scheduled__2022-05-17T22:12:00.138285+00:00 [queued]>
+[2022-05-18 23:40:33,312] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 23:40:33,315] {taskinstance.py:1242} INFO - Starting attempt 7 of 8
+[2022-05-18 23:40:33,316] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 23:40:33,390] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_test.test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86> on 2022-05-17 22:12:00.138285+00:00
+[2022-05-18 23:40:33,440] {standard_task_runner.py:52} INFO - Started process 926 to run task
+[2022-05-18 23:40:33,459] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_great_expectations_dag', 'dbt_test.test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86', 'scheduled__2022-05-17T22:12:00.138285+00:00', '--job-id', '187', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_great_expectations_dag.py', '--cfg-path', '/tmp/tmpn7tggh6k', '--error-file', '/tmp/tmpgfyfu3vt']
+[2022-05-18 23:40:33,461] {standard_task_runner.py:77} INFO - Job 187: Subtask dbt_test.test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+[2022-05-18 23:40:33,714] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_great_expectations_dag.dbt_test.test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86 scheduled__2022-05-17T22:12:00.138285+00:00 [running]> on host d4b673e28191
+[2022-05-18 23:40:34,003] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_great_expectations_dag
+AIRFLOW_CTX_TASK_ID=dbt_test.test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.231d91af86
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-17T22:12:00.138285+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-17T22:12:00.138285+00:00
+[2022-05-18 23:40:34,008] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-18 23:40:34,012] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'dbt --no-write-json test --target dev --select unique_stg_jaffle_shop__customers_customer_id --profiles-dir /opt/dbt/jaffle_shop --project-dir /opt/dbt/jaffle_shop']
+[2022-05-18 23:40:34,109] {subprocess.py:85} INFO - Output:
+[2022-05-18 23:40:38,920] {base_job.py:230} ERROR - LocalTaskJob heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 771, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 561, in do_commit
+    dbapi_connection.commit()
+psycopg2.errors.AdminShutdown: terminating connection due to unexpected postmaster exit
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 203, in heartbeat
+    previous_heartbeat = self.latest_heartbeat
+  File "/usr/local/lib/python3.7/contextlib.py", line 119, in __exit__
+    next(self.gen)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 32, in create_session
+    session.commit()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1046, in commit
+    self.transaction.commit()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 508, in commit
+    t[1].commit()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1762, in commit
+    self._do_commit()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1793, in _do_commit
+    self.connection._commit_impl()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 773, in _commit_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 771, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 561, in do_commit
+    dbapi_connection.commit()
+sqlalchemy.exc.OperationalError: (psycopg2.errors.AdminShutdown) terminating connection due to unexpected postmaster exit
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)

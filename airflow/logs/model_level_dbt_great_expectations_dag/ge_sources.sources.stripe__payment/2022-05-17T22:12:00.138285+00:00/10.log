@@ -1,0 +1,42 @@
+[2022-05-18 22:32:31,918] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.ge_sources.sources.stripe__payment scheduled__2022-05-17T22:12:00.138285+00:00 [queued]>
+[2022-05-18 22:32:31,938] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.ge_sources.sources.stripe__payment scheduled__2022-05-17T22:12:00.138285+00:00 [queued]>
+[2022-05-18 22:32:31,939] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 22:32:31,941] {taskinstance.py:1242} INFO - Starting attempt 10 of 11
+[2022-05-18 22:32:31,942] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-18 22:32:31,960] {taskinstance.py:1262} INFO - Executing <Task(GreatExpectationsOperator): ge_sources.sources.stripe__payment> on 2022-05-17 22:12:00.138285+00:00
+[2022-05-18 22:32:31,973] {standard_task_runner.py:52} INFO - Started process 89 to run task
+[2022-05-18 22:32:31,986] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_great_expectations_dag', 'ge_sources.sources.stripe__payment', 'scheduled__2022-05-17T22:12:00.138285+00:00', '--job-id', '98', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_great_expectations_dag.py', '--cfg-path', '/tmp/tmp4frno5zr', '--error-file', '/tmp/tmpf7ntf7k8']
+[2022-05-18 22:32:31,988] {standard_task_runner.py:77} INFO - Job 98: Subtask ge_sources.sources.stripe__payment
+[2022-05-18 22:32:32,093] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_great_expectations_dag.ge_sources.sources.stripe__payment scheduled__2022-05-17T22:12:00.138285+00:00 [running]> on host 3db539bd1596
+[2022-05-18 22:32:32,239] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_great_expectations_dag
+AIRFLOW_CTX_TASK_ID=ge_sources.sources.stripe__payment
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-17T22:12:00.138285+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-17T22:12:00.138285+00:00
+[2022-05-18 22:32:32,242] {great_expectations.py:122} INFO - Running validation with Great Expectations...
+[2022-05-18 22:32:32,243] {great_expectations.py:125} INFO - Ensuring data context is valid...
+[2022-05-18 22:32:33,430] {sqlalchemy_execution_engine.py:404} WARNING - schema_name specified creating a URL with schema is not supported. Set a default schema on the user connecting to your database.
+[2022-05-18 22:32:33,461] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/great_expectations/datasource/data_connector/runtime_data_connector.py:135 DeprecationWarning: Specifying batch_identifiers as part of the RuntimeDataConnector config is deprecated as of v0.15.1 and will be removed by v0.18. Please configure batch_identifiers as part of Assets instead.
+[2022-05-18 22:32:35,062] {validator.py:1669} INFO - 	24 expectation(s) included in expectation_suite.
+[2022-05-18 22:32:35,855] {logging_mixin.py:109} WARNING - Calculating Metrics:   0%|          | 0/55 [00:00<?, ?it/s]
+[2022-05-18 22:32:35,857] {logging_mixin.py:109} WARNING - Calculating Metrics:   0%|          | 0/55 [00:00<?, ?it/s]
+[2022-05-18 22:32:35,869] {logging_mixin.py:109} WARNING - Calculating Metrics:   4%|3         | 2/55 [00:00<00:00, 171.49it/s]
+[2022-05-18 22:32:35,949] {logging_mixin.py:109} WARNING - Calculating Metrics:   7%|7         | 4/55 [00:00<00:01, 43.68it/s] 
+[2022-05-18 22:32:36,071] {logging_mixin.py:109} WARNING - Calculating Metrics:  35%|###4      | 19/55 [00:00<00:00, 88.66it/s]
+[2022-05-18 22:32:36,075] {logging_mixin.py:109} WARNING - Calculating Metrics:  35%|###4      | 19/55 [00:00<00:00, 88.66it/s]
+[2022-05-18 22:32:36,211] {util.py:247} WARNING - Using lossy conversion for decimal 1469.1666666666666667 to float object to support serialization.
+[2022-05-18 22:32:36,212] {logging_mixin.py:109} WARNING - Calculating Metrics:  78%|#######8  | 43/55 [00:00<00:00, 128.20it/s]
+[2022-05-18 22:32:36,214] {logging_mixin.py:109} WARNING - Calculating Metrics:  78%|#######8  | 43/55 [00:00<00:00, 128.20it/s]
+[2022-05-18 22:32:36,314] {logging_mixin.py:109} WARNING - Calculating Metrics:  96%|#########6| 53/55 [00:00<00:00, 128.20it/s]
+[2022-05-18 22:32:36,434] {logging_mixin.py:109} WARNING - Calculating Metrics:  98%|#########8| 54/55 [00:00<00:00, 128.20it/s]
+[2022-05-18 22:32:36,561] {logging_mixin.py:109} WARNING - Calculating Metrics: 100%|##########| 55/55 [00:00<00:00, 128.20it/s]
+[2022-05-18 22:32:36,749] {logging_mixin.py:109} WARNING - Calculating Metrics: 100%|##########| 55/55 [00:00<00:00, 128.20it/s]
+[2022-05-18 22:32:36,752] {logging_mixin.py:109} WARNING - Calculating Metrics: 100%|##########| 55/55 [00:00<00:00, 61.46it/s] 
+[2022-05-18 22:32:36,756] {logging_mixin.py:109} WARNING - 
+[2022-05-18 22:32:42,193] {great_expectations.py:197} INFO - Validation with Great Expectations successful.
+[2022-05-18 22:32:42,307] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=model_level_dbt_great_expectations_dag, task_id=ge_sources.sources.stripe__payment, execution_date=20220517T221200, start_date=20220518T223231, end_date=20220518T223242
+[2022-05-18 22:32:42,395] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-05-18 22:32:42,607] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
