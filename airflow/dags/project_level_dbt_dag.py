@@ -29,16 +29,14 @@ with DAG(
     dbt_run = BashOperator(
         task_id="dbt_run",
         bash_command=f"""
-        cd {DBT_PROJECT_PATH}
-        dbt run --profiles-dir .
+        dbt run --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
         """,
     )
 
     dbt_test = BashOperator(
         task_id="dbt_test",
         bash_command=f"""
-        cd {DBT_PROJECT_PATH}
-        dbt test --profiles-dir .
+        dbt test --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
         """,
     )
 

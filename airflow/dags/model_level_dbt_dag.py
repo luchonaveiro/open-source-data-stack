@@ -36,12 +36,12 @@ with DAG(
 
     # Validate taskgroups
     validate_taskgroup = TaskGroup('dbt_validate')
-    # dbt_debug = BashOperator(
-    #     task_id='dbt_debug',
-    #     task_group=validate_taskgroup,
-    #     bash_command=f"""
-    #     dbt debug --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
-    #     """)
+    dbt_debug = BashOperator(
+        task_id='dbt_debug',
+        task_group=validate_taskgroup,
+        bash_command=f"""
+        dbt debug --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
+        """)
 
     dbt_parse = BashOperator(
         task_id='dbt_parse',
@@ -57,7 +57,7 @@ with DAG(
         dbt compile --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
         """)
 
-    start_dummy >> dbt_parse >> dbt_compile >> start_run_dbt_dummy
+    start_dummy >> dbt_debug >> dbt_parse >> dbt_compile >> start_run_dbt_dummy
 
     # The parser parses out a dbt manifest.json file and dynamically creates tasks for "dbt run" and "dbt test"
     # commands for each individual model. It groups them into task groups which we can retrieve and use in the DAG.

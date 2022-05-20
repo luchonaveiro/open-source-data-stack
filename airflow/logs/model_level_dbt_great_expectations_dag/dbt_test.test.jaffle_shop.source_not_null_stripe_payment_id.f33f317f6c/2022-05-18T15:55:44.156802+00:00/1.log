@@ -1,0 +1,39 @@
+[2022-05-19 15:58:39,101] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c scheduled__2022-05-18T15:55:44.156802+00:00 [queued]>
+[2022-05-19 15:58:39,118] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c scheduled__2022-05-18T15:55:44.156802+00:00 [queued]>
+[2022-05-19 15:58:39,119] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-19 15:58:39,119] {taskinstance.py:1242} INFO - Starting attempt 1 of 4
+[2022-05-19 15:58:39,120] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-19 15:58:39,132] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c> on 2022-05-18 15:55:44.156802+00:00
+[2022-05-19 15:58:39,141] {standard_task_runner.py:52} INFO - Started process 912 to run task
+[2022-05-19 15:58:39,145] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_great_expectations_dag', 'dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c', 'scheduled__2022-05-18T15:55:44.156802+00:00', '--job-id', '150', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_great_expectations_dag.py', '--cfg-path', '/tmp/tmpi2uwbcfr', '--error-file', '/tmp/tmpwdr__t8s']
+[2022-05-19 15:58:39,146] {standard_task_runner.py:77} INFO - Job 150: Subtask dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+[2022-05-19 15:58:39,196] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_great_expectations_dag.dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c scheduled__2022-05-18T15:55:44.156802+00:00 [running]> on host 34ae02bc0b96
+[2022-05-19 15:58:39,255] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_great_expectations_dag
+AIRFLOW_CTX_TASK_ID=dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-18T15:55:44.156802+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-18T15:55:44.156802+00:00
+[2022-05-19 15:58:39,257] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-19 15:58:39,259] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'dbt --no-write-json test --target dev --select source_not_null_stripe_payment_id --profiles-dir /opt/dbt/jaffle_shop --project-dir /opt/dbt/jaffle_shop']
+[2022-05-19 15:58:39,281] {subprocess.py:85} INFO - Output:
+[2022-05-19 15:58:44,595] {subprocess.py:89} INFO - 15:58:44  Running with dbt=1.1.0
+[2022-05-19 15:58:44,780] {subprocess.py:89} INFO - 15:58:44  Found 5 models, 13 tests, 0 snapshots, 0 analyses, 170 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[2022-05-19 15:58:44,787] {subprocess.py:89} INFO - 15:58:44
+[2022-05-19 15:58:44,953] {subprocess.py:89} INFO - 15:58:44  Concurrency: 1 threads (target='dev')
+[2022-05-19 15:58:44,957] {subprocess.py:89} INFO - 15:58:44
+[2022-05-19 15:58:44,976] {subprocess.py:89} INFO - 15:58:44  1 of 1 START test source_not_null_stripe_payment_id ............................ [RUN]
+[2022-05-19 15:58:45,103] {subprocess.py:89} INFO - 15:58:45  1 of 1 PASS source_not_null_stripe_payment_id .................................. [[32mPASS[0m in 0.12s]
+[2022-05-19 15:58:45,200] {subprocess.py:89} INFO - 15:58:45
+[2022-05-19 15:58:45,202] {subprocess.py:89} INFO - 15:58:45  Finished running 1 test in 0.41s.
+[2022-05-19 15:58:45,207] {subprocess.py:89} INFO - 15:58:45
+[2022-05-19 15:58:45,209] {subprocess.py:89} INFO - 15:58:45  [32mCompleted successfully[0m
+[2022-05-19 15:58:45,211] {subprocess.py:89} INFO - 15:58:45
+[2022-05-19 15:58:45,213] {subprocess.py:89} INFO - 15:58:45  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2022-05-19 15:58:46,437] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-05-19 15:58:46,512] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=model_level_dbt_great_expectations_dag, task_id=dbt_test.test.jaffle_shop.source_not_null_stripe_payment_id.f33f317f6c, execution_date=20220518T155544, start_date=20220519T155839, end_date=20220519T155846
+[2022-05-19 15:58:46,590] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-05-19 15:58:46,651] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -149,31 +149,44 @@ This commands will run `Apache Airflow` on `localhost:8080`. We can login by usi
 ### DAG at a project level
 The first DAG we will create is a pretty simple one. We can see it on `project_level_dbt_dag` DAG. 
 
-Here, we will just use the `BashOperator` to run and test the whole *jaffle_shop* project. We will have 2 tasks (`dbt_run` and `dbt_test`) that executes `dbt run` to create the whole models on the `PostgreSQL` database, and then executed `dbt test` over the created models.
+Here, we will just use the `BashOperator` to run and test the whole *jaffle_shop* project. We will have 2 tasks (`dbt_run` and `dbt_test`) that executes `dbt run` to create the whole models on the `PostgreSQL` database, and then execute `dbt test` to test the created models.
+
 The DAG looks something like this:
 
-![model_level_dbt_dag](assets/project_level_dbt_dag.png)
+![project_level_dbt_dag](assets/project_level_dbt_dag.png)
 
-One main problem with this approach is that in case any model fails, all the task will fail and we should reexecute all the models again after solving the issue with the one that failed. This could be very expensive in time to rebuild all the defined tables.
+Where, `dbt_run` is defined as follows:
+![project_level_dbt_run](assets/project_level_dbt_run.png)
+And by inspecting its logs, we can see that it runs all the models at once.
+
+![project_level_dbt_run_2](assets/project_level_dbt_run_2.png)
+
+The same with `dbt_test`:
+![project_level_dbt_test](assets/project_level_dbt_test.png)
+And to check that all the tests have passed, let's look at the logs:
+
+![project_level_dbt_test_2](assets/project_level_dbt_test_2.png)
+
+So, here we manage to run and test `dbt` models, but one main problem with this approach is that in case any model fails, the task will fail and we should reexecute all the models again after solving the issue with the one that failed. This could be very expensive in time to rebuild all the defined tables.
 
 ### DAG at a model level
 We can try instead, of creating one task per defined model, and one task per defined test. We did this on `model_level_dbt_dag` DAG.
 
 To accomplish this, we are going to use the `manifest.json` stored on the `target` directory inside the `dbt` project. In this way we are going to parse all the defined models and tests, and create one task per each. This implementation is based on the following [Astronomer's post](https://www.astronomer.io/guides/airflow-dbt/).
 
-In this case, if one model or test fails, we can reexecute only that one, without rebuilding everything. Also we can group all the model runs under the `dbt_run` taskgroup, and all the model tests under the `dbt_test` taskgroup, so the DAG graph is cleaner. Tbis is also useful when creating some custom slack messages to be sent as a failure callback of any task. So we can quickly get notified whenever some model or test failed and go ahead and spolve the issue.
+In this case, if one model or test fails, we can reexecute only that one, without rebuilding everything. Also we can group all the model runs under the `dbt_run` taskgroup, and all the model tests under the `dbt_test` taskgroup, so the DAG graph is cleaner. This is also useful when creating some custom slack messages to be sent as a failure callback of any task. So we can quickly get notified whenever some model or test failed and go ahead and spolve the issue.
 
 Also, we are going to add some `dbt_validate` tasks. Particularly the `dbt_compile` one is super important. In csae we add a new model, we should run `dbt compile` first, so the new model is logged on the `manifest.json`, and then the proper task will be created. This also works in case we remove/rename a productive model. We should always recreate the `manifest.json` and keep it fresh.
 
 Also this solution is useful if we want different models to be run in different schedules.
 
-![project_level_dbt_dag](assets/model_level_dbt_dag_1.png)
+![model_level_dbt_dag](assets/model_level_dbt_dag_1.png)
 
 If we open each taskgroup:
 
-![project_level_dbt_dag](assets/model_level_dbt_dag_2.png)
+![model_level_dbt_dag](assets/model_level_dbt_dag_2.png)
 
-At the end of the DAG, we added teh `dbt_docs` task, which is in charge of executing the `dbt docs generate` statement. As on the `docker-compose.yml` we added an `nginx` server to host the `dbt` documentation, we can go to `localhost:80` and see the proper documentation of the data model.
+At the end of the DAG, we added the `dbt_docs` task, which is in charge of executing the `dbt docs generate` statement. As on the `docker-compose.yml` we added an `nginx` server to host the `dbt` documentation, we can go to `localhost:80` and see the proper documentation of the data model.
 
 Here, for example we can see the documentation generated for the `fct_customer_orders` model:
 
@@ -183,14 +196,49 @@ And here, we can see its lineage graph, where we can observe its dependencies, a
 
 ![dbt_docs_2](assets/dbt_docs_2.png)
 
+Let's go by parts to understand all the change we proposed here.
+
+**dbt Validate**
+First, we included this *TaskGroup* to run the following commands:
+![model_level_dbt_validate](assets/model_level_dbt_validate.png)
+For example, the first task `dbt_debug`, is in charge of testing the connection agains the database. If everything is ok, we should see the following:
+
+![model_level_dbt_debug](assets/model_level_dbt_debug.png)
+
+And when running `dbt_compile`, we will refresh the `manifest.json` file:
+
+![model_level_dbt_compile](assets/model_level_dbt_compile.png)
+
+**dbt Run**
+Now, we will have one task per model to run, all grouped under the same *TaskGroup* The dependencies are taken from the `manifest.json` file, so we will keep the desired consistency on the running of the models. Let's look for example to the logs generated after running `model.jaffle_shop.fct_customer_orders` model, there we will find both the command executed and the dbt log:
+
+![model_level_dbt_run](assets/model_level_dbt_run.png)
+
+**dbt Test**
+We also grouped all the tests together on the same `TaskGroup` and we see that there is one task per test. Let's look the log of `test.jaffle_shop.assert_positive_total_for_payments` to check everything went fine:
+
+![model_level_dbt_test](assets/model_level_dbt_test.png)
+
+**dbt Docs**
+This task is responsible of executing the following command:
+![model_level_dbt_docs_task](assets/model_level_dbt_docs_task.png)
+Generating the `.html` file that is hosted on `localhost:80`.
 
 
 ### DAG at a model level with Great Expectations
-Of course we can rely on `dbt`'s testing suite to create more complex tests, suchas the one we created on `jaffle_shop/tests/assert_positive_total_for_payments.sql`, but what if we want to use `Great Expectations` library? How can we include it on our current project?
+Of course we can rely on `dbt`'s testing suite to create more complex tests, such as the one we created on `jaffle_shop/tests/assert_positive_total_for_payments.sql`, but what if we want to use `Great Expectations` library? How can we include it on our current project?
 
-For this, we created the `model_level_dbt_great_expectations_dag` DAG. We are going to use the `GreatExpectationsOperator` that we can find on the `airflow-provider-great-expectations` library. Here I decided to split the `Great Expectations` validations in 2: *sources* and *targets*. The *sources* validations we are going to execute them at the beginning of the DAG, and the *targets* validations, at the end, after running the `dbt` models.
+For this, we created the `model_level_dbt_great_expectations_dag` adding som tasks to the previous DAG. We are going to use the `GreatExpectationsOperator` that we can find on the `airflow-provider-great-expectations` library. Here I decided to split the `Great Expectations` validations in 2: *sources* and *targets*. The *sources* validations we are going to execute them at the beginning of the DAG, and the *targets* validations, at the end, after running the `dbt` models.
 
 ![great_expectations_dag](assets/great_expectations_dag.png)
+
+Where `great_expectations_sources` is in charge of validating the three source tables, while `great_expectations_targets` validates `dev.fct_customer_orders` table. This can be seen when expanding the *TaskGroups*
+
+![great_expectations_dag_2](assets/great_expectations_dag_2.png)
+
+When executing `targets.dev__fct_customer_orders` we can see the logs to check that the validations passed ok:
+
+![great_expectations_dag_targets](assets/great_expectations_dag_targets.png)
 
 To further understand how to create the *Expectations*, you can check my [great-expectations-postgres-tutorial](https://github.com/luchonaveiro/great-expectations-postgres-tutorial) repository.
 

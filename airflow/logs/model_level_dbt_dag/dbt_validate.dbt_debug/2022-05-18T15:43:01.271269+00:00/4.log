@@ -1,0 +1,74 @@
+[2022-05-19 15:52:37,971] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_validate.dbt_debug scheduled__2022-05-18T15:43:01.271269+00:00 [queued]>
+[2022-05-19 15:52:37,995] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_validate.dbt_debug scheduled__2022-05-18T15:43:01.271269+00:00 [queued]>
+[2022-05-19 15:52:37,997] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-19 15:52:37,998] {taskinstance.py:1242} INFO - Starting attempt 4 of 4
+[2022-05-19 15:52:37,999] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-19 15:52:38,023] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_validate.dbt_debug> on 2022-05-18 15:43:01.271269+00:00
+[2022-05-19 15:52:38,030] {standard_task_runner.py:52} INFO - Started process 92 to run task
+[2022-05-19 15:52:38,037] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_dag', 'dbt_validate.dbt_debug', 'scheduled__2022-05-18T15:43:01.271269+00:00', '--job-id', '104', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_dag.py', '--cfg-path', '/tmp/tmp3rpf_y1v', '--error-file', '/tmp/tmpx5qpeq2o']
+[2022-05-19 15:52:38,039] {standard_task_runner.py:77} INFO - Job 104: Subtask dbt_validate.dbt_debug
+[2022-05-19 15:52:38,138] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_dag.dbt_validate.dbt_debug scheduled__2022-05-18T15:43:01.271269+00:00 [running]> on host 34ae02bc0b96
+[2022-05-19 15:52:38,241] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_dag
+AIRFLOW_CTX_TASK_ID=dbt_validate.dbt_debug
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-18T15:43:01.271269+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-18T15:43:01.271269+00:00
+[2022-05-19 15:52:38,244] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-19 15:52:38,247] {subprocess.py:74} INFO - Running command: ['bash', '-c', '\n        dbt debug --profiles-dir /opt/dbt/jaffle_shop --project-dir /opt/dbt/jaffle_shop\n        ']
+[2022-05-19 15:52:38,281] {subprocess.py:85} INFO - Output:
+[2022-05-19 15:52:43,103] {local_task_job.py:212} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2022-05-19 15:52:43,109] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 92
+[2022-05-19 15:52:43,110] {taskinstance.py:1411} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-05-19 15:52:43,111] {subprocess.py:99} INFO - Sending SIGTERM signal to process group
+[2022-05-19 15:52:43,132] {taskinstance.py:1703} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 182, in execute
+    cwd=self.cwd,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/subprocess.py", line 87, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b''):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1413, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-05-19 15:52:43,149] {taskinstance.py:1280} INFO - Marking task as UP_FOR_RETRY. dag_id=model_level_dbt_dag, task_id=dbt_validate.dbt_debug, execution_date=20220518T154301, start_date=20220519T155237, end_date=20220519T155243
+[2022-05-19 15:52:43,175] {standard_task_runner.py:91} ERROR - Failed to execute job 104 for task dbt_validate.dbt_debug
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 292, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 182, in execute
+    cwd=self.cwd,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/subprocess.py", line 87, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b''):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1413, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-05-19 15:52:43,204] {process_utils.py:66} INFO - Process psutil.Process(pid=93, status='terminated', started='15:52:38') (93) terminated with exit code None
+[2022-05-19 15:52:43,205] {process_utils.py:66} INFO - Process psutil.Process(pid=92, status='terminated', exitcode=1, started='15:52:37') (92) terminated with exit code 1
+[2022-05-19 15:52:43,207] {process_utils.py:66} INFO - Process psutil.Process(pid=94, status='terminated', started='15:52:38') (94) terminated with exit code None
