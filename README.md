@@ -250,7 +250,7 @@ When executing `targets.dev__fct_customer_orders` we can see the logs to check t
 
 To further understand how to create the *Expectations*, you can check my [great-expectations-postgres-tutorial](https://github.com/luchonaveiro/great-expectations-postgres-tutorial) repository.
 
-But basically, we can find all the defined validations on the `great_expectations` directory. There I defined different expectations for diffeernet tables: `jaffle_shop.customers`, `jaffle_shop.orders`, `stripe.payment` and `dev.fct_customer_orders`. The expectations defined are in charge of validating the columns data types, uniqueness and not null values of the tables primary key.
+But basically, we can find all the defined validations on the `great_expectations` directory. There I defined different expectations for different tables: `jaffle_shop.customers`, `jaffle_shop.orders`, `stripe.payment` and `dev.fct_customer_orders`. The expectations defined are in charge of validating the columns data types, uniqueness and not null values of the tables primary key.
 
 Here, also we added another `nginx` server to host the `Great Expectations` documentation, we can go to `localhost:81` and see the runs results and the defined validations on each table.
 
