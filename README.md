@@ -146,7 +146,7 @@ This commands will run `Apache Airflow` on `localhost:8080`. We can login by usi
 
 ## Apache Airflow DAGs
 
-### DAG at a project level
+### DAG with dbt at a project level
 The first DAG we will create is a pretty simple one. We can see it on `project_level_dbt_dag` DAG. 
 
 Here, we will just use the `BashOperator` to run and test the whole *jaffle_shop* project. We will have 2 tasks (`dbt_run` and `dbt_test`) that executes `dbt run` to create the whole models on the `PostgreSQL` database, and then execute `dbt test` to test the created models.
@@ -157,19 +157,27 @@ The DAG looks something like this:
 
 Where, `dbt_run` is defined as follows:
 ![project_level_dbt_run](assets/project_level_dbt_run.png)
+The models are defined on `dbt/jaffle_shop/models` directory, there you will find the staging, intermediate and final queries that build the whole data model.
+
 And by inspecting its logs, we can see that it runs all the models at once.
 
 ![project_level_dbt_run_2](assets/project_level_dbt_run_2.png)
 
 The same with `dbt_test`:
 ![project_level_dbt_test](assets/project_level_dbt_test.png)
+The tests are defined both on the different `.yml` files stored on the `dbt/jaffle_shop/models` directory, and also defined as `.sql` files on the `dbt/jaffle_shop/tests`. This approach can be done in case we need some custom tests that are not covered by `dbt`'s built in ones.
+
+The ones defined on the `.yml` files on the `dbt/jaffle_shop/models` directory, are basicaly in charge of testing the uniqueness and not null of each table primary key. Also, we are testing a relatinship constraint between `jaffle_shop.customers` and `jaffle_shop.orders` tables.
+
+On the other side, on the `dbt/jaffle_shop/tests/assert/positive_total_for_payments.sql` file, we are testing that the payed amount per order id, should always be greater or equal than 0.
+
 And to check that all the tests have passed, let's look at the logs:
 
 ![project_level_dbt_test_2](assets/project_level_dbt_test_2.png)
 
 So, here we manage to run and test `dbt` models, but one main problem with this approach is that in case any model fails, the task will fail and we should reexecute all the models again after solving the issue with the one that failed. This could be very expensive in time to rebuild all the defined tables.
 
-### DAG at a model level
+### DAG with dbt at a model level
 We can try instead, of creating one task per defined model, and one task per defined test. We did this on `model_level_dbt_dag` DAG.
 
 To accomplish this, we are going to use the `manifest.json` stored on the `target` directory inside the `dbt` project. In this way we are going to parse all the defined models and tests, and create one task per each. This implementation is based on the following [Astronomer's post](https://www.astronomer.io/guides/airflow-dbt/).
@@ -225,10 +233,10 @@ This task is responsible of executing the following command:
 Generating the `.html` file that is hosted on `localhost:80`.
 
 
-### DAG at a model level with Great Expectations
+### DAG with dbt at a model level with Great Expectations
 Of course we can rely on `dbt`'s testing suite to create more complex tests, such as the one we created on `jaffle_shop/tests/assert_positive_total_for_payments.sql`, but what if we want to use `Great Expectations` library? How can we include it on our current project?
 
-For this, we created the `model_level_dbt_great_expectations_dag` adding som tasks to the previous DAG. We are going to use the `GreatExpectationsOperator` that we can find on the `airflow-provider-great-expectations` library. Here I decided to split the `Great Expectations` validations in 2: *sources* and *targets*. The *sources* validations we are going to execute them at the beginning of the DAG, and the *targets* validations, at the end, after running the `dbt` models.
+For this, we created the `model_level_dbt_great_expectations_dag` adding some tasks to the previous DAG. We are going to use the `GreatExpectationsOperator` that we can find on the `airflow-provider-great-expectations` library. Here I decided to split the `Great Expectations` validations in 2: *sources* and *targets*. The *sources* validations we are going to execute them at the beginning of the DAG, and the *targets* validations, at the end, after running the `dbt` models.
 
 ![great_expectations_dag](assets/great_expectations_dag.png)
 
@@ -241,6 +249,8 @@ When executing `targets.dev__fct_customer_orders` we can see the logs to check t
 ![great_expectations_dag_targets](assets/great_expectations_dag_targets.png)
 
 To further understand how to create the *Expectations*, you can check my [great-expectations-postgres-tutorial](https://github.com/luchonaveiro/great-expectations-postgres-tutorial) repository.
+
+But basically, we can find all the defined validations on the `great_expectations` directory. There I defined different expectations for diffeernet tables: `jaffle_shop.customers`, `jaffle_shop.orders`, `stripe.payment` and `dev.fct_customer_orders`. The expectations defined are in charge of validating the columns data types, uniqueness and not null values of the tables primary key.
 
 Here, also we added another `nginx` server to host the `Great Expectations` documentation, we can go to `localhost:81` and see the runs results and the defined validations on each table.
 

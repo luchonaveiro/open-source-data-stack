@@ -44,7 +44,6 @@ class DbtDagParser:
         # Parse the manifest and populate the two task groups
         self.make_dbt_task_groups()
 
-
     def load_dbt_manifest(self):
         """
         Helper function to load the dbt manifest file.
@@ -54,7 +53,6 @@ class DbtDagParser:
         with open(manifest_path) as f:
             file_content = json.load(f)
         return file_content
-
 
     def make_dbt_task(self, node_name, manifest_json, dbt_verb):
         """
@@ -83,7 +81,7 @@ class DbtDagParser:
             )
 
         elif dbt_verb == "test":
-            test_name = manifest_json['nodes'][node_name]['name']
+            test_name = manifest_json["nodes"][node_name]["name"]
             task_group = self.dbt_test_group
 
             dbt_task = BashOperator(
@@ -119,7 +117,9 @@ class DbtDagParser:
                 # Only use nodes with the right tag, if tag is specified
                 if (self.dbt_tag and self.dbt_tag in tags) or not self.dbt_tag:
                     # Make the run nodes
-                    dbt_tasks[node_name] = self.make_dbt_task(node_name, manifest_json, "run")
+                    dbt_tasks[node_name] = self.make_dbt_task(
+                        node_name, manifest_json, "run"
+                    )
 
             elif node_name.split(".")[0] == "test":
                 tags = manifest_json["nodes"][node_name]["tags"]
@@ -127,7 +127,9 @@ class DbtDagParser:
                 if (self.dbt_tag and self.dbt_tag in tags) or not self.dbt_tag:
                     # Make the test nodes
                     node_test = node_name.replace("model", "test")
-                    dbt_tasks[node_test] = self.make_dbt_task(node_name, manifest_json, "test")
+                    dbt_tasks[node_test] = self.make_dbt_task(
+                        node_name, manifest_json, "test"
+                    )
 
         # Add upstream and downstream dependencies for each run task
         for node_name in manifest_json["nodes"].keys():
@@ -135,7 +137,9 @@ class DbtDagParser:
                 tags = manifest_json["nodes"][node_name]["tags"]
                 # Only use nodes with the right tag, if tag is specified
                 if (self.dbt_tag and self.dbt_tag in tags) or not self.dbt_tag:
-                    for upstream_node in manifest_json["nodes"][node_name]["depends_on"]["nodes"]:
+                    for upstream_node in manifest_json["nodes"][node_name][
+                        "depends_on"
+                    ]["nodes"]:
                         upstream_node_type = upstream_node.split(".")[0]
                         if upstream_node_type == "model":
                             dbt_tasks[upstream_node] >> dbt_tasks[node_name]

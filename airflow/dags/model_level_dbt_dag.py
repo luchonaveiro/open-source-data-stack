@@ -5,10 +5,10 @@ from airflow.utils.task_group import TaskGroup
 from airflow.utils.dates import datetime, timedelta
 from dbt_dag_parser_v2 import DbtDagParser
 
-DAG_ID = 'model_level_dbt_dag'
-DAG_OWNER = 'luciano.naveiro'
+DAG_ID = "model_level_dbt_dag"
+DAG_OWNER = "luciano.naveiro"
 
-DBT_PROJECT_PATH = '/opt/dbt/jaffle_shop'
+DBT_PROJECT_PATH = "/opt/dbt/jaffle_shop"
 DBT_GLOBAL_CLI_FLAGS = "--no-write-json"
 DBT_TARGET = "dev"
 
@@ -35,27 +35,30 @@ with DAG(
     start_test_dbt_dummy = DummyOperator(task_id="start_test_dbt")
 
     # Validate taskgroups
-    validate_taskgroup = TaskGroup('dbt_validate')
+    validate_taskgroup = TaskGroup("dbt_validate")
     dbt_debug = BashOperator(
-        task_id='dbt_debug',
+        task_id="dbt_debug",
         task_group=validate_taskgroup,
         bash_command=f"""
         dbt debug --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
-        """)
+        """,
+    )
 
     dbt_parse = BashOperator(
-        task_id='dbt_parse',
+        task_id="dbt_parse",
         task_group=validate_taskgroup,
         bash_command=f"""
         dbt parse --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
-        """)
+        """,
+    )
 
     dbt_compile = BashOperator(
-        task_id='dbt_compile',
+        task_id="dbt_compile",
         task_group=validate_taskgroup,
         bash_command=f"""
         dbt compile --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
-        """)
+        """,
+    )
 
     start_dummy >> dbt_debug >> dbt_parse >> dbt_compile >> start_run_dbt_dummy
 
@@ -70,14 +73,13 @@ with DAG(
     dbt_run_group = dag_parser.get_dbt_run_group()
     dbt_test_group = dag_parser.get_dbt_test_group()
 
-    start_run_dbt_dummy >> dbt_run_group >> start_test_dbt_dummy >> dbt_test_group 
+    start_run_dbt_dummy >> dbt_run_group >> start_test_dbt_dummy >> dbt_test_group
 
     dbt_docs = BashOperator(
-        task_id='dbt_docs',
+        task_id="dbt_docs",
         bash_command=f"""
         dbt docs generate --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
-        """)
+        """,
+    )
 
     dbt_test_group >> dbt_docs >> end_dummy
-
-

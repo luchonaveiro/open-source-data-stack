@@ -5,10 +5,10 @@ from airflow.operators.bash_operator import BashOperator
 from airflow.utils.dates import datetime
 from airflow.utils.dates import timedelta
 
-DAG_ID = 'project_level_dbt_dag'
-DAG_OWNER = 'luciano.naveiro'
+DAG_ID = "project_level_dbt_dag"
+DAG_OWNER = "luciano.naveiro"
 
-DBT_PROJECT_PATH = '/opt/dbt/jaffle_shop'
+DBT_PROJECT_PATH = "/opt/dbt/jaffle_shop"
 
 default_args = {
     "owner": DAG_OWNER,
@@ -20,10 +20,10 @@ default_args = {
 with DAG(
     DAG_ID,
     start_date=datetime(2021, 12, 23),
-    description='An Airflow DAG to invoke simple dbt commands',
+    description="An Airflow DAG to invoke simple dbt commands",
     schedule_interval=timedelta(days=1),
     default_args=default_args,
-    catchup=False
+    catchup=False,
 ) as dag:
 
     dbt_run = BashOperator(

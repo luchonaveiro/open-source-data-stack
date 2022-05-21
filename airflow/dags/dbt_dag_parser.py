@@ -66,7 +66,9 @@ class DbtDagParser:
 
         model_name = node_name.split(".")[-1]
         if dbt_verb == "test":
-            node_name = node_name.replace("model", "test")  # Just a cosmetic renaming of the task
+            node_name = node_name.replace(
+                "model", "test"
+            )  # Just a cosmetic renaming of the task
             task_group = self.dbt_test_group
         else:
             task_group = self.dbt_run_group
@@ -112,7 +114,9 @@ class DbtDagParser:
                 tags = manifest_json["nodes"][node_name]["tags"]
                 # Only use nodes with the right tag, if tag is specified
                 if (self.dbt_tag and self.dbt_tag in tags) or not self.dbt_tag:
-                    for upstream_node in manifest_json["nodes"][node_name]["depends_on"]["nodes"]:
+                    for upstream_node in manifest_json["nodes"][node_name][
+                        "depends_on"
+                    ]["nodes"]:
                         upstream_node_type = upstream_node.split(".")[0]
                         if upstream_node_type == "model":
                             dbt_tasks[upstream_node] >> dbt_tasks[node_name]
