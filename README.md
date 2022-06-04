@@ -295,3 +295,4 @@ Once created, we can start creating charts to create our **Jaffle Shop** dashboa
 Also we are going to create a filter, to filter by **Customer ID** in case we want to. In this way, we have created our **Jaffle Shop** dashboard.
 
 ![superset_jaffle_shop_dahsboard](assets/superset_jaffle_shop_dahsboard.png)
+
