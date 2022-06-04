@@ -1,0 +1,36 @@
+[2022-06-04 20:28:14,876] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_validate.dbt_parse scheduled__2022-06-03T02:53:52.617168+00:00 [queued]>
+[2022-06-04 20:28:14,888] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_validate.dbt_parse scheduled__2022-06-03T02:53:52.617168+00:00 [queued]>
+[2022-06-04 20:28:14,889] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 20:28:14,890] {taskinstance.py:1242} INFO - Starting attempt 4 of 7
+[2022-06-04 20:28:14,891] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 20:28:14,905] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_validate.dbt_parse> on 2022-06-03 02:53:52.617168+00:00
+[2022-06-04 20:28:14,910] {standard_task_runner.py:52} INFO - Started process 270 to run task
+[2022-06-04 20:28:14,915] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_dag', 'dbt_validate.dbt_parse', 'scheduled__2022-06-03T02:53:52.617168+00:00', '--job-id', '275', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_dag.py', '--cfg-path', '/tmp/tmpflwma3ic', '--error-file', '/tmp/tmpu5tffc4g']
+[2022-06-04 20:28:14,916] {standard_task_runner.py:77} INFO - Job 275: Subtask dbt_validate.dbt_parse
+[2022-06-04 20:28:14,966] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_dag.dbt_validate.dbt_parse scheduled__2022-06-03T02:53:52.617168+00:00 [running]> on host 0c1ca7618279
+[2022-06-04 20:28:15,020] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_dag
+AIRFLOW_CTX_TASK_ID=dbt_validate.dbt_parse
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T02:53:52.617168+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T02:53:52.617168+00:00
+[2022-06-04 20:28:15,022] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-04 20:28:15,024] {subprocess.py:74} INFO - Running command: ['bash', '-c', '\n        dbt parse --profiles-dir /opt/dbt/jaffle_shop --project-dir /opt/dbt/jaffle_shop\n        ']
+[2022-06-04 20:28:15,035] {subprocess.py:85} INFO - Output:
+[2022-06-04 20:28:18,617] {subprocess.py:89} INFO - 20:28:18  Running with dbt=1.1.0
+[2022-06-04 20:28:18,638] {subprocess.py:89} INFO - 20:28:18  Start parsing.
+[2022-06-04 20:28:18,664] {subprocess.py:89} INFO - 20:28:18  Dependencies loaded
+[2022-06-04 20:28:18,687] {subprocess.py:89} INFO - 20:28:18  ManifestLoader created
+[2022-06-04 20:28:18,735] {subprocess.py:89} INFO - 20:28:18  Manifest loaded
+[2022-06-04 20:28:18,737] {subprocess.py:89} INFO - 20:28:18  Manifest checked
+[2022-06-04 20:28:18,741] {subprocess.py:89} INFO - 20:28:18  Flat graph built
+[2022-06-04 20:28:18,743] {subprocess.py:89} INFO - 20:28:18  Manifest loaded
+[2022-06-04 20:28:18,748] {subprocess.py:89} INFO - 20:28:18  Performance info: target/perf_info.json
+[2022-06-04 20:28:18,750] {subprocess.py:89} INFO - 20:28:18  Done.
+[2022-06-04 20:28:19,695] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-06-04 20:28:19,735] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=model_level_dbt_dag, task_id=dbt_validate.dbt_parse, execution_date=20220603T025352, start_date=20220604T202814, end_date=20220604T202819
+[2022-06-04 20:28:19,776] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-04 20:28:19,918] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -478,3 +478,173 @@
 [2022-06-04 03:32:56,570] {logging_mixin.py:109} INFO - [2022-06-04 03:32:56,570] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
 [2022-06-04 03:32:56,621] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
 [2022-06-04 03:32:56,628] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.074 seconds
+[2022-06-04 20:25:25,933] {processor.py:163} INFO - Started process (PID=42) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:25:25,937] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:25:25,939] {logging_mixin.py:109} INFO - [2022-06-04 20:25:25,939] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:25:26,027] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:25:26,036] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.124 seconds
+[2022-06-04 20:25:56,469] {processor.py:163} INFO - Started process (PID=72) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:25:56,471] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:25:56,473] {logging_mixin.py:109} INFO - [2022-06-04 20:25:56,472] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:25:56,509] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:25:56,516] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.050 seconds
+[2022-06-04 20:26:26,869] {processor.py:163} INFO - Started process (PID=102) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:26:26,871] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:26:26,872] {logging_mixin.py:109} INFO - [2022-06-04 20:26:26,872] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:26:26,901] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:26:26,904] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.038 seconds
+[2022-06-04 20:26:57,160] {processor.py:163} INFO - Started process (PID=146) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:26:57,162] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:26:57,163] {logging_mixin.py:109} INFO - [2022-06-04 20:26:57,163] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:26:57,195] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:26:57,200] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.044 seconds
+[2022-06-04 20:27:27,449] {processor.py:163} INFO - Started process (PID=177) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:27:27,453] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:27:27,456] {logging_mixin.py:109} INFO - [2022-06-04 20:27:27,455] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:27:27,505] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:27:27,511] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.070 seconds
+[2022-06-04 20:27:57,995] {processor.py:163} INFO - Started process (PID=210) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:27:57,999] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:27:58,001] {logging_mixin.py:109} INFO - [2022-06-04 20:27:58,001] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:27:58,083] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:27:58,097] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.107 seconds
+[2022-06-04 20:28:28,209] {processor.py:163} INFO - Started process (PID=258) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:28:28,212] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:28:28,214] {logging_mixin.py:109} INFO - [2022-06-04 20:28:28,214] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:28:28,247] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:28:28,252] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.047 seconds
+[2022-06-04 20:28:58,846] {processor.py:163} INFO - Started process (PID=299) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:28:58,853] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:28:58,858] {logging_mixin.py:109} INFO - [2022-06-04 20:28:58,857] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:28:58,978] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:28:58,993] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.156 seconds
+[2022-06-04 20:29:29,552] {processor.py:163} INFO - Started process (PID=325) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:29:29,556] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:29:29,558] {logging_mixin.py:109} INFO - [2022-06-04 20:29:29,558] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:29:29,619] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:29:29,625] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.078 seconds
+[2022-06-04 20:29:59,850] {processor.py:163} INFO - Started process (PID=360) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:29:59,855] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:29:59,857] {logging_mixin.py:109} INFO - [2022-06-04 20:29:59,857] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:29:59,900] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:29:59,905] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.060 seconds
+[2022-06-04 20:30:30,315] {processor.py:163} INFO - Started process (PID=391) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:30:30,317] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:30:30,319] {logging_mixin.py:109} INFO - [2022-06-04 20:30:30,319] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:30:30,378] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:30:30,389] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.080 seconds
+[2022-06-04 20:31:00,794] {processor.py:163} INFO - Started process (PID=433) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:31:00,797] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:31:00,799] {logging_mixin.py:109} INFO - [2022-06-04 20:31:00,799] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:31:00,833] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:31:00,837] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.048 seconds
+[2022-06-04 20:31:31,180] {processor.py:163} INFO - Started process (PID=465) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:31:31,183] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:31:31,185] {logging_mixin.py:109} INFO - [2022-06-04 20:31:31,184] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:31:31,218] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:31:31,223] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.047 seconds
+[2022-06-04 20:32:01,509] {processor.py:163} INFO - Started process (PID=497) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:32:01,517] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:32:01,520] {logging_mixin.py:109} INFO - [2022-06-04 20:32:01,519] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:32:01,556] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:32:01,560] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.061 seconds
+[2022-06-04 20:32:31,788] {processor.py:163} INFO - Started process (PID=540) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:32:31,791] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:32:31,792] {logging_mixin.py:109} INFO - [2022-06-04 20:32:31,792] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:32:31,823] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:32:31,827] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.043 seconds
+[2022-06-04 20:33:02,055] {processor.py:163} INFO - Started process (PID=571) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:33:02,058] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:33:02,060] {logging_mixin.py:109} INFO - [2022-06-04 20:33:02,060] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:33:02,106] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:33:02,114] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.065 seconds
+[2022-06-04 20:33:32,346] {processor.py:163} INFO - Started process (PID=615) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:33:32,348] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:33:32,351] {logging_mixin.py:109} INFO - [2022-06-04 20:33:32,351] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:33:32,384] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:33:32,390] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.048 seconds
+[2022-06-04 20:34:02,679] {processor.py:163} INFO - Started process (PID=650) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:34:02,681] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:34:02,683] {logging_mixin.py:109} INFO - [2022-06-04 20:34:02,682] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:34:02,713] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:34:02,717] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.042 seconds
+[2022-06-04 20:34:33,011] {processor.py:163} INFO - Started process (PID=682) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:34:33,013] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:34:33,015] {logging_mixin.py:109} INFO - [2022-06-04 20:34:33,015] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:34:33,047] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:34:33,053] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.046 seconds
+[2022-06-04 20:35:03,243] {processor.py:163} INFO - Started process (PID=706) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:35:03,247] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:35:03,248] {logging_mixin.py:109} INFO - [2022-06-04 20:35:03,248] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:35:03,303] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:35:03,309] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.070 seconds
+[2022-06-04 20:35:33,799] {processor.py:163} INFO - Started process (PID=746) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:35:33,802] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:35:33,805] {logging_mixin.py:109} INFO - [2022-06-04 20:35:33,804] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:35:33,854] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:35:33,861] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.069 seconds
+[2022-06-04 20:36:04,101] {processor.py:163} INFO - Started process (PID=780) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:36:04,104] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:36:04,105] {logging_mixin.py:109} INFO - [2022-06-04 20:36:04,105] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:36:04,137] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:36:04,141] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.044 seconds
+[2022-06-04 20:36:34,458] {processor.py:163} INFO - Started process (PID=814) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:36:34,465] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:36:34,469] {logging_mixin.py:109} INFO - [2022-06-04 20:36:34,469] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:36:34,509] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:36:34,515] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.061 seconds
+[2022-06-04 20:37:04,647] {processor.py:163} INFO - Started process (PID=860) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:37:04,657] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:37:04,659] {logging_mixin.py:109} INFO - [2022-06-04 20:37:04,659] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:37:04,697] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:37:04,702] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.061 seconds
+[2022-06-04 20:37:34,884] {processor.py:163} INFO - Started process (PID=895) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:37:34,888] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:37:34,889] {logging_mixin.py:109} INFO - [2022-06-04 20:37:34,889] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:37:34,940] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:37:34,949] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.069 seconds
+[2022-06-04 20:38:05,176] {processor.py:163} INFO - Started process (PID=928) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:38:05,178] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:38:05,180] {logging_mixin.py:109} INFO - [2022-06-04 20:38:05,180] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:38:05,212] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:38:05,217] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.045 seconds
+[2022-06-04 20:38:35,452] {processor.py:163} INFO - Started process (PID=961) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:38:35,455] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:38:35,456] {logging_mixin.py:109} INFO - [2022-06-04 20:38:35,456] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:38:35,506] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:38:35,518] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.070 seconds
+[2022-06-04 20:39:05,993] {processor.py:163} INFO - Started process (PID=1001) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:39:05,996] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:39:05,998] {logging_mixin.py:109} INFO - [2022-06-04 20:39:05,998] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:39:06,038] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:39:06,043] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.064 seconds
+[2022-06-04 20:39:36,273] {processor.py:163} INFO - Started process (PID=1036) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:39:36,275] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:39:36,277] {logging_mixin.py:109} INFO - [2022-06-04 20:39:36,277] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:39:36,326] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:39:36,333] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.065 seconds
+[2022-06-04 20:40:06,723] {processor.py:163} INFO - Started process (PID=1073) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:40:06,725] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:40:06,726] {logging_mixin.py:109} INFO - [2022-06-04 20:40:06,726] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:40:06,752] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:40:06,756] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.036 seconds
+[2022-06-04 20:40:37,594] {processor.py:163} INFO - Started process (PID=1117) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:40:37,596] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:40:37,597] {logging_mixin.py:109} INFO - [2022-06-04 20:40:37,597] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:40:37,624] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:40:37,627] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.036 seconds
+[2022-06-04 20:41:07,995] {processor.py:163} INFO - Started process (PID=1160) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:41:07,997] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:41:07,998] {logging_mixin.py:109} INFO - [2022-06-04 20:41:07,998] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:41:08,026] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:41:08,031] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.039 seconds
+[2022-06-04 20:41:38,350] {processor.py:163} INFO - Started process (PID=1192) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:41:38,353] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:41:38,356] {logging_mixin.py:109} INFO - [2022-06-04 20:41:38,355] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:41:38,385] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:41:38,390] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.048 seconds
+[2022-06-04 20:42:08,568] {processor.py:163} INFO - Started process (PID=1223) to work on /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:42:08,571] {processor.py:625} INFO - Processing file /opt/airflow/dags/dbt_dag_parser_v2.py for tasks to queue
+[2022-06-04 20:42:08,573] {logging_mixin.py:109} INFO - [2022-06-04 20:42:08,573] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:42:08,605] {processor.py:639} WARNING - No viable dags retrieved from /opt/airflow/dags/dbt_dag_parser_v2.py
+[2022-06-04 20:42:08,609] {processor.py:171} INFO - Processing /opt/airflow/dags/dbt_dag_parser_v2.py took 0.045 seconds

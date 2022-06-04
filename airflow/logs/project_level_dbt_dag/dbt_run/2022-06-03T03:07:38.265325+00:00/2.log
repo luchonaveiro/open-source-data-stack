@@ -1,0 +1,48 @@
+[2022-06-04 20:27:23,177] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: project_level_dbt_dag.dbt_run scheduled__2022-06-03T03:07:38.265325+00:00 [queued]>
+[2022-06-04 20:27:23,188] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: project_level_dbt_dag.dbt_run scheduled__2022-06-03T03:07:38.265325+00:00 [queued]>
+[2022-06-04 20:27:23,189] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 20:27:23,190] {taskinstance.py:1242} INFO - Starting attempt 2 of 5
+[2022-06-04 20:27:23,191] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 20:27:23,202] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_run> on 2022-06-03 03:07:38.265325+00:00
+[2022-06-04 20:27:23,207] {standard_task_runner.py:52} INFO - Started process 157 to run task
+[2022-06-04 20:27:23,211] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'project_level_dbt_dag', 'dbt_run', 'scheduled__2022-06-03T03:07:38.265325+00:00', '--job-id', '270', '--raw', '--subdir', 'DAGS_FOLDER/project_level_dbt_dag.py', '--cfg-path', '/tmp/tmpkhhjmcs6', '--error-file', '/tmp/tmp8otvogmm']
+[2022-06-04 20:27:23,212] {standard_task_runner.py:77} INFO - Job 270: Subtask dbt_run
+[2022-06-04 20:27:23,261] {logging_mixin.py:109} INFO - Running <TaskInstance: project_level_dbt_dag.dbt_run scheduled__2022-06-03T03:07:38.265325+00:00 [running]> on host 0c1ca7618279
+[2022-06-04 20:27:23,321] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=project_level_dbt_dag
+AIRFLOW_CTX_TASK_ID=dbt_run
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T03:07:38.265325+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T03:07:38.265325+00:00
+[2022-06-04 20:27:23,323] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-04 20:27:23,325] {subprocess.py:74} INFO - Running command: ['bash', '-c', '\n        dbt run --profiles-dir /opt/dbt/jaffle_shop --project-dir /opt/dbt/jaffle_shop\n        ']
+[2022-06-04 20:27:23,382] {subprocess.py:85} INFO - Output:
+[2022-06-04 20:27:26,901] {subprocess.py:89} INFO - 20:27:26  Running with dbt=1.1.0
+[2022-06-04 20:27:26,950] {subprocess.py:89} INFO - 20:27:26  Unable to do partial parsing because config vars, config profile, or config target have changed
+[2022-06-04 20:27:28,489] {subprocess.py:89} INFO - 20:27:28  Found 5 models, 14 tests, 0 snapshots, 0 analyses, 170 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[2022-06-04 20:27:28,498] {subprocess.py:89} INFO - 20:27:28
+[2022-06-04 20:27:28,842] {subprocess.py:89} INFO - 20:27:28  Concurrency: 1 threads (target='dev')
+[2022-06-04 20:27:28,844] {subprocess.py:89} INFO - 20:27:28
+[2022-06-04 20:27:28,861] {subprocess.py:89} INFO - 20:27:28  1 of 5 START view model dev.stg_jaffle_shop__customers ......................... [RUN]
+[2022-06-04 20:27:29,026] {subprocess.py:89} INFO - 20:27:29  1 of 5 OK created view model dev.stg_jaffle_shop__customers .................... [[32mCREATE VIEW[0m in 0.16s]
+[2022-06-04 20:27:29,038] {subprocess.py:89} INFO - 20:27:29  2 of 5 START view model dev.stg_jaffle_shop__orders ............................ [RUN]
+[2022-06-04 20:27:29,154] {subprocess.py:89} INFO - 20:27:29  2 of 5 OK created view model dev.stg_jaffle_shop__orders ....................... [[32mCREATE VIEW[0m in 0.11s]
+[2022-06-04 20:27:29,160] {subprocess.py:89} INFO - 20:27:29  3 of 5 START view model dev.stg_stripe__payments ............................... [RUN]
+[2022-06-04 20:27:29,255] {subprocess.py:89} INFO - 20:27:29  3 of 5 OK created view model dev.stg_stripe__payments .......................... [[32mCREATE VIEW[0m in 0.09s]
+[2022-06-04 20:27:29,261] {subprocess.py:89} INFO - 20:27:29  4 of 5 START view model dev.int_orders ......................................... [RUN]
+[2022-06-04 20:27:29,366] {subprocess.py:89} INFO - 20:27:29  4 of 5 OK created view model dev.int_orders .................................... [[32mCREATE VIEW[0m in 0.10s]
+[2022-06-04 20:27:29,376] {subprocess.py:89} INFO - 20:27:29  5 of 5 START table model dev.fct_customer_orders ............................... [RUN]
+[2022-06-04 20:27:29,545] {subprocess.py:89} INFO - 20:27:29  5 of 5 OK created table model dev.fct_customer_orders .......................... [[32mSELECT 99[0m in 0.16s]
+[2022-06-04 20:27:29,609] {subprocess.py:89} INFO - 20:27:29
+[2022-06-04 20:27:29,612] {subprocess.py:89} INFO - 20:27:29  Finished running 4 view models, 1 table model in 1.11s.
+[2022-06-04 20:27:29,642] {subprocess.py:89} INFO - 20:27:29
+[2022-06-04 20:27:29,644] {subprocess.py:89} INFO - 20:27:29  [32mCompleted successfully[0m
+[2022-06-04 20:27:29,647] {subprocess.py:89} INFO - 20:27:29
+[2022-06-04 20:27:29,650] {subprocess.py:89} INFO - 20:27:29  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[2022-06-04 20:27:30,879] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-06-04 20:27:30,914] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=project_level_dbt_dag, task_id=dbt_run, execution_date=20220603T030738, start_date=20220604T202723, end_date=20220604T202730
+[2022-06-04 20:27:30,948] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-04 20:27:30,987] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

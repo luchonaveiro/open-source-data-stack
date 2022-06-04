@@ -78,7 +78,7 @@ with DAG(
     dbt_docs = BashOperator(
         task_id="dbt_docs",
         bash_command=f"""
-        dbt docs generate --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
+        dbt docs generate --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH} --vars '{{"date": " {{{{ ds }}}} " }}'
         """,
     )
 

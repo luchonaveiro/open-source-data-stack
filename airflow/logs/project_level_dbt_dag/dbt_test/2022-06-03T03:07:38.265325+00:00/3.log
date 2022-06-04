@@ -1,0 +1,66 @@
+[2022-06-04 20:27:31,349] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: project_level_dbt_dag.dbt_test scheduled__2022-06-03T03:07:38.265325+00:00 [queued]>
+[2022-06-04 20:27:31,373] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: project_level_dbt_dag.dbt_test scheduled__2022-06-03T03:07:38.265325+00:00 [queued]>
+[2022-06-04 20:27:31,378] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 20:27:31,379] {taskinstance.py:1242} INFO - Starting attempt 3 of 6
+[2022-06-04 20:27:31,380] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 20:27:31,401] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_test> on 2022-06-03 03:07:38.265325+00:00
+[2022-06-04 20:27:31,408] {standard_task_runner.py:52} INFO - Started process 184 to run task
+[2022-06-04 20:27:31,412] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'project_level_dbt_dag', 'dbt_test', 'scheduled__2022-06-03T03:07:38.265325+00:00', '--job-id', '271', '--raw', '--subdir', 'DAGS_FOLDER/project_level_dbt_dag.py', '--cfg-path', '/tmp/tmpwv22aw1i', '--error-file', '/tmp/tmpy59u79ot']
+[2022-06-04 20:27:31,413] {standard_task_runner.py:77} INFO - Job 271: Subtask dbt_test
+[2022-06-04 20:27:31,458] {logging_mixin.py:109} INFO - Running <TaskInstance: project_level_dbt_dag.dbt_test scheduled__2022-06-03T03:07:38.265325+00:00 [running]> on host 0c1ca7618279
+[2022-06-04 20:27:31,516] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=project_level_dbt_dag
+AIRFLOW_CTX_TASK_ID=dbt_test
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T03:07:38.265325+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T03:07:38.265325+00:00
+[2022-06-04 20:27:31,519] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-04 20:27:31,520] {subprocess.py:74} INFO - Running command: ['bash', '-c', '\n        dbt test --profiles-dir /opt/dbt/jaffle_shop --project-dir /opt/dbt/jaffle_shop --vars \'{"date": " 2022-06-03 " }\'\n        ']
+[2022-06-04 20:27:31,541] {subprocess.py:85} INFO - Output:
+[2022-06-04 20:27:35,228] {subprocess.py:89} INFO - 20:27:35  Running with dbt=1.1.0
+[2022-06-04 20:27:35,268] {subprocess.py:89} INFO - 20:27:35  Unable to do partial parsing because config vars, config profile, or config target have changed
+[2022-06-04 20:27:36,302] {subprocess.py:89} INFO - 20:27:36  Found 5 models, 14 tests, 0 snapshots, 0 analyses, 170 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[2022-06-04 20:27:36,308] {subprocess.py:89} INFO - 20:27:36
+[2022-06-04 20:27:36,424] {subprocess.py:89} INFO - 20:27:36  Concurrency: 1 threads (target='dev')
+[2022-06-04 20:27:36,431] {subprocess.py:89} INFO - 20:27:36
+[2022-06-04 20:27:36,447] {subprocess.py:89} INFO - 20:27:36  1 of 14 START test accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed  [RUN]
+[2022-06-04 20:27:36,536] {subprocess.py:89} INFO - 20:27:36  1 of 14 PASS accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed  [[32mPASS[0m in 0.09s]
+[2022-06-04 20:27:36,540] {subprocess.py:89} INFO - 20:27:36  2 of 14 START test assert_positive_total_for_payments .......................... [RUN]
+[2022-06-04 20:27:36,581] {subprocess.py:89} INFO - 20:27:36  2 of 14 PASS assert_positive_total_for_payments ................................ [[32mPASS[0m in 0.04s]
+[2022-06-04 20:27:36,586] {subprocess.py:89} INFO - 20:27:36  3 of 14 START test assert_positive_total_for_payments_daily .................... [RUN]
+[2022-06-04 20:27:36,633] {subprocess.py:89} INFO - 20:27:36  3 of 14 PASS assert_positive_total_for_payments_daily .......................... [[32mPASS[0m in 0.04s]
+[2022-06-04 20:27:36,640] {subprocess.py:89} INFO - 20:27:36  4 of 14 START test not_null_stg_jaffle_shop__customers_customer_id ............. [RUN]
+[2022-06-04 20:27:36,703] {subprocess.py:89} INFO - 20:27:36  4 of 14 PASS not_null_stg_jaffle_shop__customers_customer_id ................... [[32mPASS[0m in 0.06s]
+[2022-06-04 20:27:36,707] {subprocess.py:89} INFO - 20:27:36  5 of 14 START test not_null_stg_jaffle_shop__orders_order_id ................... [RUN]
+[2022-06-04 20:27:36,756] {subprocess.py:89} INFO - 20:27:36  5 of 14 PASS not_null_stg_jaffle_shop__orders_order_id ......................... [[32mPASS[0m in 0.05s]
+[2022-06-04 20:27:36,760] {subprocess.py:89} INFO - 20:27:36  6 of 14 START test relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_  [RUN]
+[2022-06-04 20:27:36,814] {subprocess.py:89} INFO - 20:27:36  6 of 14 PASS relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_  [[32mPASS[0m in 0.05s]
+[2022-06-04 20:27:36,820] {subprocess.py:89} INFO - 20:27:36  7 of 14 START test source_not_null_jaffle_shop_customers_id .................... [RUN]
+[2022-06-04 20:27:36,875] {subprocess.py:89} INFO - 20:27:36  7 of 14 PASS source_not_null_jaffle_shop_customers_id .......................... [[32mPASS[0m in 0.05s]
+[2022-06-04 20:27:36,879] {subprocess.py:89} INFO - 20:27:36  8 of 14 START test source_not_null_jaffle_shop_orders_id ....................... [RUN]
+[2022-06-04 20:27:36,925] {subprocess.py:89} INFO - 20:27:36  8 of 14 PASS source_not_null_jaffle_shop_orders_id ............................. [[32mPASS[0m in 0.04s]
+[2022-06-04 20:27:36,929] {subprocess.py:89} INFO - 20:27:36  9 of 14 START test source_not_null_stripe_payment_id ........................... [RUN]
+[2022-06-04 20:27:36,980] {subprocess.py:89} INFO - 20:27:36  9 of 14 PASS source_not_null_stripe_payment_id ................................. [[32mPASS[0m in 0.05s]
+[2022-06-04 20:27:36,985] {subprocess.py:89} INFO - 20:27:36  10 of 14 START test source_unique_jaffle_shop_customers_id ..................... [RUN]
+[2022-06-04 20:27:37,039] {subprocess.py:89} INFO - 20:27:37  10 of 14 PASS source_unique_jaffle_shop_customers_id ........................... [[32mPASS[0m in 0.05s]
+[2022-06-04 20:27:37,046] {subprocess.py:89} INFO - 20:27:37  11 of 14 START test source_unique_jaffle_shop_orders_id ........................ [RUN]
+[2022-06-04 20:27:37,111] {subprocess.py:89} INFO - 20:27:37  11 of 14 PASS source_unique_jaffle_shop_orders_id .............................. [[32mPASS[0m in 0.06s]
+[2022-06-04 20:27:37,116] {subprocess.py:89} INFO - 20:27:37  12 of 14 START test source_unique_stripe_payment_id ............................ [RUN]
+[2022-06-04 20:27:37,171] {subprocess.py:89} INFO - 20:27:37  12 of 14 PASS source_unique_stripe_payment_id .................................. [[32mPASS[0m in 0.05s]
+[2022-06-04 20:27:37,178] {subprocess.py:89} INFO - 20:27:37  13 of 14 START test unique_stg_jaffle_shop__customers_customer_id .............. [RUN]
+[2022-06-04 20:27:37,249] {subprocess.py:89} INFO - 20:27:37  13 of 14 PASS unique_stg_jaffle_shop__customers_customer_id .................... [[32mPASS[0m in 0.07s]
+[2022-06-04 20:27:37,257] {subprocess.py:89} INFO - 20:27:37  14 of 14 START test unique_stg_jaffle_shop__orders_order_id .................... [RUN]
+[2022-06-04 20:27:37,317] {subprocess.py:89} INFO - 20:27:37  14 of 14 PASS unique_stg_jaffle_shop__orders_order_id .......................... [[32mPASS[0m in 0.06s]
+[2022-06-04 20:27:37,367] {subprocess.py:89} INFO - 20:27:37
+[2022-06-04 20:27:37,369] {subprocess.py:89} INFO - 20:27:37  Finished running 14 tests in 1.06s.
+[2022-06-04 20:27:37,389] {subprocess.py:89} INFO - 20:27:37
+[2022-06-04 20:27:37,391] {subprocess.py:89} INFO - 20:27:37  [32mCompleted successfully[0m
+[2022-06-04 20:27:37,393] {subprocess.py:89} INFO - 20:27:37
+[2022-06-04 20:27:37,395] {subprocess.py:89} INFO - 20:27:37  Done. PASS=14 WARN=0 ERROR=0 SKIP=0 TOTAL=14
+[2022-06-04 20:27:38,460] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-06-04 20:27:38,493] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=project_level_dbt_dag, task_id=dbt_test, execution_date=20220603T030738, start_date=20220604T202731, end_date=20220604T202738
+[2022-06-04 20:27:38,530] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-04 20:27:38,565] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -23373,3 +23373,622 @@ File Path                                                      PID  Runtime     
 ================================================================================
 [2022-06-04 03:32:59,556] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
 [2022-06-04 03:32:59,558] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 03:27:59.558006+00:00
+[2022-06-04 20:25:25,741] {manager.py:504} INFO - Processing files using up to 2 processes at a time 
+[2022-06-04 20:25:25,744] {manager.py:505} INFO - Process each file at most once every 30 seconds
+[2022-06-04 20:25:25,748] {manager.py:507} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2022-06-04 20:25:25,751] {manager.py:653} INFO - Searching for files in /opt/airflow/dags
+[2022-06-04 20:25:25,840] {manager.py:656} INFO - There are 5 files in /opt/airflow/dags
+[2022-06-04 20:25:25,906] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:25:25,912] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:20:25.911589+00:00
+[2022-06-04 20:25:26,075] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.18s           2022-06-04T20:25:26
+/opt/airflow/dags/model_level_dbt_dag.py                        43  0.18s             0           0
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           0           0
+/opt/airflow/dags/project_level_dbt_dag.py                                            0           0
+================================================================================
+[2022-06-04 20:25:36,189] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:25:36,203] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:20:36.202949+00:00
+[2022-06-04 20:25:46,412] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:25:46,413] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:20:46.413809+00:00
+[2022-06-04 20:25:56,444] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:25:56,446] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:20:56.446543+00:00
+[2022-06-04 20:25:56,461] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.19s           2022-06-04T20:25:27
+/opt/airflow/dags/dbt_dag_parser_v2.py                          72  0.00s             0           0  0.18s           2022-06-04T20:25:26
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  1.26s           2022-06-04T20:25:27
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  11.20s          2022-06-04T20:25:38
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.28s           2022-06-04T20:25:27
+================================================================================
+[2022-06-04 20:26:06,708] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:26:06,711] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:21:06.711613+00:00
+[2022-06-04 20:26:16,787] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:26:16,789] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:21:16.789723+00:00
+[2022-06-04 20:26:26,844] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:26:26,846] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:21:26.846268+00:00
+[2022-06-04 20:26:26,862] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.08s           2022-06-04T20:25:57
+/opt/airflow/dags/dbt_dag_parser_v2.py                         102  0.00s             0           0  0.07s           2022-06-04T20:25:56
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.25s           2022-06-04T20:25:57
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  5.04s           2022-06-04T20:26:13
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.21s           2022-06-04T20:25:57
+================================================================================
+[2022-06-04 20:26:37,032] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:26:37,036] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:21:37.036108+00:00
+[2022-06-04 20:26:47,092] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:26:47,095] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:21:47.095098+00:00
+[2022-06-04 20:26:57,132] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:26:57,134] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:21:57.134927+00:00
+[2022-06-04 20:26:57,151] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.08s           2022-06-04T20:26:28
+/opt/airflow/dags/dbt_dag_parser_v2.py                         146  0.00s             0           0  0.06s           2022-06-04T20:26:26
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.14s           2022-06-04T20:26:28
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.30s           2022-06-04T20:26:46
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.17s           2022-06-04T20:26:28
+================================================================================
+[2022-06-04 20:27:07,316] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:27:07,318] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:22:07.318147+00:00
+[2022-06-04 20:27:17,349] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:27:17,351] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:22:17.351570+00:00
+[2022-06-04 20:27:27,129] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.07s           2022-06-04T20:26:58
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.06s           2022-06-04T20:26:57
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.17s           2022-06-04T20:26:58
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.75s           2022-06-04T20:27:19
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.13s           2022-06-04T20:26:58
+================================================================================
+[2022-06-04 20:27:27,387] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:27:27,390] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:22:27.390594+00:00
+[2022-06-04 20:27:37,801] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:27:37,803] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:22:37.803912+00:00
+[2022-06-04 20:27:47,839] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:27:47,842] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:22:47.842024+00:00
+[2022-06-04 20:27:57,264] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.15s           2022-06-04T20:27:28
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.11s           2022-06-04T20:27:27
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.39s           2022-06-04T20:27:28
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.39s           2022-06-04T20:27:52
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.31s           2022-06-04T20:27:28
+================================================================================
+[2022-06-04 20:27:57,907] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:27:57,909] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:22:57.909820+00:00
+[2022-06-04 20:28:08,232] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:28:08,235] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:23:08.234986+00:00
+[2022-06-04 20:28:18,270] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:28:18,274] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:23:18.274669+00:00
+[2022-06-04 20:28:27,388] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.14s           2022-06-04T20:27:59
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.18s           2022-06-04T20:27:58
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.26s           2022-06-04T20:27:59
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  3.89s           2022-06-04T20:28:26
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.25s           2022-06-04T20:27:59
+================================================================================
+[2022-06-04 20:28:29,198] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:28:29,200] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:23:29.200538+00:00
+[2022-06-04 20:28:39,573] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:28:39,576] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:23:39.576198+00:00
+[2022-06-04 20:28:49,619] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:28:49,622] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:23:49.622400+00:00
+[2022-06-04 20:28:57,661] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.13s           2022-06-04T20:28:29
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.07s           2022-06-04T20:28:28
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.28s           2022-06-04T20:28:29
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py    294  1.01s             1           0  3.89s           2022-06-04T20:28:26
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.31s           2022-06-04T20:28:29
+================================================================================
+[2022-06-04 20:28:59,837] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:28:59,840] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:23:59.840754+00:00
+[2022-06-04 20:29:10,405] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:29:10,408] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:24:10.408318+00:00
+[2022-06-04 20:29:20,449] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:29:20,453] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:24:20.453100+00:00
+[2022-06-04 20:29:27,871] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.12s           2022-06-04T20:29:00
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.30s           2022-06-04T20:28:59
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.59s           2022-06-04T20:29:00
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  4.77s           2022-06-04T20:29:01
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.23s           2022-06-04T20:29:00
+================================================================================
+[2022-06-04 20:29:30,540] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:29:30,542] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:24:30.542277+00:00
+[2022-06-04 20:29:40,752] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:29:40,755] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:24:40.755395+00:00
+[2022-06-04 20:29:50,792] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:29:50,795] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:24:50.795234+00:00
+[2022-06-04 20:29:58,203] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.13s           2022-06-04T20:29:31
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.12s           2022-06-04T20:29:29
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.39s           2022-06-04T20:29:30
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  5.68s           2022-06-04T20:29:37
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.21s           2022-06-04T20:29:31
+================================================================================
+[2022-06-04 20:30:00,840] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:30:00,844] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:25:00.844036+00:00
+[2022-06-04 20:30:11,110] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:30:11,112] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:25:11.112597+00:00
+[2022-06-04 20:30:21,155] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:30:21,157] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:25:21.157543+00:00
+[2022-06-04 20:30:26,178] {manager.py:653} INFO - Searching for files in /opt/airflow/dags
+[2022-06-04 20:30:26,232] {manager.py:656} INFO - There are 5 files in /opt/airflow/dags
+[2022-06-04 20:30:28,274] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.08s           2022-06-04T20:30:02
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.08s           2022-06-04T20:29:59
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.16s           2022-06-04T20:30:02
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.18s           2022-06-04T20:30:10
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.17s           2022-06-04T20:30:02
+================================================================================
+[2022-06-04 20:30:31,304] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:30:31,312] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:25:31.312289+00:00
+[2022-06-04 20:30:41,639] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:30:41,641] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:25:41.641654+00:00
+[2022-06-04 20:30:51,718] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:30:51,722] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:25:51.722407+00:00
+[2022-06-04 20:30:58,753] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.10s           2022-06-04T20:30:32
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.11s           2022-06-04T20:30:30
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.26s           2022-06-04T20:30:32
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.16s           2022-06-04T20:30:42
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.27s           2022-06-04T20:30:32
+================================================================================
+[2022-06-04 20:31:01,827] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:31:01,830] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:26:01.830170+00:00
+[2022-06-04 20:31:12,073] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:31:12,076] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:26:12.075947+00:00
+[2022-06-04 20:31:22,119] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:31:22,122] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:26:22.122264+00:00
+[2022-06-04 20:31:29,152] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.09s           2022-06-04T20:31:03
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.09s           2022-06-04T20:31:00
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.23s           2022-06-04T20:31:03
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.18s           2022-06-04T20:31:15
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.16s           2022-06-04T20:31:02
+================================================================================
+[2022-06-04 20:31:32,136] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:31:32,139] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:26:32.139573+00:00
+[2022-06-04 20:31:42,404] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:31:42,406] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:26:42.406573+00:00
+[2022-06-04 20:31:52,451] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:31:52,453] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:26:52.453064+00:00
+[2022-06-04 20:31:59,479] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.09s           2022-06-04T20:31:33
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.07s           2022-06-04T20:31:31
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.21s           2022-06-04T20:31:33
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.23s           2022-06-04T20:31:47
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.13s           2022-06-04T20:31:33
+================================================================================
+[2022-06-04 20:32:02,536] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:32:02,538] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:27:02.538438+00:00
+[2022-06-04 20:32:12,679] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:32:12,684] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:27:12.684242+00:00
+[2022-06-04 20:32:22,731] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:32:22,732] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:27:22.732749+00:00
+[2022-06-04 20:32:29,761] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.09s           2022-06-04T20:32:03
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.08s           2022-06-04T20:32:01
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.19s           2022-06-04T20:32:03
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.30s           2022-06-04T20:32:20
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.12s           2022-06-04T20:32:03
+================================================================================
+[2022-06-04 20:32:32,744] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:32:32,746] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:27:32.746470+00:00
+[2022-06-04 20:32:42,948] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:32:42,952] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:27:42.952384+00:00
+[2022-06-04 20:32:53,015] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:32:53,019] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:27:53.019490+00:00
+[2022-06-04 20:33:00,056] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.07s           2022-06-04T20:32:33
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.03s           2022-06-04T20:32:31
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.15s           2022-06-04T20:32:33
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.60s           2022-06-04T20:32:53
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.15s           2022-06-04T20:32:33
+================================================================================
+[2022-06-04 20:33:03,128] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:33:03,133] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:28:03.133064+00:00
+[2022-06-04 20:33:13,330] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:33:13,332] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:28:13.332702+00:00
+[2022-06-04 20:33:23,376] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:33:23,379] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:28:23.379212+00:00
+[2022-06-04 20:33:30,080] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.12s           2022-06-04T20:33:04
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.10s           2022-06-04T20:33:02
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.69s           2022-06-04T20:33:16
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.29s           2022-06-04T20:33:26
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.16s           2022-06-04T20:33:04
+================================================================================
+[2022-06-04 20:33:33,405] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:33:33,407] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:28:33.407016+00:00
+[2022-06-04 20:33:43,529] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:33:43,532] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:28:43.532165+00:00
+[2022-06-04 20:33:53,667] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:33:53,670] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:28:53.670787+00:00
+[2022-06-04 20:34:00,687] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.16s           2022-06-04T20:33:34
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.08s           2022-06-04T20:33:32
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.13s           2022-06-04T20:33:46
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.99s           2022-06-04T20:33:59
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.27s           2022-06-04T20:33:34
+================================================================================
+[2022-06-04 20:34:03,728] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:34:03,731] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:29:03.731568+00:00
+[2022-06-04 20:34:13,787] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:34:13,790] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:29:13.790625+00:00
+[2022-06-04 20:34:23,848] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:34:23,851] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:29:23.851056+00:00
+[2022-06-04 20:34:30,886] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                      PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.07s           2022-06-04T20:34:04
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.06s           2022-06-04T20:34:02
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.19s           2022-06-04T20:34:16
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py    674  1.01s             1           0  2.99s           2022-06-04T20:33:59
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.12s           2022-06-04T20:34:04
+================================================================================
+[2022-06-04 20:34:34,006] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:34:34,009] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:29:34.009039+00:00
+[2022-06-04 20:34:44,143] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:34:44,145] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:29:44.145631+00:00
+[2022-06-04 20:34:54,216] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:34:54,218] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:29:54.218224+00:00
+[2022-06-04 20:35:01,253] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.09s           2022-06-04T20:34:35
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.07s           2022-06-04T20:34:33
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.14s           2022-06-04T20:34:47
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.53s           2022-06-04T20:34:32
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.15s           2022-06-04T20:34:35
+================================================================================
+[2022-06-04 20:35:04,309] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:35:04,311] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:30:04.311788+00:00
+[2022-06-04 20:35:14,661] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:35:14,664] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:30:14.664834+00:00
+[2022-06-04 20:35:24,710] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:35:24,713] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:30:24.713097+00:00
+[2022-06-04 20:35:26,738] {manager.py:653} INFO - Searching for files in /opt/airflow/dags
+[2022-06-04 20:35:26,768] {manager.py:656} INFO - There are 5 files in /opt/airflow/dags
+[2022-06-04 20:35:31,769] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.12s           2022-06-04T20:35:05
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.09s           2022-06-04T20:35:03
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.22s           2022-06-04T20:35:17
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.77s           2022-06-04T20:35:05
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.16s           2022-06-04T20:35:05
+================================================================================
+[2022-06-04 20:35:34,784] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:35:34,787] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:30:34.787618+00:00
+[2022-06-04 20:35:44,939] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:35:44,942] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:30:44.942126+00:00
+[2022-06-04 20:35:55,078] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:35:55,080] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:30:55.080578+00:00
+[2022-06-04 20:36:02,076] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.07s           2022-06-04T20:35:35
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.09s           2022-06-04T20:35:33
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.15s           2022-06-04T20:35:48
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.15s           2022-06-04T20:35:39
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.12s           2022-06-04T20:35:35
+================================================================================
+[2022-06-04 20:36:05,106] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:36:05,109] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:31:05.109335+00:00
+[2022-06-04 20:36:15,283] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:36:15,286] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:31:15.286433+00:00
+[2022-06-04 20:36:25,431] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:36:25,435] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:31:25.435727+00:00
+[2022-06-04 20:36:32,435] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.09s           2022-06-04T20:36:06
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.06s           2022-06-04T20:36:04
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.24s           2022-06-04T20:36:18
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.17s           2022-06-04T20:36:11
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.14s           2022-06-04T20:36:06
+================================================================================
+[2022-06-04 20:36:35,526] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:36:35,528] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:31:35.528742+00:00
+[2022-06-04 20:36:45,554] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:36:45,557] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:31:45.557776+00:00
+[2022-06-04 20:36:55,622] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:36:55,625] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:31:55.625869+00:00
+[2022-06-04 20:37:02,623] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.07s           2022-06-04T20:36:36
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.08s           2022-06-04T20:36:34
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.31s           2022-06-04T20:36:48
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.01s           2022-06-04T20:36:43
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.14s           2022-06-04T20:36:36
+================================================================================
+[2022-06-04 20:37:05,715] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:37:05,718] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:32:05.718424+00:00
+[2022-06-04 20:37:15,778] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:37:15,788] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:32:15.788508+00:00
+[2022-06-04 20:37:25,851] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:37:25,856] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:32:25.856112+00:00
+[2022-06-04 20:37:32,862] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.07s           2022-06-04T20:37:06
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.08s           2022-06-04T20:37:04
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.58s           2022-06-04T20:37:19
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  6.09s           2022-06-04T20:37:19
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.16s           2022-06-04T20:37:06
+================================================================================
+[2022-06-04 20:37:35,874] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:37:35,877] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:32:35.877084+00:00
+[2022-06-04 20:37:46,037] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:37:46,041] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:32:46.041621+00:00
+[2022-06-04 20:37:56,152] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:37:56,155] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:32:56.155101+00:00
+[2022-06-04 20:38:03,153] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.11s           2022-06-04T20:37:37
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.10s           2022-06-04T20:37:34
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.36s           2022-06-04T20:37:50
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  3.14s           2022-06-04T20:37:53
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.21s           2022-06-04T20:37:37
+================================================================================
+[2022-06-04 20:38:06,213] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:38:06,217] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:33:06.217258+00:00
+[2022-06-04 20:38:16,391] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:38:16,393] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:33:16.393712+00:00
+[2022-06-04 20:38:26,436] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:38:26,440] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:33:26.440003+00:00
+[2022-06-04 20:38:33,431] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.12s           2022-06-04T20:38:07
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.06s           2022-06-04T20:38:05
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.27s           2022-06-04T20:38:21
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.25s           2022-06-04T20:38:25
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.13s           2022-06-04T20:38:07
+================================================================================
+[2022-06-04 20:38:36,541] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:38:36,544] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:33:36.544272+00:00
+[2022-06-04 20:38:46,591] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:38:46,595] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:33:46.595803+00:00
+[2022-06-04 20:38:56,649] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:38:56,651] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:33:56.651205+00:00
+[2022-06-04 20:39:03,463] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.07s           2022-06-04T20:38:37
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.10s           2022-06-04T20:38:35
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.36s           2022-06-04T20:38:52
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.51s           2022-06-04T20:38:58
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.13s           2022-06-04T20:38:37
+================================================================================
+[2022-06-04 20:39:06,974] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:39:06,976] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:34:06.976128+00:00
+[2022-06-04 20:39:17,135] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:39:17,137] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:34:17.137369+00:00
+[2022-06-04 20:39:27,236] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:39:27,244] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:34:27.244481+00:00
+[2022-06-04 20:39:34,244] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.13s           2022-06-04T20:39:08
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.09s           2022-06-04T20:39:06
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.27s           2022-06-04T20:39:23
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.99s           2022-06-04T20:39:15
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.20s           2022-06-04T20:39:08
+================================================================================
+[2022-06-04 20:39:37,262] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:39:37,264] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:34:37.264092+00:00
+[2022-06-04 20:39:47,407] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:39:47,412] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:34:47.411964+00:00
+[2022-06-04 20:39:57,690] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:39:57,697] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:34:57.697520+00:00
+[2022-06-04 20:40:04,695] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.09s           2022-06-04T20:39:38
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.09s           2022-06-04T20:39:36
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.24s           2022-06-04T20:39:53
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  3.29s           2022-06-04T20:39:48
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.26s           2022-06-04T20:39:38
+================================================================================
+[2022-06-04 20:40:07,715] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:40:07,722] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:35:07.721993+00:00
+[2022-06-04 20:40:17,861] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:40:17,863] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:35:17.863816+00:00
+[2022-06-04 20:40:27,434] {manager.py:653} INFO - Searching for files in /opt/airflow/dags
+[2022-06-04 20:40:27,510] {manager.py:656} INFO - There are 5 files in /opt/airflow/dags
+[2022-06-04 20:40:28,576] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:40:28,577] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:35:28.577884+00:00
+[2022-06-04 20:40:35,575] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.09s           2022-06-04T20:40:08
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.05s           2022-06-04T20:40:06
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.44s           2022-06-04T20:40:24
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.53s           2022-06-04T20:40:21
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.31s           2022-06-04T20:40:09
+================================================================================
+[2022-06-04 20:40:38,642] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:40:38,645] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:35:38.644950+00:00
+[2022-06-04 20:40:48,742] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:40:48,746] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:35:48.746692+00:00
+[2022-06-04 20:40:58,973] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:40:58,976] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:35:58.976547+00:00
+[2022-06-04 20:41:05,974] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.13s           2022-06-04T20:40:39
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.06s           2022-06-04T20:40:37
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.37s           2022-06-04T20:40:54
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.82s           2022-06-04T20:40:54
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.34s           2022-06-04T20:40:39
+================================================================================
+[2022-06-04 20:41:09,041] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:41:09,044] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:36:09.044600+00:00
+[2022-06-04 20:41:19,182] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:41:19,185] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:36:19.185464+00:00
+[2022-06-04 20:41:29,331] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:41:29,333] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:36:29.333746+00:00
+[2022-06-04 20:41:36,324] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.15s           2022-06-04T20:41:10
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.06s           2022-06-04T20:41:08
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.38s           2022-06-04T20:41:25
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  2.11s           2022-06-04T20:41:27
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.30s           2022-06-04T20:41:10
+================================================================================
+[2022-06-04 20:41:39,401] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:41:39,403] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:36:39.403292+00:00
+[2022-06-04 20:41:49,483] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:41:49,485] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:36:49.485401+00:00
+[2022-06-04 20:41:59,542] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:41:59,544] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:36:59.544772+00:00
+[2022-06-04 20:42:06,537] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_dag_parser.py                                                   0           0  0.11s           2022-06-04T20:41:40
+/opt/airflow/dags/dbt_dag_parser_v2.py                                                0           0  0.07s           2022-06-04T20:41:38
+/opt/airflow/dags/model_level_dbt_dag.py                                              1           0  0.25s           2022-06-04T20:41:56
+/opt/airflow/dags/model_level_dbt_great_expectations_dag.py                           1           0  1.94s           2022-06-04T20:41:59
+/opt/airflow/dags/project_level_dbt_dag.py                                            1           0  0.22s           2022-06-04T20:41:40
+================================================================================
+[2022-06-04 20:42:09,557] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-04 20:42:09,560] {manager.py:1055} INFO - Failing jobs without heartbeat after 2022-06-04 20:37:09.560771+00:00

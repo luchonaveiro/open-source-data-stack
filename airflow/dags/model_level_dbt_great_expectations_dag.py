@@ -89,7 +89,7 @@ with DAG(
         task_id="dbt_compile",
         task_group=validate_taskgroup,
         bash_command=f"""
-        dbt compile --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
+        dbt compile --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH} --vars '{{"date": " {{{{ ds }}}} " }}'
         """,
     )
 
@@ -136,7 +136,7 @@ with DAG(
     dbt_docs = BashOperator(
         task_id="dbt_docs",
         bash_command=f"""
-        dbt docs generate --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
+        dbt docs generate --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH} --vars '{{"date": " {{{{ ds }}}} " }}'
         """,
     )
 
