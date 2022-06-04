@@ -169,7 +169,7 @@ The tests are defined both on the different `.yml` files stored on the `dbt/jaff
 
 The ones defined on the `.yml` files on the `dbt/jaffle_shop/models` directory, are basicaly in charge of testing the uniqueness and not null of each table primary key. Also, we are testing a relatinship constraint between `jaffle_shop.customers` and `jaffle_shop.orders` tables.
 
-On the other side, on the `dbt/jaffle_shop/tests/assert/positive_total_for_payments.sql` file, we are testing that the payed amount per order id, should always be greater or equal than 0.
+On the other side, on the `dbt/jaffle_shop/tests/assert/positive_total_for_payments.sql` file, we are testing that the payed amount per order id, should always be greater or equal than 0. Also we defined the `dbt/jaffle_shop/tests/assert/positive_total_for_payments_daily.sql` where we are using the `date` variable passed on the `dbt test` command.
 
 And to check that all the tests have passed, let's look at the logs:
 

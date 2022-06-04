@@ -1,0 +1,87 @@
+[2022-06-04 03:03:26,837] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: project_level_dbt_dag.dbt_run scheduled__2022-06-03T02:45:23.192192+00:00 [queued]>
+[2022-06-04 03:03:26,870] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: project_level_dbt_dag.dbt_run scheduled__2022-06-03T02:45:23.192192+00:00 [queued]>
+[2022-06-04 03:03:26,871] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 03:03:26,872] {taskinstance.py:1242} INFO - Starting attempt 2 of 4
+[2022-06-04 03:03:26,874] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 03:03:26,914] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_run> on 2022-06-03 02:45:23.192192+00:00
+[2022-06-04 03:03:26,922] {standard_task_runner.py:52} INFO - Started process 1317 to run task
+[2022-06-04 03:03:26,940] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'project_level_dbt_dag', 'dbt_run', 'scheduled__2022-06-03T02:45:23.192192+00:00', '--job-id', '208', '--raw', '--subdir', 'DAGS_FOLDER/project_level_dbt_dag.py', '--cfg-path', '/tmp/tmp52l7r0tk', '--error-file', '/tmp/tmp9xl6i3jg']
+[2022-06-04 03:03:26,943] {standard_task_runner.py:77} INFO - Job 208: Subtask dbt_run
+[2022-06-04 03:03:27,050] {logging_mixin.py:109} INFO - Running <TaskInstance: project_level_dbt_dag.dbt_run scheduled__2022-06-03T02:45:23.192192+00:00 [running]> on host 3d17a0db806e
+[2022-06-04 03:03:27,200] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=project_level_dbt_dag
+AIRFLOW_CTX_TASK_ID=dbt_run
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T02:45:23.192192+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T02:45:23.192192+00:00
+[2022-06-04 03:03:27,203] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-04 03:03:27,206] {subprocess.py:74} INFO - Running command: ['bash', '-c', '\n        dbt run --profiles-dir /opt/dbt/jaffle_shop --project-dir /opt/dbt/jaffle_shop\n        ']
+[2022-06-04 03:03:27,235] {subprocess.py:85} INFO - Output:
+[2022-06-04 03:03:33,209] {subprocess.py:89} INFO - 03:03:33  Running with dbt=1.1.0
+[2022-06-04 03:03:33,709] {subprocess.py:89} INFO - 03:03:33  Found 5 models, 14 tests, 0 snapshots, 0 analyses, 170 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[2022-06-04 03:03:33,726] {subprocess.py:89} INFO - 03:03:33
+[2022-06-04 03:03:34,044] {subprocess.py:89} INFO - 03:03:34  Concurrency: 1 threads (target='dev')
+[2022-06-04 03:03:34,047] {subprocess.py:89} INFO - 03:03:34
+[2022-06-04 03:03:34,087] {subprocess.py:89} INFO - 03:03:34  1 of 5 START view model dev.stg_jaffle_shop__customers ......................... [RUN]
+[2022-06-04 03:03:34,390] {subprocess.py:89} INFO - 03:03:34  1 of 5 OK created view model dev.stg_jaffle_shop__customers .................... [[32mCREATE VIEW[0m in 0.30s]
+[2022-06-04 03:03:34,397] {subprocess.py:89} INFO - 03:03:34  2 of 5 START view model dev.stg_jaffle_shop__orders ............................ [RUN]
+[2022-06-04 03:03:34,578] {subprocess.py:89} INFO - 03:03:34  2 of 5 OK created view model dev.stg_jaffle_shop__orders ....................... [[32mCREATE VIEW[0m in 0.17s]
+[2022-06-04 03:03:34,597] {subprocess.py:89} INFO - 03:03:34  3 of 5 START view model dev.stg_stripe__payments ............................... [RUN]
+[2022-06-04 03:03:34,917] {subprocess.py:89} INFO - 03:03:34  3 of 5 OK created view model dev.stg_stripe__payments .......................... [[32mCREATE VIEW[0m in 0.31s]
+[2022-06-04 03:03:34,940] {subprocess.py:89} INFO - 03:03:34  4 of 5 START view model dev.int_orders ......................................... [RUN]
+[2022-06-04 03:03:35,099] {subprocess.py:89} INFO - 03:03:35  4 of 5 OK created view model dev.int_orders .................................... [[32mCREATE VIEW[0m in 0.15s]
+[2022-06-04 03:03:35,110] {subprocess.py:89} INFO - 03:03:35  5 of 5 START table model dev.fct_customer_orders ............................... [RUN]
+[2022-06-04 03:03:35,259] {subprocess.py:89} INFO - 03:03:35  5 of 5 ERROR creating table model dev.fct_customer_orders ...................... [[31mERROR[0m in 0.14s]
+[2022-06-04 03:03:35,354] {subprocess.py:89} INFO - 03:03:35
+[2022-06-04 03:03:35,358] {subprocess.py:89} INFO - 03:03:35  Finished running 4 view models, 1 table model in 1.62s.
+[2022-06-04 03:03:35,404] {subprocess.py:89} INFO - 03:03:35
+[2022-06-04 03:03:35,410] {subprocess.py:89} INFO - 03:03:35  [31mCompleted with 1 error and 0 warnings:[0m
+[2022-06-04 03:03:35,414] {subprocess.py:89} INFO - 03:03:35
+[2022-06-04 03:03:35,417] {subprocess.py:89} INFO - 03:03:35  [33mDatabase Error in model fct_customer_orders (models/marts/core/fct_customer_orders.sql)[0m
+[2022-06-04 03:03:35,420] {subprocess.py:89} INFO - 03:03:35    relation "fct_customer_orders" already exists
+[2022-06-04 03:03:35,423] {subprocess.py:89} INFO - 03:03:35    compiled SQL at target/run/jaffle_shop/models/marts/core/fct_customer_orders.sql
+[2022-06-04 03:03:35,431] {subprocess.py:89} INFO - 03:03:35
+[2022-06-04 03:03:35,436] {subprocess.py:89} INFO - 03:03:35  Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+[2022-06-04 03:03:36,567] {subprocess.py:93} INFO - Command exited with return code 1
+[2022-06-04 03:03:36,592] {taskinstance.py:1703} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 188, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-06-04 03:03:36,604] {taskinstance.py:1280} INFO - Marking task as UP_FOR_RETRY. dag_id=project_level_dbt_dag, task_id=dbt_run, execution_date=20220603T024523, start_date=20220604T030326, end_date=20220604T030336
+[2022-06-04 03:03:36,624] {standard_task_runner.py:91} ERROR - Failed to execute job 208 for task dbt_run
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 292, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 188, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-06-04 03:03:36,672] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-06-04 03:03:36,778] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

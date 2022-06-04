@@ -1,0 +1,40 @@
+[2022-06-04 03:30:10,889] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_test.test.jaffle_shop.assert_positive_total_for_payments scheduled__2022-06-03T02:53:52.617168+00:00 [queued]>
+[2022-06-04 03:30:11,042] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_dag.dbt_test.test.jaffle_shop.assert_positive_total_for_payments scheduled__2022-06-03T02:53:52.617168+00:00 [queued]>
+[2022-06-04 03:30:11,051] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 03:30:11,055] {taskinstance.py:1242} INFO - Starting attempt 1 of 4
+[2022-06-04 03:30:11,056] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 03:30:11,247] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_test.test.jaffle_shop.assert_positive_total_for_payments> on 2022-06-03 02:53:52.617168+00:00
+[2022-06-04 03:30:11,288] {standard_task_runner.py:52} INFO - Started process 2860 to run task
+[2022-06-04 03:30:11,367] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_dag', 'dbt_test.test.jaffle_shop.assert_positive_total_for_payments', 'scheduled__2022-06-03T02:53:52.617168+00:00', '--job-id', '238', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_dag.py', '--cfg-path', '/tmp/tmpkbrsd7hi', '--error-file', '/tmp/tmpmox89au6']
+[2022-06-04 03:30:11,379] {standard_task_runner.py:77} INFO - Job 238: Subtask dbt_test.test.jaffle_shop.assert_positive_total_for_payments
+[2022-06-04 03:30:12,337] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_dag.dbt_test.test.jaffle_shop.assert_positive_total_for_payments scheduled__2022-06-03T02:53:52.617168+00:00 [running]> on host 3d17a0db806e
+[2022-06-04 03:30:12,870] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_dag
+AIRFLOW_CTX_TASK_ID=dbt_test.test.jaffle_shop.assert_positive_total_for_payments
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T02:53:52.617168+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T02:53:52.617168+00:00
+[2022-06-04 03:30:12,877] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-04 03:30:12,880] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'dbt --no-write-json test --target dev --select assert_positive_total_for_payments --profiles-dir /opt/dbt/jaffle_shop --project-dir /opt/dbt/jaffle_shop']
+[2022-06-04 03:30:12,969] {subprocess.py:85} INFO - Output:
+[2022-06-04 03:30:48,349] {subprocess.py:89} INFO - 03:30:48  Running with dbt=1.1.0
+[2022-06-04 03:30:48,464] {subprocess.py:89} INFO - 03:30:48  Unable to do partial parsing because config vars, config profile, or config target have changed
+[2022-06-04 03:31:06,616] {subprocess.py:89} INFO - 03:31:06  Found 5 models, 14 tests, 0 snapshots, 0 analyses, 170 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[2022-06-04 03:31:06,721] {subprocess.py:89} INFO - 03:31:06
+[2022-06-04 03:31:07,221] {subprocess.py:89} INFO - 03:31:07  Concurrency: 1 threads (target='dev')
+[2022-06-04 03:31:07,224] {subprocess.py:89} INFO - 03:31:07
+[2022-06-04 03:31:07,301] {subprocess.py:89} INFO - 03:31:07  1 of 1 START test assert_positive_total_for_payments ........................... [RUN]
+[2022-06-04 03:31:07,859] {subprocess.py:89} INFO - 03:31:07  1 of 1 PASS assert_positive_total_for_payments ................................. [[32mPASS[0m in 0.54s]
+[2022-06-04 03:31:08,006] {subprocess.py:89} INFO - 03:31:08
+[2022-06-04 03:31:08,015] {subprocess.py:89} INFO - 03:31:08  Finished running 1 test in 1.28s.
+[2022-06-04 03:31:08,051] {subprocess.py:89} INFO - 03:31:08
+[2022-06-04 03:31:08,065] {subprocess.py:89} INFO - 03:31:08  [32mCompleted successfully[0m
+[2022-06-04 03:31:08,074] {subprocess.py:89} INFO - 03:31:08
+[2022-06-04 03:31:08,083] {subprocess.py:89} INFO - 03:31:08  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2022-06-04 03:31:09,989] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-06-04 03:31:10,122] {taskinstance.py:1280} INFO - Marking task as SUCCESS. dag_id=model_level_dbt_dag, task_id=dbt_test.test.jaffle_shop.assert_positive_total_for_payments, execution_date=20220603T025352, start_date=20220604T033010, end_date=20220604T033110
+[2022-06-04 03:31:10,202] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-04 03:31:10,346] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

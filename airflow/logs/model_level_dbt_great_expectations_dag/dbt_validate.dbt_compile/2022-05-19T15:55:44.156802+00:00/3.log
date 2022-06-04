@@ -1,0 +1,75 @@
+[2022-06-04 02:54:23,992] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.dbt_validate.dbt_compile scheduled__2022-05-19T15:55:44.156802+00:00 [queued]>
+[2022-06-04 02:54:24,006] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: model_level_dbt_great_expectations_dag.dbt_validate.dbt_compile scheduled__2022-05-19T15:55:44.156802+00:00 [queued]>
+[2022-06-04 02:54:24,007] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 02:54:24,008] {taskinstance.py:1242} INFO - Starting attempt 3 of 4
+[2022-06-04 02:54:24,009] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 02:54:24,021] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_validate.dbt_compile> on 2022-05-19 15:55:44.156802+00:00
+[2022-06-04 02:54:24,037] {standard_task_runner.py:52} INFO - Started process 758 to run task
+[2022-06-04 02:54:24,047] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'model_level_dbt_great_expectations_dag', 'dbt_validate.dbt_compile', 'scheduled__2022-05-19T15:55:44.156802+00:00', '--job-id', '193', '--raw', '--subdir', 'DAGS_FOLDER/model_level_dbt_great_expectations_dag.py', '--cfg-path', '/tmp/tmp_gg8zf0d', '--error-file', '/tmp/tmppb8g7kgf']
+[2022-06-04 02:54:24,051] {standard_task_runner.py:77} INFO - Job 193: Subtask dbt_validate.dbt_compile
+[2022-06-04 02:54:24,127] {logging_mixin.py:109} INFO - Running <TaskInstance: model_level_dbt_great_expectations_dag.dbt_validate.dbt_compile scheduled__2022-05-19T15:55:44.156802+00:00 [running]> on host 3d17a0db806e
+[2022-06-04 02:54:24,203] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=model_level_dbt_great_expectations_dag
+AIRFLOW_CTX_TASK_ID=dbt_validate.dbt_compile
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-19T15:55:44.156802+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-19T15:55:44.156802+00:00
+[2022-06-04 02:54:24,206] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-04 02:54:24,208] {subprocess.py:74} INFO - Running command: ['bash', '-c', '\n        dbt compile --profiles-dir /opt/dbt/jaffle_shop --project-dir /opt/dbt/jaffle_shop\n        ']
+[2022-06-04 02:54:24,232] {subprocess.py:85} INFO - Output:
+[2022-06-04 02:54:27,934] {subprocess.py:89} INFO - 02:54:27  Running with dbt=1.1.0
+[2022-06-04 02:54:28,064] {subprocess.py:89} INFO - 02:54:28  Found 5 models, 14 tests, 0 snapshots, 0 analyses, 170 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[2022-06-04 02:54:28,072] {subprocess.py:89} INFO - 02:54:28
+[2022-06-04 02:54:28,197] {subprocess.py:89} INFO - 02:54:28  Concurrency: 1 threads (target='dev')
+[2022-06-04 02:54:28,200] {subprocess.py:89} INFO - 02:54:28
+[2022-06-04 02:54:29,897] {subprocess.py:89} INFO - 02:54:29  Encountered an error:
+[2022-06-04 02:54:29,898] {subprocess.py:89} INFO - Runtime Error
+[2022-06-04 02:54:29,899] {subprocess.py:89} INFO -   Compilation Error in test assert_positive_total_for_payments_daily (tests/assert_positive_total_for_payments_daily.sql)
+[2022-06-04 02:54:29,900] {subprocess.py:89} INFO -     Required var 'date' not found in config:
+[2022-06-04 02:54:29,901] {subprocess.py:89} INFO -     Vars supplied to assert_positive_total_for_payments_daily = {}
+[2022-06-04 02:54:29,902] {subprocess.py:89} INFO - 
+[2022-06-04 02:54:29,903] {subprocess.py:89} INFO -     > in test assert_positive_total_for_payments_daily (tests/assert_positive_total_for_payments_daily.sql)
+[2022-06-04 02:54:29,904] {subprocess.py:89} INFO -     > called by test assert_positive_total_for_payments_daily (tests/assert_positive_total_for_payments_daily.sql)
+[2022-06-04 02:54:30,071] {subprocess.py:93} INFO - Command exited with return code 2
+[2022-06-04 02:54:30,090] {taskinstance.py:1703} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 188, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2022-06-04 02:54:30,101] {taskinstance.py:1280} INFO - Marking task as UP_FOR_RETRY. dag_id=model_level_dbt_great_expectations_dag, task_id=dbt_validate.dbt_compile, execution_date=20220519T155544, start_date=20220604T025423, end_date=20220604T025430
+[2022-06-04 02:54:30,121] {standard_task_runner.py:91} ERROR - Failed to execute job 193 for task dbt_validate.dbt_compile
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 292, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 188, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2022-06-04 02:54:30,154] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-06-04 02:54:30,222] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

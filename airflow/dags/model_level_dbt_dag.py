@@ -56,7 +56,7 @@ with DAG(
         task_id="dbt_compile",
         task_group=validate_taskgroup,
         bash_command=f"""
-        dbt compile --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
+        dbt compile --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH} --vars '{{"date": " {{{{ ds }}}} " }}'
         """,
     )
 

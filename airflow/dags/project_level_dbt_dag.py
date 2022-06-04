@@ -36,7 +36,7 @@ with DAG(
     dbt_test = BashOperator(
         task_id="dbt_test",
         bash_command=f"""
-        dbt test --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH}
+        dbt test --profiles-dir {DBT_PROJECT_PATH} --project-dir {DBT_PROJECT_PATH} --vars '{{"date": " {{{{ ds }}}} " }}'
         """,
     )
 

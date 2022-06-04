@@ -1,0 +1,108 @@
+[2022-06-04 03:03:37,051] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: project_level_dbt_dag.dbt_test scheduled__2022-05-20T00:46:38.594894+00:00 [queued]>
+[2022-06-04 03:03:37,066] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: project_level_dbt_dag.dbt_test scheduled__2022-05-20T00:46:38.594894+00:00 [queued]>
+[2022-06-04 03:03:37,067] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 03:03:37,068] {taskinstance.py:1242} INFO - Starting attempt 1 of 4
+[2022-06-04 03:03:37,069] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 03:03:37,086] {taskinstance.py:1262} INFO - Executing <Task(BashOperator): dbt_test> on 2022-05-20 00:46:38.594894+00:00
+[2022-06-04 03:03:37,093] {standard_task_runner.py:52} INFO - Started process 1341 to run task
+[2022-06-04 03:03:37,102] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'project_level_dbt_dag', 'dbt_test', 'scheduled__2022-05-20T00:46:38.594894+00:00', '--job-id', '209', '--raw', '--subdir', 'DAGS_FOLDER/project_level_dbt_dag.py', '--cfg-path', '/tmp/tmprjqpkaq9', '--error-file', '/tmp/tmpsbaylot2']
+[2022-06-04 03:03:37,105] {standard_task_runner.py:77} INFO - Job 209: Subtask dbt_test
+[2022-06-04 03:03:37,171] {logging_mixin.py:109} INFO - Running <TaskInstance: project_level_dbt_dag.dbt_test scheduled__2022-05-20T00:46:38.594894+00:00 [running]> on host 3d17a0db806e
+[2022-06-04 03:03:37,246] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=luciano.naveiro
+AIRFLOW_CTX_DAG_ID=project_level_dbt_dag
+AIRFLOW_CTX_TASK_ID=dbt_test
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-20T00:46:38.594894+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-20T00:46:38.594894+00:00
+[2022-06-04 03:03:37,247] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-04 03:03:37,249] {subprocess.py:74} INFO - Running command: ['bash', '-c', '\n        dbt test --profiles-dir /opt/dbt/jaffle_shop --project-dir /opt/dbt/jaffle_shop --vars \'{"date": "2018-01-01" }\'\n        ']
+[2022-06-04 03:03:37,263] {subprocess.py:85} INFO - Output:
+[2022-06-04 03:03:41,677] {subprocess.py:89} INFO - 03:03:41  Running with dbt=1.1.0
+[2022-06-04 03:03:41,739] {subprocess.py:89} INFO - 03:03:41  Unable to do partial parsing because config vars, config profile, or config target have changed
+[2022-06-04 03:03:43,094] {subprocess.py:89} INFO - 03:03:43  Found 5 models, 14 tests, 0 snapshots, 0 analyses, 170 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[2022-06-04 03:03:43,101] {subprocess.py:89} INFO - 03:03:43
+[2022-06-04 03:03:43,246] {subprocess.py:89} INFO - 03:03:43  Concurrency: 1 threads (target='dev')
+[2022-06-04 03:03:43,253] {subprocess.py:89} INFO - 03:03:43
+[2022-06-04 03:03:43,272] {subprocess.py:89} INFO - 03:03:43  1 of 14 START test accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed  [RUN]
+[2022-06-04 03:03:43,373] {subprocess.py:89} INFO - 03:03:43  1 of 14 PASS accepted_values_stg_jaffle_shop__orders_order_status__completed__shipped__returned__return_pending__placed  [[32mPASS[0m in 0.10s]
+[2022-06-04 03:03:43,384] {subprocess.py:89} INFO - 03:03:43  2 of 14 START test assert_positive_total_for_payments .......................... [RUN]
+[2022-06-04 03:03:43,452] {subprocess.py:89} INFO - 03:03:43  2 of 14 PASS assert_positive_total_for_payments ................................ [[32mPASS[0m in 0.06s]
+[2022-06-04 03:03:43,458] {subprocess.py:89} INFO - 03:03:43  3 of 14 START test assert_positive_total_for_payments_daily .................... [RUN]
+[2022-06-04 03:03:43,536] {subprocess.py:89} INFO - 03:03:43  3 of 14 ERROR assert_positive_total_for_payments_daily ......................... [[31mERROR[0m in 0.08s]
+[2022-06-04 03:03:43,548] {subprocess.py:89} INFO - 03:03:43  4 of 14 START test not_null_stg_jaffle_shop__customers_customer_id ............. [RUN]
+[2022-06-04 03:03:43,682] {subprocess.py:89} INFO - 03:03:43  4 of 14 PASS not_null_stg_jaffle_shop__customers_customer_id ................... [[32mPASS[0m in 0.13s]
+[2022-06-04 03:03:43,694] {subprocess.py:89} INFO - 03:03:43  5 of 14 START test not_null_stg_jaffle_shop__orders_order_id ................... [RUN]
+[2022-06-04 03:03:43,779] {subprocess.py:89} INFO - 03:03:43  5 of 14 PASS not_null_stg_jaffle_shop__orders_order_id ......................... [[32mPASS[0m in 0.08s]
+[2022-06-04 03:03:43,785] {subprocess.py:89} INFO - 03:03:43  6 of 14 START test relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_  [RUN]
+[2022-06-04 03:03:43,862] {subprocess.py:89} INFO - 03:03:43  6 of 14 PASS relationships_stg_jaffle_shop__orders_customer_id__customer_id__ref_stg_jaffle_shop__customers_  [[32mPASS[0m in 0.07s]
+[2022-06-04 03:03:43,869] {subprocess.py:89} INFO - 03:03:43  7 of 14 START test source_not_null_jaffle_shop_customers_id .................... [RUN]
+[2022-06-04 03:03:43,967] {subprocess.py:89} INFO - 03:03:43  7 of 14 PASS source_not_null_jaffle_shop_customers_id .......................... [[32mPASS[0m in 0.09s]
+[2022-06-04 03:03:43,979] {subprocess.py:89} INFO - 03:03:43  8 of 14 START test source_not_null_jaffle_shop_orders_id ....................... [RUN]
+[2022-06-04 03:03:44,097] {subprocess.py:89} INFO - 03:03:44  8 of 14 PASS source_not_null_jaffle_shop_orders_id ............................. [[32mPASS[0m in 0.11s]
+[2022-06-04 03:03:44,107] {subprocess.py:89} INFO - 03:03:44  9 of 14 START test source_not_null_stripe_payment_id ........................... [RUN]
+[2022-06-04 03:03:44,193] {subprocess.py:89} INFO - 03:03:44  9 of 14 PASS source_not_null_stripe_payment_id ................................. [[32mPASS[0m in 0.08s]
+[2022-06-04 03:03:44,203] {subprocess.py:89} INFO - 03:03:44  10 of 14 START test source_unique_jaffle_shop_customers_id ..................... [RUN]
+[2022-06-04 03:03:44,367] {subprocess.py:89} INFO - 03:03:44  10 of 14 PASS source_unique_jaffle_shop_customers_id ........................... [[32mPASS[0m in 0.16s]
+[2022-06-04 03:03:44,379] {subprocess.py:89} INFO - 03:03:44  11 of 14 START test source_unique_jaffle_shop_orders_id ........................ [RUN]
+[2022-06-04 03:03:44,493] {subprocess.py:89} INFO - 03:03:44  11 of 14 PASS source_unique_jaffle_shop_orders_id .............................. [[32mPASS[0m in 0.11s]
+[2022-06-04 03:03:44,508] {subprocess.py:89} INFO - 03:03:44  12 of 14 START test source_unique_stripe_payment_id ............................ [RUN]
+[2022-06-04 03:03:44,620] {subprocess.py:89} INFO - 03:03:44  12 of 14 PASS source_unique_stripe_payment_id .................................. [[32mPASS[0m in 0.11s]
+[2022-06-04 03:03:44,628] {subprocess.py:89} INFO - 03:03:44  13 of 14 START test unique_stg_jaffle_shop__customers_customer_id .............. [RUN]
+[2022-06-04 03:03:44,708] {subprocess.py:89} INFO - 03:03:44  13 of 14 PASS unique_stg_jaffle_shop__customers_customer_id .................... [[32mPASS[0m in 0.08s]
+[2022-06-04 03:03:44,715] {subprocess.py:89} INFO - 03:03:44  14 of 14 START test unique_stg_jaffle_shop__orders_order_id .................... [RUN]
+[2022-06-04 03:03:44,794] {subprocess.py:89} INFO - 03:03:44  14 of 14 PASS unique_stg_jaffle_shop__orders_order_id .......................... [[32mPASS[0m in 0.07s]
+[2022-06-04 03:03:44,832] {subprocess.py:89} INFO - 03:03:44
+[2022-06-04 03:03:44,835] {subprocess.py:89} INFO - 03:03:44  Finished running 14 tests in 1.73s.
+[2022-06-04 03:03:44,855] {subprocess.py:89} INFO - 03:03:44
+[2022-06-04 03:03:44,857] {subprocess.py:89} INFO - 03:03:44  [31mCompleted with 1 error and 0 warnings:[0m
+[2022-06-04 03:03:44,858] {subprocess.py:89} INFO - 03:03:44
+[2022-06-04 03:03:44,863] {subprocess.py:89} INFO - 03:03:44  [33mDatabase Error in test assert_positive_total_for_payments_daily (tests/assert_positive_total_for_payments_daily.sql)[0m
+[2022-06-04 03:03:44,869] {subprocess.py:89} INFO - 03:03:44    column "created" does not exist
+[2022-06-04 03:03:44,872] {subprocess.py:89} INFO - 03:03:44    LINE 13:         created = '2018-01-01'
+[2022-06-04 03:03:44,875] {subprocess.py:89} INFO - 03:03:44                     ^
+[2022-06-04 03:03:44,878] {subprocess.py:89} INFO - 03:03:44    compiled SQL at target/run/jaffle_shop/tests/assert_positive_total_for_payments_daily.sql
+[2022-06-04 03:03:44,881] {subprocess.py:89} INFO - 03:03:44
+[2022-06-04 03:03:44,884] {subprocess.py:89} INFO - 03:03:44  Done. PASS=13 WARN=0 ERROR=1 SKIP=0 TOTAL=14
+[2022-06-04 03:03:46,020] {subprocess.py:93} INFO - Command exited with return code 1
+[2022-06-04 03:03:46,036] {taskinstance.py:1703} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 188, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-06-04 03:03:46,050] {taskinstance.py:1280} INFO - Marking task as UP_FOR_RETRY. dag_id=project_level_dbt_dag, task_id=dbt_test, execution_date=20220520T004638, start_date=20220604T030337, end_date=20220604T030346
+[2022-06-04 03:03:46,066] {standard_task_runner.py:91} ERROR - Failed to execute job 209 for task dbt_test
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 292, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1332, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1458, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 188, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-06-04 03:03:46,107] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-06-04 03:03:46,144] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
