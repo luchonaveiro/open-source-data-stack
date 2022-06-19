@@ -11,7 +11,7 @@
 On the following project, we are going to integrate `Apache Airflow`, `PostgreSQL`, `dbt`, `Great Expectations` and `Apache Superset`. We are going to do it by using `Apache Airflow` to orchestrate and schedule `dbt` (by running and testing the models) to create the data model on a local `PostgreSQL` database. Use `Great Expectations` to define some further data tests and data profiles, and create a dashboard on `Apache Superset` where we are going to visualize the data. Also, we added two `nignx` servers to host both `dbt` and `Great Expectations` documentation generated.
 
 
-![diagram](assets/diagram.png)
+![diagram](assets/diagram.jpg)
 
 The idea is not to go through the basics of each technology, but here is a small summary of each one.
 
